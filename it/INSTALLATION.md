@@ -1,60 +1,65 @@
-## Installation {#installation}
+## Installazione  {#installation}
 
-`Highlighted text` is used to denote window, menu, button, file or directory names.
+`Il testo evidenziato` viene utilizzato per indicare i nomi di finestre, menu, pulsanti, file o directory.
 
-*Little Navmap* for Windows is a 32-bit application and was tested with Windows 7, Windows 8, Windows 10 \(32-bit and 64-bit\).
+*Little Navmap* per Windows è un'applicazione a 32 bit ed è stato testato con Windows 7, Windows 8, Windows 10 (32 bit e 64 bit).
 
-The macOS and Linux versions are both 64-bit and were tested with macOS Sierra and Ubuntu Linux.
+Le versioni macOS e Linux sono entrambe a 64 bit e sono state testate con macOS Sierra e Ubuntu Linux.
 
-### Updating
-Delete all installed files of a previous _Little Navmap_ version before installing a new version. All files from the previous ZIP archive can be deleted since settings are stored in separate directories \(except [custom map themes](MAPTHEMES.md)\). In any case do not merge the installation directories.
 
-There is no need to delete the old settings directory. The program is written in a way that it can always work with old setting files.
+### In aggiornamento
+Eliminare tutti i file installati di una precedente versione di Little Navmap prima di installare una nuova versione. Tutti i file dal precedente archivio ZIP può essere eliminato poiché le impostazioni sono memorizzate in directory separate \(eccetto[custom map themes](MAPTHEMES.md)\). In ogni caso non unire le directory di installazione.
+on è necessario eliminare la vecchia directory delle impostazioni. Il programma è scritto in modo tale da poter funzionare sempre con i vecchi file di impostazioni.
 
-### Windows
-The installation of _Little Navmap_ does not change any registry entries \(in Windows\) and involves a simple copy of files therefore an installer or setup program is not required.
 
-Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges for some Windows versions. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
+### Finestre
+L'installazione di of _Little Navmap_ does not change any registry entries \(in Windows\) non modifica alcuna voce del registro \(in Windows\) e comporta quindi una semplice copia dei file non è richiesto un programma di installazione o installatore.
 
-Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](INTRO.md#first-start) for more information on the first start after installation.
+Non estrarre l'archivio nella directory `c:\Program Files\` or `c:\Program Files (x86)\`  poiché ciò richiede privilegi amministrativi. Windows mantiene il controllo di queste directory, pertanto potrebbero verificarsi altri problemi come la sostituzione o file cancellati.
 
-In some cases you have to install the [Update for Visual C\+\+ 2013 and Visual C\+\+ Redistributable Package](https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Install both 32 and 64 bit versions.
-Usually this is already installed since many other programs require it.
+Estrai l'archivio Zip in una directory come `c:\Little Navmap`. Quindi avvia il programma facendo un doppio click su `littlenavmap.exe`. See [First Start](INTRO.md#first-start) per ulteriori informazioni sul primo avvio dopo l'installazione.
 
-_Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\). Windows XP is not supported.
+In qualche caso devi installare  [Update for Visual C\+\+ 2013 and Visual C\+\+ Redistributable Package](https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Installa entrambe le versioni a 32 e 64 bit.
+Di solito questa è già installata poiché molti altri programmi lo richiedono.
 
-#### Other Simulators than FSX SP2 {#other-simulators-than-fsx-sp2}
+_Little Navmap_ è un'applicazione a 32 bit ed è stato testato con Windows 7, Windows 8 e Windows 10 (32 bit e 64 bit).
+XP non è supportato.
 
-This program was compiled using plain FSX SP2 \(no Acceleration\) SimConnect version 10.0.61259.0.
 
-You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navmap_ out. If it fails with an error message follow the instructions below:
+#### Simulatori diversi da FSX SP2 {#other-simulators-than-fsx-sp2}
 
-_**Prepar3D**_: In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
+Questo programma è stato compilato utilizzando la semplice versione\(no Acceleration\) di SimConnect 10.0.61259.0 di FSX SP2.
 
-_**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
+Potrebbe essere necessario installare una versione precedente di SimConnect se si utilizza_Prepar3D_ or _FSX Steam Edition_. Se non sei sicuro di questo, prova semplicemente Little Navmap. Se fallisce con un messaggio di errore, seguire le istruzioni seguenti:
+
+_**Prepar3D**_: Nella stessa directory di `Prepar3D.exe` è presente una directory `redist\Interface` \(normalmente `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). Sono disponibili più versioni obsolete di SimConnect. Devi installare `FSX-SP2-XPACK.msi` per _Little Navmap_.
+
+_**FSX Steam Edition**_: l'installazione aggiunge la directory `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` in cui è possibile trovare le interfacce obsolete di SimConnect.
 
 ### macOS
 
-Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
+Estrarre il file ZIP e copia l'applicazione  `Little Navmap` nella cartella`Applications` o in qualsiasi altra cartella.
 
 ### Linux
 
-Extract the tar archive to any place and use the `littlenavmap.sh` shell script to start the program from a terminal:
+estrarre l'archivo tar in qualsiasi posto e avvia e usa l'eseguibile the `littlenavmap.sh` per far partire il programma da un terminale:
 
 `bash ./littlenavmap.sh`
 
 ### X-Plane
 
-*Little Navmap* can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well.
+*Little Navmap* può connettersi a Xplane usanod il pluging *Little Xpconnect* X-Plane che deve essere installato.
 
-The *Little Xpconnect* plugin is included in the *Little Navmap* archive but can also be downloaded separately. See the included `README.txt` in the `Little Xpconnect` directory for installation instructions.
+Il lugin *Little Xpconnect* è inclsuo nell'archivio *Little Navmap* ma può anche essere scaricato separatamente. Vedi il
+`README.txt` nella directory `Little Xpconnect` per le istruzioni di installazione.
 
-The plugin 64-bit only and is available for Windows, macOS and Linux.
+The plugin a 64-bit è disponibile solo per Windows, macOS and Linux.
 
-### Additional Programs
+### Programmi aggiuntivi
 
-The downloaded *Little Navmap* archive contains two additional directories \(or applications for macOS\):
+L'archivio scaricato *Little Navmap* contiene due directory addizionali \(or applications for macOS\):
 
-`Little Navconnect`: A complete copy of the program allowing remote flight simulator connections for FSX, P3D and X-Plane.
+`Little Navconnect`:  Una copia completa del programma che consente le connessioni del simulatore di volo remoto per FSX, P3D and 
+X-Plane.
 
-`Little Xpconnect`: This is the 64-bit plugin that is needed for *Little Navmap* or *Little Navconnect* to connect to X-Plane.
+`Little Xpconnect`:  Questo è il plugin a 64-bit plugin necessario per consentire a *Little Navmap* o *Little Navconnect* di connettersi a  X-Plane.
