@@ -26,7 +26,7 @@ Tutti gli elementi selezionati nella vista della tabella del piano di volo saran
 
 _-_ ** Immagine sopra: ** Il waypoint _`ALTAG`_ e parti delle vie aeree _`V324`_ non sono stati trovati nel database._
 
-#### Tbella delle colonne {# flight-plan-table-colonne}
+#### Tabella delle colonne {# flight-plan-table-colonne}
 
 -* `Identificativo`: identificativo ICAO del radioaiuto o aeroporto.
 * `Regione`: codice regionale di due lettere di un radioaiuto.

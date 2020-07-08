@@ -1,27 +1,26 @@
-## Tutorials {#tutorials}
+## guide {#guide}
 
-### General {#tutorials-general}
+### Generale {# guide-generale}
 
-The tutorials are based on:
-* FSX or P3D scenery but can be easily adapted to X-Plane.
-* An already loaded scenery database which normally happens right after the first startup.
-* The stock navigation data of FSX or P3D. Differences might appear if you use navdata updates or airport scenery add-ons.
+Le guide si basano su:
+* Scenario FSX o P3D ma può essere facilmente adattato a X-Plane.
+* Un database di scenari già caricato che normalmente risulta apposto subito dopo il primo avvio.
+* I dati di navigazione di base di FSX o P3D. Le differenze potrebbero apparire se si utilizzano aggiornamenti dati di navigazione o componenti aggiuntivi di scenari aeroportuali.
 
-All functions will be referred by the names in the main menu by using `Menu Name` -&gt; `Menu Item`. The icons are shown too so you can find the buttons on one of the toolbars. Screenshots will provide more help.
+Tutte le funzioni saranno indicate dai nomi nel menu principale usando "Nome menu" - & gt; "Voce di menu". Vengono visualizzate anche le icone in modo da poter trovare i pulsanti su una delle barre degli strumenti. Le schermate forniranno ulteriore aiuto.
 
-### Quick Start
+### Avvio veloce
+layout
+Per avere una base comune pulita, raccomando quanto segue:
 
-To have a clean common base I recommend the following:
+* Seleziona `Finestra` - & gt; "Ripristina posizione finestra" per riportare tutte le finestre ancorate nella loro posizione predefinita.
+* Usa il tema della mappa `OpenStreetMap` con l'ombreggiatura della collina! [collina ombreggiatura] (../ images / icons / hillshading.png) abilitato.
+* Ripristina le impostazioni di visualizzazione della mappa in `Mappa` - & gt; "Ripristina impostazioni di visualizzazione" per assicurarsi che tutte le funzioni necessarie siano visualizzate sulla mappa.
+* Seleziona `File` - & gt; "Nuovo piano di volo"! [Nuovo piano di volo] (../ images / icons / filenew.png) per iniziare con un piano di volo pulito.
 
-* Select `Window` -&gt; `Reset Window Layout` to get all the dock windows back into their default place.
-* Use the map theme `OpenStreetMap` with hill shading ![Hill Shading](../images/icons/hillshading.png) enabled.
-* Reset the map display settings in `Map` -&gt; `Reset Display Settings` to make sure that all needed features are shown on the map.
-* Select `File` -&gt; `New Flight Plan` ![New Flight Plan](../images/icons/filenew.png) to start with a clean flight plan.
+### Guide {# guide-sommario}
 
-### Tutorials {#tutorials-summary}
-
-1. [Building a VFR Flight Plan](TUTORIALVFR.md)
-This tutorial will show how to create a simple flight plan based on the map and its context menus.
-2. [Building an IFR Flight Plan with Approach Procedures](TUTORIALIFR.md)
-This long tutorial will show you how to create a more complex IFR flight plan including approach procedures. It introduces the advanced airport search functionality, the spatial search and the automatic flight plan calculation.
-
+1. [Creazione di un piano di volo VFR] (TUTORIALVFR.md)
+Questo tutorial mostrerà come creare un semplice piano di volo basato sulla mappa e sui suoi menu contestuali.
+2. [Creazione di un piano di volo IFR con procedure di avvicinamento] (TUTORIALIFR.md)
+Questo lungo tutorial ti mostrerà come creare un piano di volo IFR più complesso che includa le procedure di avvicinamento. Presenta la funzionalità di ricerca avanzata dell'aeroporto, la ricerca spaziale e il calcolo automatico del piano di volo.

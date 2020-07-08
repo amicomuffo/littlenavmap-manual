@@ -1,63 +1,64 @@
-## Tips and Tricks {#tips-and-tricks}
 
-### Show all Navaid Ranges of a Flight Plan {#tips-and-tricks-navaid-range}
+## Suggerimenti e trucchi {# suggerimenti-e-trucchi}
 
-Select all legs in the flight plan table, then right click on any leg and select `Show Navaid Range` ![Show Navaid Range](../images/icons/navrange.png). This will place a range ring around every radio navaid in the flight plan.
+### Mostra tutti gli intervalli radiaiuto di un piano di volo {# suggerimenti-e-trucchi-radioaiuto-intrevallo}
 
-See also [Show Navaid range](MAPDISPLAY.md#show-navaid-range).
+Seleziona tutte le tratte nella tabella del piano di volo, quindi fai clic con il pulsante destro del mouse su qualsiasi tratta e seleziona "Mostra intervallo radioaiuto"! [Mostra intervallo radioaiuto] (../ images / icons / navrange.png). Ciò posizionerà un anello di distanza attorno a ogni radio aiuto nel piano di volo.
 
-Remove the range rings by selecting `Remove all Range Rings and Distance Measurements` ![Remove all Range Rings and Distance Measurements](../images/icons/rangeringsoff.png).
+Vedi anche [Mostra intervallo radioaiuto] (MAPDISPLAY.md # mostra-radioaiuto-intervallo).
 
-![Range Rings](../images/tutorial/tipsrangerings.jpg)
+Rimuovere gli anelli di distanza selezionando "Rimuovi tutti gli anelli di distanza e le misurazioni della distanza"! [Rimuovi tutti gli anelli di distanza e le misurazioni della distanza] (../immagine / icone / rangeringsoff.png).
 
-### Use the measurment lines to get a VOR Radial Intersection {#tips-and-tricks-vor-radials}
+! [anelli di distanza] (../ images / tutorial / tipsrangerings.jpg)
 
-Measurment lines can start at airports or navaids where they use the magnetic variation if available. You can use them to find an airport by radial and distance if you like to navigate the old fashioned way.
+### Usa le linee di misurazione per ottenere un'intersezione radiale VOR {# suggerimenti-e-trucchi-vor-radiali}
 
-Below is an example that gets radial and distance from two VORs for `ETUO`. Measurement lines can also start at NDBs or waypoints. Note the suffix `M` which indicates magnetic course.
+Le linee di misurazione possono iniziare negli aeroporti o nei radioaiuti dove  si usa la variazione magnetica, se disponibile. Puoi usarli per trovare un aeroporto in base al raggio e alla distanza se ti piace navigare alla vecchia maniera.
 
-See also [Measure GC Distance from here](MAPDISPLAY.md#measure-gc-distance-from-here) and [Measure Rhumb Distance from here](MAPDISPLAY.md#measure-rhumb-distance-from-here).
+Di seguito è riportato un esempio che ottiene  la radiale e  la distanza da due VOR per `ETUO`. Le linee di misurazione possono anche iniziare da NDB o waypoint. Notare il suffisso "M" che indica la rotta magnetica.
 
-![VOR Radials](../images/tutorial/tipvor.jpg)
+Vedi anche [Misura distanza GC da qui] (MAPDISPLAY.md # misura-gc-distanza-da-qui) e [Misura distanza isodromica da qui] (MAPDISPLAY.md # misura-rombo-distanza-da-qui).
 
-The same can be used when flying airways without GPS. In the example below fly 323 degrees magnetic to VOR `SFD` \(radial 143\). You are at `WAFFU` when the DME shows 13.7 nautical miles. Then turn left to 280°M until you intercept 302° to `GWC`.
+! [VOR Radiali] (../ images / tutorial / tipvor.jpg)
 
-![VOR Airways](../images/tutorial/tipvorairway.jpg)
+Lo stesso può essere usato quando si vola nelle vie aeree senza GPS. Nell'esempio che segue volo a 323 gradi magnetici rispetto a VOR `SFD` \ (radiale 143 \). Sei a "WAFFU" quando il DME mostra 13,7 miglia nautiche. Quindi voltare a sinistra a 280 ° M fino a quando non si intercetta 302 ° su `GWC`.
 
-### Use the measurment lines for Approach Guidance {#tips-and-tricks-approach-guidance}
+! [VOR Aerovie] (../ images / tutorial / tipvorairway.jpg)
 
-Right click on the airport and choose `Measure Rhumb Distance from here` ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png). Pull the line using the opposing course to 3 nautical miles out to get guidance for the final approach.
+### Usa le linee di misurazione per un orientamento all'avvicinamento {# suggerimenti-e-trucchi-avvicinamento-guida}
 
-![Approach Guidance](../images/tutorial/tipsapproach.jpg)
+Fai clic con il pulsante destro del mouse sull'aeroporto e scegli "Misura distanza isodromica da qui"! [Misura distanza isodromica da qui] (../immagine / icone / distanzameasurerhumb.png). Tirare la linea usando la rotta opposta a 3 miglia nautiche per ottenere un orientamento per l'avvicinamento finale.
 
-### Search for Add-On Airports {#tips-and-tricks-addon-airports}
+! [Orientamento all'avvicinamento] (../ images / tutorial / tipsapproach.jpg)
 
-You can use the scenery path to look for add-on airports of a certain developer. Click on one of the add-on airports and copy the relevant part of the path from the information window. Insert this path fragment into the `Scenery Path` input field in the airports tab of the search dock window. Add `*` at the beginning and at the end since it only a path fragment.
+### Cerca aeroporti aggiuntivi {# suggerimenti-e-trucchi-aggiuntivi-aeroporti}
 
-See also [Text Filters](SEARCH.md#text-filters).
+Puoi utilizzare il percorso dello scenario per cercare aeroporti aggiuntivi di un determinato autore. Fare clic su uno degli aeroporti aggiuntivi e copiare la parte pertinente del percorso dalla finestra delle informazioni. Inserisci questo frammento di percorso nel campo di immissione "Percorso scenario", nella scheda aeroporti della finestra ancorata di ricerca. Aggiungi `*` all'inizio e alla fine poiché è solo un frammento di percorso.
 
-Select all in the result table to get all airports highlighted on the map.
+Vedi anche [Filtri di testo] (SEARCH.md # filtri di testo).
 
-![Search Add-On](../images/tutorial/tipscenery.jpg)
+Seleziona tutto nella tabella dei risultati, per evidenziare tutti gli aeroporti sulla mappa.
 
-### Use the Search Function to plan a Round the World Trip {#tips-and-tricks-rtw}
+! [Cerca componente aggiuntivo] (../ images / tutorial / tipscenery.jpg)
 
-The spatial search function is useful to plan a round the world tour.
-Assume you'd like to go east:
 
-1. Got to the dock window `Search`, right click into the result table and select `Reset Search` ![Reset Search](../images/icons/clear.png) to get rid of all search criteria that may affect the query.
-2. Set your departure airport.
-2. Right click on your departure airport in the search or on the map and select `Set Center for Distance Search` ![Set Center for Distance Search](../images/icons/mark.png). This is the center point for the spatial search.
-3. Add any additional criteria in the search like lighted runways, procedures, fuel, minimum runway length and more.
-4. Adjust the minimum and maximum distance, set direction to `East` and click the checkbox before `Distance`.
-5. Select all in the result table to see the airports on the map.
-5. Choose your next destination airport.
-6. Add as destination.
-7. Calculate plan.
-8. Fly.
-9. Back to 2. until you are done around the world.
+### Utilizza la funzione di ricerca per pianificare un viaggio attorno al mondo {# suggerimenti-e-trucchi-rtw}
 
-Picture below shows a query result for airports in the east. Note that the black/yellow highlight circles have tooltips too no matter if the airport is visible or not.
+La funzione di ricerca spaziale è utile per pianificare un giro del mondo.
+Supponiamo che ti piacesse andare ad est:
 
-![Approach Guidance](../images/tutorial/tiprtw.jpg)
+1. Vai alla finestra ancorata "Cerca", fai clic con il pulsante destro del mouse nella tabella dei risultati e seleziona "Ripristina ricerca"! [Ripristina ricerca] (../ images / icons / clear.png) per eliminare tutti i criteri di ricerca che potrebbero influire la domanda.
+2. Imposta l'aeroporto di partenza.
+2. Fare clic con il tasto destro del mouse sull'aeroporto di partenza nella ricerca o sulla mappa e seleziona "Imposta il centro per la ricerca della distanza"! [Imposta centro per la ricerca della distanza] (../ images / icons / mark.png). Questo è il punto centrale per la ricerca spaziale.
+3. Aggiungi eventuali criteri aggiuntivi nella ricerca come piste illuminate, procedure, carburante, lunghezza minima della pista e altro.
+4. Regola la distanza minima e massima, imposta la direzione su "Est" e fai clic sulla casella di controllo prima di "Distanza".
+5. Seleziona tutto nella tabella dei risultati per visualizzare gli aeroporti sulla mappa.
+5. Scegli il tuo prossimo aeroporto di destinazione.
+6. Aggiungi come destinazione.
+7. Calcola il piano.
+8. Vola.
+9. Torna al 2. fino a quando non avrai finito intorno al mondo.
 
+L'immagine seguente mostra un risultato della domanda per gli aeroporti ad est. Nota che i cerchi evidenziati in nero / giallo hanno anche delle descrizioni comandi, indipendentemente dal fatto che l'aeroporto sia visibile o meno.
+
+! [Guida all'Avvicinamento] (../ images / tutorial / tiprtw.jpg)

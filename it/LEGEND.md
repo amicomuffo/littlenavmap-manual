@@ -1,136 +1,133 @@
-## Legend {#little-navmap-legend}
 
-All speeds are per default in knots, distances in nautical miles, altitude in feet. The units can be changed to imperial or metric in the dialog `Options` on the tab `Units`.
+## Legenda {# legenda little-navmap}
 
-Colors, size and text labels of some map elements can be changed in the dialog `Options` on the tab `Map Display`. This legend shows the default values.
+Tutte le velocità sono in nodi di default, distanze in miglia nautiche, altitudine in piedi. Le unità possono essere cambiate in imperiali o metriche nella finestra di dialogo `Opzioni` nella scheda` Unità`.
 
-Heading and course are suffixed with `°T` for true course or `°M` for magnetic course.
+Colori, dimensioni e etichette di testo di alcuni elementi della mappa possono essere cambiati nella finestra di dialogo `Opzioni` nella scheda` Visualizzazione mappa`. Questa legenda mostra i valori predefiniti.
 
-### Map Marks {#map-marks}
+Intestazione e rotta sono suffissate con `° T` per rotta vera o` ° M` per rotta magnetica.
 
-| Symbol | Description |
+### Contrassegni mappa {# contrassegni mappa}
+
+| Simboli | Descrizione |
 | --- | --- |
-| ![Home](../images/legend/home.png "Home") | Center of the home position. |
-| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches.
-| ![Flight Plan](../images/legend/route_leg.png "Flight Plan") | Flight plan with distance, direction and magnetic course at each leg. |
-| ![Flight Plan Procedure](../images/legend/route_procedure_leg.png "Flight Plan Procedure") | Flight plan procedure leg with the same information as above.
-| ![Active Leg](../images/legend/activesegment.png "Active Leg") | Active flight plan leg |
-| ![Flight Plan Departure Position](../images/legend/route_start.png "Flight Plan Departure Position") | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
-| ![Top of Descent](../images/legend/routetod.png "Top of Descent") | Top of descent point with distance to destination. |
-| ![Range](../images/legend/range_rings.png "Range") | Range rings labeled with distance. |
-| ![Range VOR](../images/legend/range_vor.png "Range VOR") ![Range NDB](../images/legend/range_ndb.png "Range NDB") | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
-| ![Distance GC](../images/legend/distance_gc.png "Distance GC") | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance "Great circle") distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
-| ![Distance Rhumb](../images/legend/distance_rhumb.png "Distance Rhumb") | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
-| ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
-| ![Search Highlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
-| ![Flight Plan Hightlight](../images/legend/highlight_route.png) | A highlighted airport or navaid selected in the flight plan table. |
-| ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
-| ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
+| ![Home](../images/legend/home.png "Home") |  Posizione Centrale della home. |
+| ![Mark](../images/legend/mark.png "Mark") | Centra il punto che sarà usato per le ricerche della distanza.
+| ![Piano di Volo](../images/legend/route_leg.png "Piano di Volo") | Piano di Volo con distanza, direzione e prua magnetica di ciascuna tratta. |
+| ![Procedura del Piano di Volo](../images/legend/route_procedure_leg.png "Procedura del Piano di Volo") | Tratta della procedura del piano di volo con le stesse informazioni di cui sopra.
+| ![Tratta attiva](../images/legend/activesegment.png "Active Leg") | Tratta attiva del piano di volo |
+| ![Posizione di partenza del piano di volo](../images/legend/route_start.png "Posizione di partenza del piano di volo") | Posizione di partenza del piano di volo sull'aeroporto. O parcheggio, box del carburante, eliporto, acqua o pista. |
+| ![Top of Descent](../images/legend/routetod.png "Top of Descent") |  Punto del Top of descent con la distnza verso la destinazione. |
+| ![Raggio](../images/legend/range_rings.png "Range") | Anelli di raggio etichettato con la distanza. |
+| ![Raggio VOR](../images/legend/range_vor.png "Raggio VOR") ![Raggio NDB](../images/legend/range_ndb.png "Range NDB") |  Anelli del raggio del  VOR o NDB  etichettati con identificativo e frequenza. Il colore indica il tipo di radioaiuto. |
+| ![Distanza GC](../images/legend/distance_gc.png "Distanza GC") | [ Grande circolo](https://en.wikipedia.org/wiki/Great-circle_distance "Grande circolo") linea di misurazione della distanza e della rotta che indica la lunghezza e la direzione reale all'inizio e alla destinazione. I due valori di prua saranno uguali per le piccole distanze. Per distanze più brevi la lunghezza è indicata anche in piedi o metri. |
+| ![Distanza a rombo](../images/legend/distance_rhumb.png "Distanza a Rombo") | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line)  misura uguale della distanza di rilevamento che indica distanza e direzione reale. Le linee del rombo sono utilizzate per avvicinarsi a un VOR o NDB o viaggiare lungo le vie aeree. Per distanze più brevi viene anche indicata la lunghezza in piedi. |
+| ![Distanza VOR](../images/legend/distance_vor.png) | Le linee di misurazione che partono da un aeroporto o da un radioaiuto hanno lo stesso colore, etichette identificative e frequenza aggiuntive. La rotta per le linee del rombo verrà mostrata in magnetico se il radioaiuto ha un attributo di variazione magnetica.|
+| ! [Evidenzia ricerca] (../ images / legend / highlight_search.png) | Un aeroporto o radiaiuto evidenziato, selezionato nella tabella dei risultati della ricerca. |
+| ! [Momento saliente del piano di volo] (../ images / legend / highlight_route.png) | Un aeroporto o radioaiuto evidenziato, selezionato nella tabella del piano di volo. |
+| ! [Evidenzia procedura da] (../ images / legend / highlightprocfrom.png)! [Evidenzia procedura da] (../ images / legend / highlightprocto.png) | Posizioni evidenziate di una parte della procedura nell'anteprima. Cerchio piccolo mostra _da_ e cerchio grande _a_ posizione. |
+| ! [Procedimento evidenziato in evidenza] (../ images / legend / highlightprocrec.png) | Il cerchio sottile mostra il radioaiuto raccomandato o correlato di una parte della procedura. Questo può essere, per esempio, un VORDME per una parte dell'avvicinamento ad arco DME.
 
-### Aircraft and Ships {#vehicles}
+### Aerei e navi {#vehicles}
 
-| Symbol | Description |
+|Simbolo | Descrizione |
 | --- | --- |
-| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the nose can show the current track. |
-| ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) ![Ship on Ground](../images/icons/aircraft_boat_ground_user.png)| User aircraft or ship on ground |
-| ![Aircraft Track](../images/legend/aircraft_trackneedle.png) | Needle showing the current track of the aircraft. Aircraft nose shows heading. |
-| ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
-| ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
-| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
+| ! [Small GA] (../ images / icons / aircraft_small_user.png)! [Jet] (../ images / icons / aircraft_jet_user.png)! [Helicopter] (../ images / icons / aircraft_helicopter_user.png) | Veicolo dell'utente corrente se collegato al simulatore di volo. Le etichette possono variare e possono essere personalizzate in "Opzioni" nella scheda "Visualizzazione mappa". L'aereo  dell'utente dipende dall'aereo selezionato \ (jet, pistone / turbopropulsore o elicottero \). Opzionalmente un ago nero che sporge dalla prua può mostrare la traccia corrente. |
+| ! [Small GA on Ground] (../ images / icons / aircraft_small_ground_user.png)! [Jet a terra] (../ images / icons / aircraft_jet_ground_user.png)! [Elcottero a terra] (../ images / icons /aircraft_helicopter_ground_user.png)! [nave a terra] (../ images / icons / aircraft_boat_ground_user.png) | Aeromobile o nave dell'utente a terra |
+| ! [Traccia dell'Aereo] (../ images / legend / aircraft_trackneedle.png) | Ago che mostra la traccia attuale dell'aereo. La prua del velivolo mostra la direzione. |
+| ! [Traccia] (../ images / legend / aircraft_track.png) | Traccia dell'aeromobile dell'utente se collegata al simulatore di volo. |
+| ! [Vento] (../ images / legend / windpointer.png) | Vento attorno all'aereo utente con direzione in gradi magnetici e velocità. |
+| ! [ GA piccola] (../ images / icons / aircraft_small.png)! [Jet] (../ images / icons / aircraft_jet.png)! [Elicottero] (../ images / icons / aircraft_helicopter.png)! [GA piccola] (../ images / icons / aircraft_small_ground.png)! [Jet] (../ images / icons / aircraft_jet_ground.png)! [Elicottero] (../ images / icons / aircraft_helicopter_ground.png)! [ Nave] (../ images / icons / aircraft_boat_ground.png) | Aerei AI o multiplayer. Le etichette possono variare e possono essere personalizzate in "Opzioni" nella scheda "Visualizzazione mappa". Il simbolo dipende dal tipo di aereo \ (jet, pistone / turbopropulsore, elicottero o nave \). |
 
-### Airports {#airports}
+### Aeroporti {#airports}
 
-Airports having control towers are shown in dark blue others in magenta. Add-on airport names and idents are shown italic and underlined. Airports that are part of the flight plan have a light yellow text background.
+Gli aeroporti con torri di controllo sono mostrati in blu scuro, altri in magenta. I nomi e gli identificativi degli aeroporti aggiuntivi sono indicati in corsivo e sottolineati. Gli aeroporti che fanno parte del piano di volo hanno uno sfondo di testo giallo chiaro.
 
-The symbol is shown smaller if an airport has no runways. This is the case for some add-on airports that use another technique like photo scenery to display runways.
+Il simbolo viene mostrato più piccolo se un aeroporto non ha piste. Questo è il caso di alcuni aeroporti aggiuntivi che utilizzano un'altra tecnica come lo scenario fotografico per visualizzare le piste.
 
-| Symbol | Description |
+| Simbolo | Descrizione |
 | --- | --- |
-| ![Large Airport](../images/legend/airport_tower_8000.png) ![Large Airport](../images/legend/airport_8000.png) | Airports with hard surface runways longer than 8,000 ft or 2,400 meters. All runways longer than 4,000 ft or about 1,200 meters are shown. Only for lower zoom distances. |
-| ![Airport with Tower](../images/legend/airport_tower.png) ![Airport](../images/legend/airport.png) | Airports with hard surface runways. White line shows heading of longest runway. |
-| ![Airport with soft runways and Tower](../images/legend/airport_tower_soft.png) ![Airport with soft Runways](../images/legend/airport_soft.png) | Airports with soft surface runways. |
-| ![Airport Empty](../images/legend/airport_empty.png) ![Airport Empty Soft](../images/legend/airport_empty_soft.png) | Empty airports shown in gray. No taxiways, no parking spots and no aprons. |
-| ![Seaplane Base with Tower](../images/legend/airport_tower_water.png) ![Seaplane Base](../images/legend/airport_water.png) | Seaplane base having only water runways. |
-| ![Military Airport with Tower](../images/legend/airport_tower_mil.png) ![Military Airport](../images/legend/airport_mil.png) | Military airport. |
-| ![Heliport](../images/legend/heliport.png) | Heliport having only helipads and no runways. |
-| ![Closed Airport with Tower](../images/legend/airport_tower_closed.png) ![Closed Airport](../images/legend/airport_closed.png) | Abandoned airport. All runways are closed. |
-| ![Airport with Fuel](../images/legend/airport_tower_fuel.png) ![Airport with soft Runways and Fuel](../images/legend/airport_soft_fuel.png) | Airports that have fuel available. |
-| ![Airport Text](../images/legend/airportlabel.png)  | Airport label showing name, ident, ATIS frequency, elevation, lighted runways \(`L`\) and length of longest runway. The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
+| ! [Aeroporti grandi] (../ images / legend / airport_tower_8000.png)! [Large Airport] (../ images / legend / airport_8000.png) | Aeroporti con piste a superficie dura più lunghe di 8.000 piedi o 2.400 metri. Sono mostrate tutte le piste più lunghe di 4.000 piedi o circa 1.200 metri. Solo per distanze  zoom inferiori. |
+| ! [Aeroporto con] (../ images / legend / airport_tower.png)! [Airport] (../ images / legend / airport.png) | Aeroporti con piste a  superficie dura. La linea bianca mostra la direzione della pista più lunga. |
+| ! [Aeroporto con piste morbide e Torre] (../ images / legend / airport_tower_soft.png)! [Aeroporto con piste morbide] (../ images / legend / airport_soft.png) | Aeroporti con piste a superficie morbida. |
+| ! [Aeroporti vuoti] (../ images / legend / airport_empty.png)! [Airport Empty Soft] (../ images / legend / airport_empty_soft.png) | Aeroporti vuoti indicati in grigio. Niente taxi, niente parcheggi e niente aprons. |
+| ! [Base idrovolante con torre] (../ images / legend / airport_tower_water.png)! [Base idrovolante] (../ images / legend / airport_water.png) | Base idrovolante con solo piste d'acqua. |
+| ! [Aeroporto militare con torre] (../ images / legend / airport_tower_mil.png)! [Aeroporto militare] (../ images / legend / airport_mil.png) | Aeroporto militare. |
+| ! [Eliporto] (../ images / legend / heliport.png) | L'eliporto ha solo eliporti e nessuna pista. |
+| ! [Aeroporto chiuso con torre] (../ images / legend / airport_tower_closed.png)! [Aeroporto chiuso] (../ images / legend / airport_closed.png) | Aeroporto abbandonato. Tutte le piste sono chiuse. |
+| ! [Aeroporto con carburante] (../ images / legend / airport_tower_fuel.png)! [Aeroporto con piste morbide e carburante] (../ images / legend / airport_soft_fuel.png) | Aeroporti che hanno carburante disponibile. |
+| ! [Testo dell'aeroporto (../ images / legend / airportlabel.png) | Etichetta dell'aeroporto con nome, identificativo, frequenza ATIS, elevazione, piste illuminate \ (`L` \) e lunghezza della pista più esetsa. Le etichette di testo per un aeroporto possono essere modificate nella finestra di dialogo "Opzioni" nella scheda "Visualizzazione mappa". |
 
-### Navaids {#navaids}
+### Radiaiuto {#radioaiuti}
 
-Navaids that are part of the flight plan have a light yellow text background.
+I radioaiuti che fanno parte del piano di volo hanno un colore del testo giallo chiaro.
 
-| Symbol | Description |
+| Simbolo | Descrizione |
 | --- | --- |
-| ![VORDME](../images/legend/vordme_small.png) ![VORDME](../images/legend/vordme_large.png) | VOR DME including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
-| ![VOR](../images/legend/vor_small.png) ![VOR](../images/legend/vor_large.png) | VOR including ident, type and frequency. |
-| ![DME](../images/legend/dme.png) | DME including ident, type and frequency. |
-| ![TACAN](../images/legend/tacan_small.png) ![TACAN](../images/legend/tacan_large.png) | TACAN  including ident, type \(High, Low or Terminal\) and channel. Compass rose shows magnetic variation on lower zoom distances. |
-| ![VORTAC](../images/legend/vortac_small.png) ![VORTAC](../images/legend/vortac_large.png) | VORTAC  including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
-| ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
-| ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
-| ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
-| ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
-| ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
-| ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
-| ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
-| ![ILS](../images/legend/ils_gs_small.png) ![ILS](../images/legend/ils_gs.png) | ILS with glideslope. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
-| ![Localizer](../images/legend/ils_small.png) ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
+| ! [VORDME] (../ images / legend / vordme_small.png)! [VORDME] (../ images / legend / vordme_large.png) | DME VOR compresi ident, tipo \ (High, Low o Terminal \) e frequenza. La rosa dei venti mostra una variazione magnetica sulle distanze con zoom inferiori. |
+| ! [VOR] (../ images / legend / vor_small.png)! [VOR] (../ images / legend / vor_large.png) | VOR compresi identificativo, tipo e frequenza. |
+| ! [DME] (../ images / legend / dme.png) | DME compreso identificativo, tipo e frequenza. |
+| ! [TACAN] (../ images / legend / tacan_small.png)! [TACAN] (../ images / legend / tacan_large.png) | TACAN tra cui identificativo, tipo \ (High, Low o Terminal \) e canale. La rosa dei venti mostra una variazione magnetica sulle distanze con zoom inferiori. |
+| ! [VORTAC] (../ images / legend / vortac_small.png)! [VORTAC] (../ images / legend / vortac_large.png) | VORTAC inclusi identificativo, tipo \ (High, Low o Terminal \) e frequenza. La rosa dei venti mostra una variazione magnetica su distanze con zoom inferiori. |
+| ! [NDB] (../ images / legend / ndb_small.png)! [NDB] (../ images / legend / ndb_large.png) | NDB incluso identificativo, tipo \ (HH, H, MH o CL - localizzatore bussola \) e frequenza. |
+| ! [Waypoint] (../ images / legend / waypoint.png) | Waypoint con nome. |
+| ! [Waypoint definito dall'utente] (../ images / legend / userwaypoint.png) | Waypoint definito dall'utente con nome. |
+| ! [Waypoint] (../ images / legend / waypoint_invalid.png) | Aeroporto, waypoint, VOR o NDB non validi che fanno parte del piano di volo ma non sono stati trovati nel database degli scenari. |
+| ! [Marker] (../ images / legend / marker_outer.png)! [Marker] (../ images / legend / marker_middle.png)! [Marker] (../ images / legend / marker_inner.png) | Marker con tipo e direzione indicati dalla forma delle lenti. |
+| ! [Jet Airway] (../ images / legend / airway_jet.png) | Vie aeree a getto con etichetta che mostra nome, tipo \ (getto o entrambi \), altitudine minima e massima. Il testo dipende dalla distanza dello zoom. Una freccia che precede mostrerà la direzione consentita se la via aerea è a senso unico. |
+| ! [Victor Airway] (../ images / legend / airway_victor.png) | Vie aeree Victor con etichetta che mostrano nome, tipo \ (Victor o Both \), altitudine minima e massima. Il testo dipende dalla distanza dello zoom. Una freccia che precede mostrerà la direzione consentita se la via aerea è a senso unico. |
+| ! [ILS] (../ images / legend / ils_gs_small.png)! [ILS] (../ images / legend / ils_gs.png) | ILS con glideslope. L'etichetta mostra identificativo, frequenza, direzione magnetica, Pitch glideslope e indicazione DME, se disponibili. |
+| ! [Localizer] (../ images / legend / ils_small.png)! [Localizer] (../ images / legend / ils_large.png) | Localizzatore. L'etichetta mostra identificativo, frequenza, direzione magnetica e indicazione DME, se disponibili. |
 
-### Procedures {#procedures}
+### Procedure {#procedures}
 
-See chapter [Procedures](APPROACHES.md) for more detailed information on all the legs.
+Vedere il capitolo [Procedure] (APPROACHES.md) per informazioni più dettagliate su tutte le parti.
 
-| Symbol | Description |
+| Simbolo | Descrizione |
 | --- | --- |
-| ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, approach or transition leg in preview with distance, direction and magnetic course at each leg. |
-| ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) | SID, STAR, approach or transition leg which is part of the flight plan. |
-| ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Missed approach leg in preview. |
-|  ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
-| ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
-| ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
-| ![Procedure Manual](../images/legend/proclegmanual.png) | Fly a heading, track or a hold until manually terminated by ATC. |
-| ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Intercept the next approach leg at a course of about 45 degrees. |
-| ![Procedure Altitude](../images/legend/procinterceptalt.png) | Procedure leg that is terminated when reaching the given altitude. |
-| ![Procedure Intercept Distance](../images/legend/procinterceptcd.png) | A fix defined by a course or heading and distance to a navaid.|
-| ![Procedure Intercept Course Distance](../images/legend/procinterceptd.png) |  This fix is defined by a heading or track which is terminated by reaching a DME distance. |
-| ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Intercept a course to the next fix at an angle of about 45 degrees. |
+| ! [Anteprima delle parti della procedura] (../ images / legend / proc_preview.png) | SID, STAR, parte dell' avvicinamento o transizione in anteprima, con distanza, direzione e rotta magnetica su ciascuna parte. |
+| ! [Piano di volo sulla parte della procedura] (../ images / legend / proc_flightplan.png) | SID, STAR, avvicinamento o parte della transizione che fa parte del piano di volo. |
+| ! [Anteprima della parte mancante] (../ images / legend / proc_missed_preview.png) | parte dell'avvicinamento mancante nell'anteprima. |
+| ! [parte mancante del pian di volo] (../ images / legend / proc_missed_flightplan.png) | Parte dell'avvicinamento mancante che fa parte del piano di volo. |
+| ! [Punto di procedura] (../ images / legend / proc_point.png) | Il cerchio ricoperto di colore giallo grigio indica un punto di procedura che non è un radioaiuto, ma è definito dalla rotta e / o dalla distanza da un radioaiuto, un limite di altitudine o una termination manuale. |
+| ! [Procedura sorvolo] (../ images / legend / proc_flyover.png) | Un cerchio nero indica un waypoint di sorvolo. Può essere un punto di procedura o un radioaiuto. |
+| ! [procedura manuale] (../ images / legend / proclegmanual.png) | Vola su una rotta, traccia o circuito di attesa fino a quando non viene concluso manualmente da un ATC. |
+| ! [Procedura interecettazione tratta] (../ images / legend / procinterceptleg.png) | Intercetta la prossima tratta di avvicinamento a una rotta di circa 45 gradi. |
+| ! [procedura di altitudine] (../ images / legend / procinterceptalt.png) | Parte della procedura che termina quando si raggiunge la data altitudine. |
+| ! [Distanza di intercettazione della procedura] (../ images / legend / procinterceptcd.png) | Un fix definito da una rotta o prua e distanza, da un radioaiuto
+| ! [Distanza della rotta di intercettazione della procedura] (../ images / legend / procinterceptd.png) | Questo fix è definito da un'intestazione o traccia che termina raggiungendo una distanza DME. |
+| ! [Rotta di intercettazione della procedura ad un fix] (../ images / legend / procinterceptcoursetofix.png) | Intercetta una rotta per il fix successivo con un angolo di circa 45 gradi. |
 
+### Airport Diagram {# airport-diagram}
 
-### Airport Diagram {#airport-diagram}
+I colori della pista, pista di rullaggio, eliporto e apron indicano il tipo di superficie. Il bianco viene utilizzato per un tipo di superficie sconosciuta o non valida fornita da uno sviluppatore di add-on.
 
-Runway, taxiway, helipad and apron colors indicate surface type. White is used for an unknown or invalid surface type given by an add-on developer.
-
-| Symbol | Description |
+| Simbolo | Descrizione |
 | --- | --- |
-| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator \(`L`\) and surface type. |
-| ![Runway End](../images/legend/runway_end.png) | Runway end with ident and magnetic heading. |
-| ![Runway Threshold](../images/legend/runway_threshold.png) | Displaced threshold. Do not use for landing. |
-| ![Runway Overrun](../images/legend/runway_overrun.png) | Overrun area. Do not use for taxi, takeoff or landing. |
-| ![Runway Blastpad](../images/legend/runway_blastpad.png) | Blast pad. Do not use for taxi, takeoff or landing. |
-| ![Taxiway](../images/legend/taxiway.png) | Taxiway with name and center line. |
-| ![Closed Taxiway](../images/legend/closedtaxi.png) | Closed taxiway. |
-| ![Taxiway](../images/legend/apron_transparent.png) | Semi transparent dotted aprons and taxiways indicate that no surface is drawn. It might use a photo texture or simply the default background. |
-| ![Tower](../images/legend/tower_active.png) ![Tower](../images/legend/tower_inactive.png) | Tower. Red if a tower frequency is available. Otherwise just view position. |
-| ![Fuel](../images/legend/parking_fuel.png) | Fuel |
-| ![Parking](../images/legend/parking_ga_ramp.png) | GA ramp with parking number and heading tick mark. |
-| ![Parking](../images/legend/parking_gate_no_jetway.png) ![Parking](../images/legend/parking_gate.png) | Gate with number and heading tick mark. Second ring indicates availability of jetway. |
-| ![Parking](../images/legend/parking_ramp_cargo.png) | Cargo ramp |
-| ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
-| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad. Color indicates surface.  |
+| ! [Pista] (../ images / legend / runway.png) | Pista con lunghezza, larghezza, indicatore luminoso \ (`L` \) e tipo di superficie. |
+| ! [fine pista] (../ images / legend / runway_end.png) | Fine pista con identificativo e rotta magnetica. |
+| ! [Soglia pista] (../ images / legend / runway_threshold.png) | Soglia spostata. Non utilizzare per l'atterraggio. |
+| ! [Pista di invasione] (../ images / legend / runway_overrun.png) | Area di invasione. Non utilizzare per taxi, decollo o atterraggio.|
+| ! [Blastpad della pista] (../ images / legend / runway_blastpad.png) | Blastpad. Non utilizzare per taxi, decollo o atterraggio. |
+| ! [Taxiway] (../ images / legend / taxiway.png) | Pista di rullaggio con nome e linea centrale. |
+| ! [Taxiway chiuso] (../ images / legend / closedtaxi.png) | Pista di rullaggio chiusa. |
+| ! [Taxiway] (../ images / legend / apron_transparent.png) | aprons e piste di rullaggio punteggiate semitrasparenti indicano che non viene disegnata alcuna superficie. Potrebbe utilizzare una trama fotografica o semplicemente lo sfondo predefinito. |
+| ! [Torre] (../ images / legend / tower_active.png)! [Torre] (../ images / legend / tower_inactive.png) | Torre. Rosso se è disponibile una frequenza della torre. Altrimenti basta visualizzare la posizione. |
+| ! [Carburante] (../ images / legend / parking_fuel.png) | Carburante |
+| ! [Parcheggio] (../ images / legend / parking_ga_ramp.png) | Rampa GA con numero di parcheggio e segno di spunta di direzione. |
+| ! [Parcheggio] (../ images / legend / parking_gate_no_jetway.png)! [Parceggio] (../ images / legend / parking_gate.png) | Gate con numero e segno di spunta della direzione. Il secondo anello indica la disponibilità di jetway. |
+| ! [Parking] (../ images / legend / parking_ramp_cargo.png) | Rampa di carico |
+| ! [Parking] (../ images / legend / parking_mil.png) | Parcheggio di combattimento militare o rampa di carico. |
+| ! [Helipad] (../ images / legend / helipad.png)! [Helipad] (../ images / legend / helipadmedical.png)! [Helipad] (../ images / legend / helipadsquare.png) | Eliporti. Il testo in rosso indica l'eliporto medico. Il colore indica la superficie. |
 
-### Elevation Profile Legend {#elevation-profile-legend}
+### Legenda profilo elevazione {# elevazione-profilo-legenda}
 
-| Symbol | Description |
+| Simbolo | Descrizione |
 | --- | --- |
-| ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with departure elevation on the left and destination airport elevation on the right. |
-| ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
-| ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
-| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is altitude plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
-| ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
-| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show actual altitude and climb/sink rate. |
-| ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
-
-
-
+| ! [Inizio profilo] (../ images / legend / profile_start.png)! [Fine profilo] (../ images / legend / profile_end.png) | Terreno con elevazione di partenza a sinistra e elevazione dell'aeroporto di destinazione a destra. |
+| ! [Profilo del piano di volo] (../ images / legend / profile_route.png) | Altitudine del piano di volo. |
+| ! [Top of Descent] (../ images / legend / profiletod.png) | Inizio della discesa con distanza dalla destinazione. |
+| ! [Altitudine minima di sicurezza] (../ images / legend / profile_safe_alt.png) | Altitudine minima di sicurezza per il piano di volo. Questa è l'altitudine più 1000 piedi arrotondati ai successivi 500 piedi. Il buffer di 1000 piedi può essere modificato nella finestra di dialogo `Opzioni` nella scheda` Piano di volo` |
+| ! [Segmento Altitudine minima di sicurezza] (../ images / legend / profilesegminalt.png) | Altitudine minima di sicurezza per un segmento del piano di volo. Si applicano le stesse regole relative all'altitudine minima di sicurezza per il piano di volo. |
+| ! [Aereo] (../ images / legend / profile_aircraft.png) | Aereo utente se collegato al simulatore. Le etichette mostrano l'altitudine effettiva e la velocità di salita / discesa. |
+| ! [Traccia] (../ images / legend / profile_track.png) | Traccia dell'aereo dell'utente se collegato al simulatore di volo. |

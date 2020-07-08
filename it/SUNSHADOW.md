@@ -1,35 +1,35 @@
-## ![Sun Shading](../images/icons/mapshadow.png "Sun Shading") Sun Shading {#sun-shadow}
+##! [Ombreggiatura solare] (../ images / icons / mapshadow.png "Sun Shading") Ombreggiatura solare {# sole-ombra}
 
-_Little Navmap_ allows to display the sun shadow on the globe. This works in both projections `Mercator` and `Spherical`.
+_Little Navmap_ consente di visualizzare l'ombra solare sul globo. Funziona in entrambe le proiezioni `Mercatore` e` Sferico`.
 
-Enable the shadow in the menu `View` -&gt; [Show Sun Shading](MENUS.md#show-sun-shading).
+Abilita l'ombra nel menu "Visualizza" - & gt; [mostra ombra solare] (MENUS.md # mostra-sole-ombreggiatura).
 
-You can change the time source for the sun shading in `View` -&gt; [Sun Shading Time](MENUS.md#show-sun-shading-time ).
+Puoi modificare l'origine del tempo per l'ombreggiatura solare in `Visualizza` - & gt; [tempo ombreggiatura solare] (MENUS.md # mostra-sole-ombreggiatura-tempo).
 
-The shadow darkness can be changed in the dialog `Options` on tab `Map Display`, `Sun shading Darkness` at the bottom of the dialog.
+L'oscurità dell'ombra può essere cambiata nella finestra di dialogo `Opzioni` nella scheda` Visualizzazione mappa`, `Oscurità dell'ombra del sole` nella parte inferiore della finestra di dialogo.
 
-![Sun Shading](../images/sunshadow.jpg)
+! [Ombreggiatura solare] (../ images / sunshadow.jpg)
 
-_**Picture above:** Sun shading on the northern hemisphere._
+_ ** Immagine sopra: ** Ombreggiatura del sole nell'emisfero settentrionale ._
 
-### Time Sources {#sun-shadow-time-sources}
+### Sorgenti di tempo {# sole-ombra-tempo-sorgenti}
 
-You can choose between three time source for the sun shading. Time is not fixed and will advance for all sources or updated from simulator time.
+Puoi scegliere tra tre sorgenti di tempo per l'ombreggiatura del sole. Il tempo non è fisso e avanzerà per tutte le sorgenti o aggiornato dal tempo del simulatore.
 
-* `Simulator`: Uses the time of the connected flight simulator. Falls back to real time if not connected to a simulator. Automatically updates the shadow if the simulator time changes.
-* `Real UTC Time`: Always use real time.
-* `User defined Time`: Allows to use the user defined time as changed by `Set User defined Time` below. 
+* `Simulatore`: utilizza il tempo del simulatore di volo collegato. Torna in tempo reale se non collegato a un simulatore. Aggiorna automaticamente l'ombra se il tempo del simulatore cambia.
+* `Real UTC Time`: usa sempre il tempo reale.
+* "Tempo definito dall'utente": consente di utilizzare il tempo definito dall'utente come modificato da "Imposta tempo definito dall'utente" di seguito.
 
-### Set User defined Time {#sun-shadow-user-defined}
+### Imposta ora definita dall'utente {# sole-ombra-utente-definito}
 
-The menu `View` -&gt; `Sun Shading Time` -&gt; `Set User defined Time` opens a dialog to set a user defined time in UTC as a source for the sun shading.
+Il menu `Visualizza` - & gt; `tempo ombreggiatura sole` - & gt; "Imposta ora definita dall'utente" apre una finestra di dialogo per impostare un'ora definita dall'utente in UTC come fonte per l'ombreggiatura del sole.
 
-You can move the dialog away from the map window and see the results immediately by clicking the button `Apply`.
+Puoi spostare la finestra di dialogo lontano dalla finestra della mappa e vedere immediatamente i risultati facendo clic sul pulsante "Applica".
 
-**Do not forget to click on a date when changing months or years. Otherwise the old date will be used.**
+** Non dimenticare di fare clic su una data quando si cambiano mesi o anni. Altrimenti verrà utilizzata la vecchia data. **
 
-Note that the user defined time is reset to current real time when restarting _Little Navmap_.
+Si noti che l'ora definita dall'utente viene ripristinata sull'ora reale corrente al riavvio di _Little Navmap_.
 
-![Date and Time for Sun Shading](../images/sunshadowtime.jpg)
+! [Data e ora per l'ombreggiatura del sole] (../ images / sunshadowtime.jpg)
 
-_**Picture above:** Date and time for sun shading on November 8 at 10:42 pm Zulu Time._
+_ ** Immagine sopra: ** Data e ora per l'ombreggiatura del sole l'8 novembre alle 22:42 ora Zulu._

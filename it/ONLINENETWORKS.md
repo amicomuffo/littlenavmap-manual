@@ -1,77 +1,79 @@
-## Online Networks {#online-networks}
 
-The online network functionality allows to connect to [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero) or other online networks which publish `whazzup.txt` files. This covers display of information for centers, clients and servers on the map.
+## Reti online {# online-reti}
 
-Network specific information like user names, active centers/towers, frequencies, flight plans and much more are displayed world wide without limits like distance to the user aircraft.
+La funzionalità di rete online consente di connettersi a [VATSIM] (https://www.vatsim.net), [IVAO] (https://ivao.aero) o altre reti online che pubblicano file `whazzup.txt`. Questo copre la visualizzazione di informazioni per centri di controllo, client e server sulla mappa.
 
-**Note that all related window tabs, menu items and toolbar buttons are hidden if online networks are disabled which is the default. **
+Informazioni specifiche della rete come nomi utente, centri di controllo / torri attive, frequenze, piani di volo e molto altro, vengono visualizzati in tutto il mondo senza limiti, come la distanza dall'aereo dell'utente.
 
-Access to online networks can be enabled and configured in the dialog `Options` on tab [Online Flying](OPTIONS.md#online-flying). Predefined options for the well known networks are available as well as freely configurable ones.
+** Si noti che tutte le schede della finestra, le voci di menu e i pulsanti della barra degli strumenti correlati sono nascosti se le reti online sono disabilitate, che è l'impostazione predefinita. **
 
-![Overview of Online Network Functions](../images/online_overview.jpg "Overview of Online Network Functions")
+L'accesso alle reti online può essere abilitato e configurato nella finestra di dialogo `Opzioni` nella scheda [Volare online] (OPTIONS.md # volo online). Sono disponibili opzioni predefinite per le reti ben note e configurabili liberamente.
 
-_**Picture above:** An overview of all online network related windows, tabs and buttons._
+! [Panoramica delle funzioni di rete online] (../ images / online_overview.jpg "Panoramica delle funzioni di rete online")
 
-### Simulator and Online Aircraft Duplicates {#online-networks-duplicates}
+_ ** Immagine sopra: ** Una panoramica di tutte le finestre, schede e pulsanti relativi alla rete online ._
 
-_Little Navmap_ fetches data from online networks using an interval of three minutes depending on settings and network.
+### simulatori e aeromobili duplicati online {# online-reti-duplicati}
 
-The program also fetches AI or multiplayer aircraft from the simulator which are updated about two times a second. These aircraft are injected into the simulator by the various online clients so they are visible within the simulator.
+_Little Navmap_ recupera i dati dalle reti online utilizzando un intervallo di tre minuti a seconda delle impostazioni e della rete.
 
-Therefore, the user aircraft and other client aircraft can appear duplicated on the map.
+Il programma recupera anche i velivoli AI o multiplayer dal simulatore che vengono aggiornati circa due volte al secondo. Questi aeromobili vengono immessi nel simulatore dai vari client online in modo che siano visibili all'interno del simulatore.
 
-_Little Navmap_ tries to remove these duplicates by matching the aircraft registration \(simulator\) and the client callsign \(online network\). Aircraft can appear duplicated if this information is not available which is the case for X-Plane. Refer to the configuration of your online network tool how to add this information.
+Pertanto, l'aereo utente e altri aeromobili del client possono apparire duplicati sulla mappa.
 
-### Map Display {#online-networks-mapdisplay}
-
-#### Clients {#online-networks-clients}
-
-Online network clients or their aircraft are displayed on the map using the ![Online in Flight](../images/icons/aircraft_online.png) symbol. This includes simulator aircraft that were recognized as online network clients.
-
-The user aircraft is always displayed using the yellow ![Small GA](../images/icons/aircraft_small_user.png)  or a similar symbol depending on aircraft type and simulator. Use the `Show in Search` map context menu item to see your own aircraft in the list of online clients.
-
-Information for online aircraft is shown on the tab `Online Clients` in the [Information Dock Window](INFO.md).
-
-All other functionality like context menu, double-click, tooltips, map highlights and other are the same as for the other aircraft.
-
-See [Aircraft and Ships](LEGEND.md#vehicles) in the legend for all symbols.
-
-![Online Network Aircraft](../images/online_aircraft.jpg "Online Network Aircraft")
-
-_**Picture above:** Online network clients/aircraft in search tab, map, tooltip and information window._
-
-#### Centers {#online-networks-centers}
-
-Online centers are displayed as circular airspaces in _Little Navmap_ and provide the same functionality as the other airspaces \(tooltips, information and more\). They can be enabled  separately from the other airspaces by using the button ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") or menu item [Show Online Network Airspaces](MENUS.md#show-online-airspaces).
-
-**Note that the circles do not represent the real airspaces and are only used to indicate the presence of an active center, tower, ground or other position.**
-
-Detailed information for online centers/airspaces is shown on the tab `Online Centers` in the [Information Dock Window](INFO.md).
-
-The following types are available and can be enabled in the drop down menus on the airspace toolbar or sub menu [Airspaces](MENUS.md#airspaces):
-
-* **Observer:** Circle size is taken from the `Visual Range` value of the center.
-* **Flight Information \(Center\):** Uses `Visual Range`.
-* **Delivery \(Clearance\):** Uses `Visual Range`.
-* **Ground:** Shows a circle with a diameter of 10 nm.
-* **Tower:** 20 nm circle.
-* **Approach:** 40 nm circle.
-* **ACC \(Center\):** Uses `Visual Range`.
-* **Departure:** Uses `Visual Range`.
-
-The size of the circle shapes can be changed in the configuration file. See [Online Network Center](CUSTOMIZE.md#customize-online-center).
-
-![Customize Online Network Centers](../images/online_center.jpg "Online Network Center")
-
-_**Picture above:** Online network center/ATC in search tab, map, tooltip and information window._
+_Little Navmap_ tenta di rimuovere questi duplicati abbinando la registrazione dell'aereo \ (simulatore \) e il nominativo del client \ (rete online \). L'aereo può apparire duplicato se questa informazione non è disponibile, come nel caso di X-Plane. Fai riferimento alla configurazione dello strumento della propria rete online su come aggiungere queste informazioni.
 
 
-### Online Network Client Search {#search-client}
-### Online Network Center Search {#search-center}
+### Visualizzazione mappa {# online-reti-mostra mappa}
 
-The functionality of the search filters in these two tabs and the result tables are similar to the airport and navaid search. See [Search Dock Window](SEARCH.md) for information about search filters, buttons and context menu items.
+#### Client {# online-reti-client}
 
-### Online Server Search {#search-server}
+I client della rete online o i loro aereo vengono visualizzati sulla mappa usando il simbolo! [Online in volo] (../ images / icons / aircraft_online.png). Ciò include l'aereo del simulatore riconosciuto come client di rete online.
 
-Displays all online servers in a table and has no search functionality. You can use the context menu to copy parts of the result table like the IP address.
+L'aereo dell'utente viene sempre visualizzato utilizzando il giallo! [GA piccolo] (../ images / icons / aircraft_small_user.png) o un simbolo simile a seconda del tipo di aereo e del simulatore. Utilizza la voce di menu di scelta rapida della mappa "Mostra nella ricerca" per vedere il tuo aereo nell'elenco dei client online.
 
+Le informazioni per gli aeromobili online sono visualizzate nella scheda "Client online" nella [Finestra ancorata informativa] (INFO.md).
+
+Tutte le altre funzionalità come menu di scelta rapida, doppio clic, descrizioni comandi, punti salienti della mappa e altro, sono le stesse dell'altro aereo.
+
+Vedi [Aerei e navi] (veicoli LEGEND.md #) nella legenda per tutti i simboli.
+
+! [Aerei di rete online] (../ images / online_aircraft.jpg "Aerei di rete online")
+
+_ ** Immagine sopra: ** Client / aeromobili della rete online nella scheda di ricerca, mappa, descrizione comandi e finestra informazioni ._
+
+
+#### Centri di controllo {# online-reti-centri di controllo}
+
+I centri di controllo online vengono visualizzati come spazi aerei circolari in _Little Navmap_ e offrono le stesse funzionalità degli altri spazi aerei \ (suggerimenti, informazioni e altro \). Possono essere abilitati separatamente dagli altri spazi aerei usando il pulsante! [Mostra spazi aerei di reti online] (../ images / icons / airspaceonline.png "Mostra spazi aerei di reti online") o la voce di menu [Mostra spazi aerei di rete online] (MENU. md # mostra-on-line-spazi aerei).
+
+** Si noti che i cerchi non rappresentano gli spazi aerei reali e vengono utilizzati solo per indicare la presenza di un centro attivo, torre, terra o altra posizione. **
+
+Informazioni dettagliate per i centri / gli spazi aerei online sono riportate nella scheda "Centri online" nella [Finestra ancorata d'informazione] (INFO.md).
+
+Sono disponibili i seguenti generi e possono essere abilitati nei menu a discesa sulla barra degli strumenti dello spazio aereo o nel sottomenu [Airspaces] (MENUS.md # airspaces):
+
+* ** Osservatore: ** La dimensione del cerchio è presa dal valore "Campo visivo" del centro.
+* ** Informazioni sul volo \ (Centro di controllo \): ** Usa `Raggio visivo`.
+* ** Delivery \ (autorizzazione \): ** Utilizza `Raggio visivo`.
+* ** Terra: ** Mostra un cerchio con un diametro di 10 nm.
+* ** Torre: ** cerchio da 20 nm.
+* ** Avvicinamento: ** cerchio da 40 nm.
+* ** ACC \ (Centro \): ** Usa `Raggio visivo`.
+* ** Partenza: ** Usa `Raggio visivo`.
+
+La dimensione delle forme del cerchio può essere modificata nel file di configurazione. Vedi [Centro reti online] (CUSTOMIZE.md # personalizza-centro-online).
+
+! [Personalizza i centri di rete online] (../ images / online_center.jpg "Centro di rete online")
+
+_ ** Immagine sopra: ** Centro di rete online / ATC nella scheda di ricerca, mappa, descrizione comandi e finestra informazioni ._
+
+### Ricerca client di rete online {# ricerca-client}
+
+### Ricerca centro di rete online {# ricerca-center}
+
+La funzionalità dei filtri di ricerca in queste due schede e le tabelle dei risultati sono simili alla ricerca aeroportuale e radioaiuto. Vedi [cerca finestra ancorata] (SEARCH.md) per informazioni su filtri di ricerca, pulsanti e voci del menu contestuale.
+
+### Ricerca server online {# ricerca-server}
+
+Visualizza tutti i server online in una tabella e non ha funzionalità di ricerca. È possibile utilizzare il menu di scelta rapida per copiare parti della tabella dei risultati come l'indirizzo IP.

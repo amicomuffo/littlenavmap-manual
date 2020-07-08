@@ -1,103 +1,106 @@
-## ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library Dialog {#load-scenery-library-dialog}
 
-This dialog allows loading of the scenery library data from all four supported flight simulators into the _Little Navmap_ internal database. The scenery library to load can be selected in the `Simulator:` drop down box.
+##! [Carica libreria scenari] (../ images / icons / database.png "Carica libreria scenari") Finestra di dialogo Carica libreria scenari {# carica-scenari-libreria-dialogo}
 
-The dialog shows information about the currently selected database including the number of loaded airports, database version and more.
+Questa finestra di dialogo consente di caricare i dati della libreria degi scenari da tutti e quattro i simulatori di volo supportati nel database interno _Little Navmap_. La libreria degli scenari da caricare può essere selezionata nella casella a discesa `Simulatore:`.
 
-**FSX and P3D only:** The base path and the `scenery.cfg` path will be shown in two text edit fields for the currently selected simulator. These fields are populated automatically, but can be changed to any other valid location. All values are saved for each flight simulator type.
+La finestra di dialogo mostra informazioni sul database attualmente selezionato, incluso il numero di aeroporti caricati, la versione del database e altro.
 
-**X-Plane only:** X-Plane cannot be recognized automatically. You have to select the base path manually.
-On Windows that can be a path like `C:\Simulators\X-Plane 11` where the executable is `C:\Simulators\X-Plane 11\X-Plane.exe`.
+** Solo FSX e P3D: ** Il percorso di base e il percorso `scenery.cfg` verranno mostrati in due campi modificati di testo per il simulatore attualmente selezionato. Questi campi vengono compilati automaticamente, ma possono essere modificati in qualsiasi altra posizione valida. Tutti i valori vengono salvati per ciascun tipo di simulatore di volo.
 
-Loading a scenery library can take from 2 to 15 minutes depending on your setup and amount of scenery add-ons. You can speed this up by excluding directories containing neither airport nor navigation data in the `Options` dialog on the `Scenery Library Database` tab.
+** Solo X-Plane: ** X-Plane non può essere riconosciuto automaticamente. Devi selezionare manualmente il percorso di base.
+Su Windows può essere un percorso come `C: \ Simulators \ X-Plane 11` dove l'eseguibile è` C: \ Simulators \ X-Plane 11 \ X-Plane.exe`.
 
-All airports that are not located in the default `Scenery` directory of FSX/P3D or are located in the `Custom Scenery` directory of X-Plane are considered add-on airports and will be highlighted appropriately. Directories can be excluded from this behavior in the `Options` dialog on the `Scenery Library Database` tab. This can be useful if add-ons only correct airport elevation and these airports should not be highlighted on the map using underline and italic text.
+Il caricamento di una libreria degli scenari può richiedere da 2 a 15 minuti a seconda della configurazione e della quantità di componenti aggiuntivi degli scenari. Puoi accelerare questa situazione,escludendo le directory che non contengono né i dati dell'aeroporto né quelli di navigazione, nella finestra di dialogo "Opzioni" della scheda "Database della  libreria degli scenari".
 
-See [Options](OPTIONS.md#scenery-library-database) for more information about excluding scenery.
+Tutti gli aeroporti che non si trovano nella directory "Scenario" predefinito di FSX / P3D o che si trovano nella directory "Scenario personalizzato" di X-Plane sono considerati aeroporti aggiuntivi e verranno evidenziati in modo appropriato. Le directory possono essere escluse da questo comportamento nella finestra di dialogo "Opzioni" nella scheda "Database della libreria degli scenari". Questo può essere utile se i componenti aggiuntivi correggono solo l'elevazione dell'aeroporto e questi aeroporti non devono essere evidenziati sulla mappa usando il testo sottolineato e corsivo.
 
-The previous scenery library database will be restored immediately if you cancel the loading process or if the loading process fails.
+Vedere [Opzioni] (OPTIONS.md # scenario-libreria-database) per ulteriori informazioni sull'esclusione dello scenario.
 
-The menu `Scenery Library` -&gt; `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
+Il database della libreria degli scenari precedente verrà ripristinato immediatamente se si annulla il processo di caricamento o se il processo di caricamento fallisce.
 
-Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` will differ to the numbers shown in the progress dialog since a separate process removes duplicates after loading.
+Il menu `Scenery Library` - & gt; "Simulatore di volo" è sincronizzato con la selezione del simulatore nella finestra di dialogo. Una volta che un database è caricato correttamente, la visualizzazione, il piano di volo e la ricerca passeranno ai dati del simulatore appena caricati.
 
-The progress dialog shows all objects that were found during loading. The the dialog `Load Scenery Library` shows the number of objects in the database after removing duplicates and deleting stock airports that were replaced by add-ons.
+Si noti che il numero di aeroporti, radiaiuti e altri oggetti mostrati nella "Libreria degli scenari caricata" differirà dai valori mostrati nella finestra di dialogo di avanzamento, poiché un processo separato rimuove i duplicati dopo il caricamento.
 
-**FSX or P3D only:** The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
+La finestra di dialogo di avanzamento mostra tutti gli oggetti trovati durante il caricamento. La finestra di dialogo "Carica libreria di scenari" mostra il numero di oggetti nel database dopo aver rimosso i duplicati e aver eliminato gli aeroporti di base che sono stati sostituiti da scenari aggiuntivi.
 
-* **Flight Simulator X:** `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
-* **Flight Simulator - Steam Edition:** `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
-* **Prepar3D v2:** `C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg`
-* **Prepar3D v3:** `C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg`
-* **Prepar3D v4:** `C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg`
 
-An error dialog is shown after loading if any files could not be read or directories were not found. In this case you should check if the airports of the affected sceneries display correctly and show the correct information. The error dialog allows copy and paste of formatted text which is useful for error reporting.
+** Solo FSX o P3D: ** Il programma tenta di trovare automaticamente i percorsi di base e i file `Scenery.cfg`. Le posizioni tipiche di `Scenery.cfg` per Windows 7/8/10 sono:
 
-The `Load Scenery Library` dialog shows the last time of loading \(`Last Update:`\), the program and the database version. Major database version differences show incompatible databases. The program will ask if the incompatible databases can be erased on startup before the scenery database can be reloaded. Minor database differences show compatible changes where a reload is recommended but not required.
+* ** Flight Simulator X: ** `C: \ ProgramData \ Microsoft \ FSX \ Scenery.cfg`
+* ** Flight Simulator - Steam Edition: ** `C: \ ProgramData \ Microsoft \ FSX-SE \ Scenery.cfg`
+* ** Prepar3D v2: ** `C: \ Users \ YOUR_ACCOUNT_NAME \ AppData \ Roaming \ Lockheed Martin \ Prepar3D v2 \ Scenery.cfg`
+* ** Prepar3D v3: ** `C: \ ProgramData \ Lockheed Martin \ Prepar3D v3 \ Scenery.cfg`
+* ** Prepar3D v4: ** `C: \ ProgramData \ Lockheed Martin \ Prepar3D v4 \ Scenery.cfg`
 
-### X-Plane Airports and Navdata {#load-scenery-library-dialog-xp-apt-navdata}
+Dopo il caricamento viene visualizzata una finestra di dialogo di errore se non è stato possibile leggere alcuni file o non sono state trovate directory. In questo caso, è necessario verificare se gli aeroporti degli scenari interessati vengono visualizzati correttamente e mostrare le informazioni corrette. La finestra di dialogo di errore consente di copiare e incollare il testo formattato, utile per la segnalazione degli errori.
 
-*Little Navmap* reads airport and navaid data from X-Plane's `*.dat` files. To check a version of a file you can open it in a text editor that is capable of dealing with large files. The first lines of the file will look like:
+La finestra di dialogo "carica libreria degli scenari" mostra l'ultima volta in cui si carica \ (`Last Update:` \), il programma e la versione del database. Le principali differenze di versione del database mostrano database incompatibili. Il programma chiederà se i database incompatibili possono essere cancellati all'avvio prima di poter ricaricare il database degli scenari. Differenze di database minori mostrano modifiche compatibili in cui si consiglia di ricaricare ma non è richiesto.
 
-```
-A
-1100 Generated by WorldEditor 1.6.0r1
+### Aeroporti X-Plane e dati di navigazione {# carica-scenari-libreria-dialogo-xp-apt-dati navigazione}
 
-1   1549 0 0 0A4 Johnson City STOLport
+* Little Navmap * legge i dati aeroportuali e radioaiuti dai file `* .dat` di X-Plane. Per verificare una versione di un file è possibile aprirlo in un editor di testo in grado di gestire file di grandi dimensioni. Le prime righe del file saranno simili a:
+
+`` `
+UN
+1100 generato da WorldEditor 1.6.0r1
+
+1 1549 0 0 0A4 Johnson City STOLport
 ...
-```
-The first number in the second line is the file version. Here it is `1100`.
+`` `
+Il primo numero nella seconda riga è la versione del file. Qui è `1100`.
 
-*Little Navmap* can read the following X-Plane scenery files:
+* Little Navmap * può leggere i seguenti file degli scenari X-Plane:
 
-* **Airports \(**`apt.dat`**\):** Version 850 up to 1100. This covers X-Plane 10 airports and older add-on scenery. Newer files than 1100 might work but are not tested.
-* **Navdata \(**`earth_awy.dat`**, **`earth_fix.dat`** and **`earth_nav.dat`**\):** Version 850 up to 1100. This excludes X-Plane 10 navdata files. Newer files than 1100 might work but are not tested.
-* **Procedures \(**`ICAO.dat`** in the **`CIFP`**directory\):** All procedures from X-Plane 11.
-* **Airspaces \(**`*.txt`**\):** The included `usa.txt` and all files in OpenAir format. See next chapter for more information.
+* ** Aeroporti \ (** `apt.dat` ** \): ** Versione 850 fino a 1100. Comprende aeroporti X-Plane 10 e scenari aggiuntivi. I file più recenti di 1100 potrebbero funzionare ma non sono stati testati.
+* ** dati di navigazione \ (** `earth_awy.dat` **, **` earth_fix.dat` ** e ** `earth_nav.dat` ** \): ** Versione 850 fino a 1100. Ciò esclude X- Aereo 10 file radio aiuti. I file più recenti di 1100 potrebbero funzionare ma non sono stati testati.
+* ** Procedure \ (** `ICAO.dat` ** nella directory **` CIFP` ** \): ** Tutte le procedure da X-Plane 11.
+* ** Spazi aerei\ (** `* .txt` ** \): ** Incluso` usa.txt` e tutti i file in formato OpenAir. Vedi il prossimo capitolo per maggiori informazioni.
 
-Additionally the files `user_fix.dat` and `user_nav.dat` in the X-Plane directory `Custom Data` are read.
+Inoltre vengono letti i file `user_fix.dat` e` user_nav.dat` nella directory X-Plane `databse comuni`.
 
-### X-Plane Airspaces {#load-scenery-library-dialog-xp-airspaces}
+### Spazi aerei X-Plane  {# carica-scenari-libreria-dialogo-xp-spazi aerei}
 
-All files in [OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp) will be loaded when reading the X-Plane scenery library.
+Tutti i file in [formato di spazio aereo OpenAir] (http://www.winpilot.com/UsersGuide/UserAirspace.asp) verranno caricati durante la lettura della libreria degli scenari X-Plane.
 
-You can also copy airspaces from a present FSX or Prepar3D database if you own these simulators. See [Copy Airspaces to X-Plane Database](MENUS.md#copy-airspaces-to-xplane).
+Puoi anche copiare gli spazi aerei da un database FSX o Prepar3D attuale se sei in possesso di questi simulatori. Vedere [Copia degli spazi aerei nel database X-Plane] (MENUS.md # copia-spazi aerei-verso-xplane).
 
-Note that airspace files can have errors which may prevent the loading of an airspace file. These hard errors are reported after loading the scenery library. Other errors only affecting single airspaces or the geometry are reported in the log file only.
+Si noti che i file dello spazio aereo possono contenere errori che potrebbero impedire il caricamento di un file dello spazio aereo. Questi errori gravi vengono segnalati dopo aver caricato la libreria degli scenari. Altri errori che riguardano solo singoli spazi aerei o la geometria sono riportati solo nel file di registro.
 
-X-Plane 11 comes with a single airspace file that can be found in `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces/usa.txt`.
-Additional airspace files can be downloaded from the [OpenAirspace Directory](http://www.winpilot.com/openair/index.asp), [Soaring Services](http://soaringweb.org/), [openAIP](https://www.openaip.net/) or [Luftraumdaten Deutschland](https://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten) for example.
+X-Plane 11 viene fornito con un singolo file di spazio aereo che può essere trovato in `TUA_DIRECTORY_XPLANE/Risorse / dati predefiniti / spazi aerei / usa.txt`.
+File di spazi aerei aggiuntivi possono essere scaricati da [OpenAirspace Directory] (http://www.winpilot.com/openair/index.asp), [Soaring Services] (http://soaringweb.org/), [openAIP] (https : //www.openaip.net/) o [Luftraumdaten Deutschland] (https://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten) per esempio.
 
-Airspace files must have a `.txt` extension and are loaded from the following directories by *Little Navmap*:
+I file di spazio aereo devono avere un'estensione `.txt` e sono caricati dalle seguenti directory da * Little Navmap *:
 
-* `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces`
-* `YOUR_XPLANE_DIRECTORY/Custom Data/Airspaces`
-* `YOUR_ACCOUNT_NAME/Documents/Little Navmap/X-Plane Airspaces` where `Documents` is the documents directory in your language.
+* `TUA_DIRECTORY_XPLANE / Risorse / dati predefiniti / spazi aerei`
+* `TUA_DIRECTORY_XPLANE / Dati personalizzati / Spazi aerei`
+* `TUO_ACCOUNT_NOME / Documenti / Little Navmap / X-Plane Spazi aerei` dove` Documenti` è la directory dei documenti nella tua lingua.
 
-The files can be encoded in any [UTF](https://en.wikipedia.org/wiki/Unicode#UTF) format but must have a [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) to be recognized properly. Otherwise Windows ANSI coding \(`Windows-1252`\) is used. Special characters like umlauts or accents are not displayed correctly in names if the encoding is not correct. All other functionality is unaffected.
+I file possono essere codificati in qualsiasi formato [UTF] (https://en.wikipedia.org/wiki/Unicode#UTF) ma devono avere un [BOM] (https://en.wikipedia.org/wiki/Byte_order_mark) essere riconosciuto correttamente. Altrimenti viene utilizzata la codifica ANSI di Windows \ (`Windows-1252` \). I caratteri speciali come le sfumature o gli accenti non vengono visualizzati correttamente nei nomi se la codifica non è corretta. Tutte le altre funzionalità non sono interessate.
 
-You can convert the files using any advanced editor like [Notepad++](https://notepad-plus-plus.org/) for example.
+Puoi convertire i file usando qualsiasi editor avanzato come [Notepad ++] (https://notepad-plus-plus.org/) per esempio.
 
-Airspaces will appear as duplicates in the map if an airspace file is found in more than one of these directories.
+Gli spazi aerei appariranno come duplicati nella mappa se un file dello spazio aereo viene trovato in più di una di queste directory.
 
-**Put files into the `Documents/Little Navmap/X-Plane Airspaces` if you find that X-Plane crashes when loading certain airspace files. In this way, the airspaces are at least available in *Little Navmap* which is more error tolerant.**
+** Inserisci i file in `Documenti / Little Navmap / X-Plane  spazi aerei` se trovi che X-Plane ha un crash durante il caricamento di determinati file dello spazio aereo. In questo modo, gli spazi aerei sono almeno disponibili in * Little Navmap * che è più tollerante agli errori. **
 
-### Load Scenery Library Dialog Options {#load-scenery-library-dialog-options}
 
-* `Simulator`: Selects the simulator to load and show database statistics in the label above.
-* `Reset Paths`: Reset all paths back to default values.
-* `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
-* `Scenery Configuration File` and `Select ...` \(only FSX and P3D\): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
-* `Read inactive Scenery Entries` \(only FSX and P3D\): This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
-* `Read Prepar3D add-on.xml packages` \(only P3D v3 and v4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
-* `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database will be restored. The dialog will be closed and the program will switch to show the loaded database once it is successfully loaded.
-* `Close`: Keeps all settings and changes in the dialog and close it without loading anything.
+### Opzioni della finestra di dialogo carica libreria degli scenari {# carica-scenari-libreria-dialogo-opzioni}
 
-![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
+* `Simulatore`: seleziona il simulatore per caricare e mostrare le statistiche del database nell'etichetta sopra.
+* `Ripristina percorsi`: ripristina tutti i percorsi ai valori predefiniti.
+* `percorso base del simulatore di volo` e` Selezione ... `: il percorso della directory di base del simulatore di volo selezionato. Questa in genere è la directory che contiene `FSX.exe` o` Prepar3D.exe`. Questa è la base per tutti i percorsi relativi trovati nel file `scenery.cfg`.
+* `File della configurazione dello scenario` e` Seleziona ... `\ (solo FSX e P3D \): il file` scenery.cfg` del simulatore. È inoltre possibile creare copie del file originale, modificarle rimuovendo o aggiungendo scenari e selezionandoli qui per il caricamento.
+* `Leggi voci dello scenario inattive` \ (solo FSX e P3D \): leggerà tutte le voci dello scenario, anche quelle inattive / disabilitate. Questo è utile se usi uno strumento per disabilitare lo scenario prima di volare ma vuoi comunque vedere tutti gli scenari dei componenti aggiuntivi in ​​_Little Navmap_ senza ricaricare.
+* `Leggi i pacchetti add-on.xml di Prepar3D` \ (solo P3D v3 e v4 \): se abilitato, legge i pacchetti` add-on.xml` di P3D v4 o v3. Vengono letti dalle sottodirectory di `C: \ Users \ TUONME \ DocumentI \ Prepar3D v4 Files \ add-ons` e` C: \ Users \ TUONOME \ Documenti \ Prepar3D v4 Add-ons`.
 
-_**Picture above:** Load Scenery Dialog. Scenery data is already loaded for FSX._
+* `Carica`: avvia il processo di caricamento del database. È possibile interrompere il processo di caricamento in qualsiasi momento e verrà ripristinato il database precedente. La finestra di dialogo verrà chiusa e il programma passerà a mostrare il database caricato una volta caricato correttamente.
+* `Chiudi`: mantiene tutte le impostazioni e le modifiche nella finestra di dialogo e la chiude senza caricare nulla.
 
-![Load Scenery Progress Dialog](../images/loadsceneryprogress.jpg "Load Scenery Progress Dialog")
+! [Finestra di dialogo Carica scenario] (../ images / loadscenery.jpg "Finestra di dialogo Carica scenario")
 
-_**Picture above:** Progress dialog shown while loading the scenery library into Little Navmap's internal database._
+_ ** Immagine sopra: ** Finestra di dialogo Carica scenario. I dati dello scenario sono già caricati per FSX._
 
+! [Finestra di dialogo di avanzamento dello scenario di caricamento] (../ images / loadsceneryprogress.jpg "Finestra di dialogo di avanzamento dello scenario di caricamento")
+
+_ ** Immagine sopra: ** Finestra di dialogo di avanzamento visualizzata durante il caricamento della libreria degli scenari nel database interno di Little Navmap._

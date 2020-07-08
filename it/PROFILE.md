@@ -1,53 +1,53 @@
-## ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Flight Plan Elevation Profile Dock Window {#flight-plan-elevation-profile-dock-window}
+##! [Profilo di elevazione del piano di volo] (../ images / icons / profiledock.png "Profilo di elevazione del piano di volo") Finestra ancorata del profilo di elevazione del piano di volo {# volo-piano-elevazione-profilo-ancorata-finestra}
 
-This dock window shows the ground elevation and flight plan cruise altitude together will all flight plan waypoints. It is only available when a flight plan is loaded. The user aircraft will be shown too if _Little Navmap_ is connected to the simulator.
+Questa finestra ancorata mostra l'elevazione al suolo e l'altitudine di crociera del piano di volo insieme per tutti i waypoint del piano di volo. È disponibile solo quando viene caricato un piano di volo. Verrà mostrato anche l'aereo dell'utente se _Little Navmap_ è collegato al simulatore.
 
-Elevation processing is done in the background since data has to be downloaded and computation is CPU intense. Therefore, the update of the elevation display can take from a few seconds up to half a minute. This background update is started after creating or changing the flight plan or when new elevation data was downloaded. The display will be updated accordingly whenever new data is available.
+L'elaborazione dell'elevazione viene eseguita in background poiché i dati devono essere scaricati e il calcolo della CPU è intenso. Pertanto, l'aggiornamento della visualizzazione dell'elevazione può richiedere da alcuni secondi a mezzo minuto. Questo aggiornamento in background viene avviato dopo aver creato o modificato il piano di volo o quando sono stati scaricati nuovi dati di elevazione. La visualizzazione verrà aggiornato di conseguenza ogni volta che saranno disponibili nuovi dati.
 
-Close the `Flight Plan Elevation Profile` window if you think that it causes performance problems or stutters. All updates will stop once the window is closed.
+Chiudi la finestra "Profilo di elevazione del piano di volo" se ritieni che ciò causi problemi di prestazioni o scatti. Tutti gli aggiornamenti si interromperanno una volta chiusa la finestra.
 
-Be aware that the elevation display covers only the flight plan and will not change the depiction if you get off flight plan with your simulator aircraft.
+Tenete presente che il display di elevazione copre solo il piano di volo e non cambierà la rappresentazione se si scende dal piano di volo con l'aereo del simulatore.
 
-The flight plan is only shown at cruise level and the descent segment. Although, you will see your user aircraft and trail climbing and descending.
+Il piano di volo viene mostrato solo a livello di crociera e nel segmento di discesa. Tuttavia, vedrai il tuo aereo utente e il percorso arrampicarsi e scendere.
 
-### Online Elevation Data {#flight-plan-elevation-profile-online}
+### Dati di elevazione online {# volo-piano-elevazione-profilo-online}
 
-Note that the online elevation data does not cover all countries and currently ends at 60 degrees north. The data contains multiple known errors.
+Si noti che i dati di elevazione online non coprono tutti i paesi e attualmente terminano a 60 gradi a nord. I dati contengono molti errori noti.
 
-The calculation of online elevation points is limited to flight plan segments not longer than 2000 nautical miles to avoid overloading.
-Add more waypoints or calculate a flight plan to avoid this limitation.
+Il calcolo dei punti di elevazione online è limitato ai segmenti del piano di volo non più lunghi di 2000 miglia nautiche per evitare sovraccarichi.
+Aggiungi altri waypoint o calcola un piano di volo per evitare questa limitazione.
 
-### Offline Elevation Data {#flight-plan-elevation-profile-offline}
+### Dati di elevazione offline {# volo-piano-elevazione-profilo-offline}
 
-Using the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data has several advantages:
-* Faster updates
-* World wide coverage
-* No known errors
-* Display of altitude below the cursor in the status bar
+L'utilizzo dei dati di elevazione [GLOBE - Global Land One-km Base Elevation Project] liberamente scaricabili (https://ngdc.noaa.gov/mgg/topo/globe.html) presenta numerosi vantaggi:
+* Aggiornamenti più rapidi
+* Copertura mondiale
+* Nessun errore noto
+* Visualizzazione dell'altitudine sotto il cursore nella barra di stato
 
-See the dialog [Cache and Files](OPTIONS.md#cache-elevation) in the options dialog for instructions how to download and install the GLOBE data.
+Vedere la finestra di dialogo [Cache e file] (OPTIONS.md # cache-elevazione) nella finestra di dialogo delle opzioni per istruzioni su come scaricare e installare i dati GLOBE.
 
-## Profile Window {#flight-plan-elevation-profile-window}
 
-Additional information is shown in a label on top of the window if the mouse is hovered over the diagram.
-The corresponding position within the flight plan is highlighted on the map too.
+# Finestra profilo {# volo-paano-prospetto-profilo-finestra}
 
-Following information is shown in the top label if connected to flight simulator with an active session:
+Ulteriori informazioni sono visualizzate in un'etichetta nella parte superiore della finestra se il mouse è posizionato sul diagramma.
+Anche la posizione corrispondente all'interno del piano di volo è evidenziata sulla mappa.
 
-* Distance from user aircraft to flight plan destination
-* Distance to the top of descent
+Le seguenti informazioni sono visualizzate nell'etichetta superiore se collegata al simulatore di volo con una sessione attiva:
 
-In addition, the information below is shown in the top label when hovering the mouse over the diagram:
+* Distanza dall'aeromobile dell'utente alla destinazione del piano di volo
+* Distanza dalla top of descend
 
-* From and to waypoint
-* Distance from departure and to destination from the mouse cursor position.
-* Ground elevation at cursor position.
-* Flight plan cruise altitude above ground.
-* Safe altitude for the current flight plan leg at the hovering position.
+Inoltre, le informazioni seguenti sono mostrate nell'etichetta superiore quando si passa il mouse sul diagramma:
 
-For more information see the `Navmap` tab in the `Legend` dock window or the
-[Nav Map Legend](LEGEND.md#elevation-profile-legend) for details.
+* Da e verso waypoint
+* Distanza dalla partenza e alla destinazione dalla posizione del cursore del mouse.
+* Elevazione terreno alla posizione del cursore.
+* Altitudine di crociera del piano di volo sopra terra.
+* Altitudine sicura per la tratta del piano di volo corrente nella posizione di sorvolo.
 
-![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
-_**Picture above:** Flight plan elevation profile with line indicating the mouse hovering position. Orange lines show minimum safe altitude for flight plan segments. Top of descent point is shown on the upper right part of the window._
+Per ulteriori informazioni, consultare la scheda "Navmap" nella finestra ancorata "Legenda" o
+[Leg Map Nav] (LEGEND.md # elevazione-profilo-legenda) per i dettagli.
 
+! [Profilo di elevazione del piano di volo] (../ images / profile.jpg "Profilo di elevazione del piano di volo")
+_ ** Immagine sopra: ** Profilo di elevazione del piano di volo con linea che indica la posizione di sorvolo del mouse. Le linee arancioni mostrano l'altitudine minima di sicurezza per i segmenti del piano di volo. Il top of descend è mostrata nella parte in alto a destra della finestra.

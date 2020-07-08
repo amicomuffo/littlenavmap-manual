@@ -1,47 +1,46 @@
-## Map Flight Plan Editing {#map-flight-plan-editing}
 
-The flight plan drag and drop editing mode is switched on per default but can be disabled using the toolbar or `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map`.
+## Modifica del piano di volo della mappa {# mappa-volo-piano-modifica}
 
-You can use the keyboard, the mouse wheel or the map overlays to scroll and zoom while editing the route.
+La modalità tascina e rilascia del piano di volo è attivata per impostazione predefinita, ma può essere disabilitata utilizzando la barra degli strumenti o `Menu principale` ->` Piano di volo` -> `Modifica piano di volo sulla mappa`.
 
-Note that the flight plan drag and drop editing is based on the assumption that a direct connection between departure and destination already exists.
+È possibile utilizzare la tastiera, la rotellina del mouse o le sovrapposizioni della mappa per scorrere e ingrandire durante la modifica del percorso.
 
-Always select departure and destination first if you would like to build you flight plan manually. This will connect both points with a great circle line. Based on this line you can start to add navaids to your flight plan.
+Si noti che il trascinamento ed il rilasciamento del piano di volo si basa sul presupposto che esiste già una connessione diretta tra partenza e destinazione.
 
-Note that selecting airways is not possible.
+Seleziona sempre prima la partenza e la destinazione se desideri costruire manualmente il tuo piano di volo. Ciò collegherà entrambi i punti con una grande linea circolare. Sulla base di questa linea puoi iniziare ad aggiungere radioaiuti al tuo piano di volo.
 
-The cursor will change into a cross ![Cursor Cross](../images/cursorcross.png) if a new navaid can be added to a leg. A cursor ![Cursor Move](../images/cursormove.png) will be shown if a present navaid can be replaced by another one or if a user position can be moved.
+Si noti che non è possibile la selezione delle vie aeree.
 
-The following functionality is available:
+Il cursore si trasformerà in una croce! [Cursor Cross] (../ images / cursorcross.png) se un nuovo radioaiuto può essere aggiunto a una tratta. Un cursore! [Cursor Move] (../ images / cursormove.png) verrà mostrato se un radioaiuto presente può essere sostituito da un altro o se una posizione dell'utente può essere spostata.
 
-* **Click on a flight plan leg:** Starts editing and adds a new waypoint depending on where the next click is done:
- *   **On a single airport and navaid:** Object is inserted into the flight plan segment.
- *   **On multiple airports or navaids:** A menu pops up that allows you to select the object to be inserted.
- *   **No airport and no navaid:** A user defined position is inserted to the flight plan.
-*   **Click on waypoint:** Starts editing and replaces the clicked waypoint with an object depending on where the next click is done:
-  *   **On a single airport and navaid:** Object replaces the clicked waypoint.
-  *   **On multiple airports or navaids:** A menu pops up that allows to select the object that should replace the clicked waypoint.
-  *   **No airport and no navaid:** A user defined position replaces the waypoint.
-* **Click on departure or destination:** Replaces the departure or destination with an object depending on where the next click is done:
- *   **On a single airport:** Airport replaces the departure or destination. A default runway is assigned as start position if the departure is replaced with a new airport.
- *   **On a navaid:** Object replaces departure or destination which results in an invalid flight plan. The flight plan can be saved and loaded (a warning will be shown) but is unusable by Flight Simulator.
- *   **On multiple airports or navaids:** A menu pops up that allows to select the object that replaces departure or destination.
- *   **No airport and no navaid:** A user defined position replaces the waypoint resulting in an invalid flight plan.
-*   **Right click, pressing the escape key or any click outside of the map window:** Cancel current operation.
+Sono disponibili le seguenti funzionalità:
 
-**Limitations if procedures are used:** You can not add navaids in or between procedures neither can you delete procedure legs. The cursor will not change its shape when you hover over a procedure. The following is not allowed:
-* Add a waypoint between departure airport and SID.
-* Add a waypoint between STAR or approach and destination airport.
-* Add a waypoint between STAR and approach or transition.
-* Move or remove the first or last waypoint of a procedure.
+* ** Fare clic su una tratta del piano di volo: ** Inizia la modifica e aggiunge un nuovo waypoint a seconda di dove viene effettuato il clic successivo:
+ * ** Su un singolo aeroporto e radioaiuto: ** L'oggetto è inserito nel segmento del piano di volo.
+ * ** Su più aeroporti o radioaiuti: ** Viene visualizzato un menu che consente di selezionare l'oggetto da inserire.
+ * ** Nessun aeroporto e nessun radioaiuto: ** Una posizione definita dall'utente viene inserita nel piano di volo.
+* ** Fare clic sul waypoint: ** Inizia la modifica e sostituisce il waypoint cliccato con un oggetto a seconda di dove viene fatto il clic successivo:
+  * ** Su un singolo aeroporto e radioaiuto ** L'oggetto sostituisce il waypoint cliccato.
+  * ** Su più aeroporti o radioaiuti: ** Viene visualizzato un menu che consente di selezionare l'oggetto che deve sostituire il waypoint cliccato.
+  * ** Nessun aeroporto e nessun radioaiuto: ** Una posizione definita dall'utente sostituisce il waypoint.
+* ** Fare clic su partenza o destinazione: ** Sostituisce la partenza o la destinazione con un oggetto a seconda di dove viene effettuato il clic successivo:
+ * ** Su un singolo aeroporto: ** L'aeroporto sostituisce la partenza o la destinazione. Una pista di default viene assegnata come posizione di partenza se questa viene sostituita con un nuovo aeroporto.
+ * ** Su un radioaiuto: ** L'oggetto sostituisce la partenza o la destinazione che risulta in un piano di volo non valido. Il piano di volo può essere salvato e caricato (verrà mostrato un avviso) ma non è utilizzabile da Flight Simulator.
+ * ** Su più aeroporti o navaidi: ** Viene visualizzato un menu che consente di selezionare l'oggetto che sostituisce la partenza o la destinazione.
+ * ** Nessun aeroporto e nessun radioaiuto: ** Una posizione definita dall'utente sostituisce il waypoint con conseguente piano di volo non valido.
+* ** Clic destro, premendo il tasto Esc o qualsiasi clic all'esterno della finestra della mappa: ** Annulla l'operazione corrente.
 
-All departure or destination procedures are removed if the departure or destination airport is moved or replaced. The same applies if waypoints are prepended before or appended after departure or destination.
+** Limitazioni in caso di utilizzo delle procedure: ** Non è possibile aggiungere radioaiuti nelle procedure o tra le procedure né eliminare le fasi di esse. Il cursore non cambierà forma quando si passa con il mouse su una procedura. Non è consentito:
+* Aggiungere un waypoint tra l'aeroporto di partenza e SID.
+* Aggiungere un waypoint tra STAR o avvicinamento e aeroporto di destinazione.
+* Aggiungere un waypoint tra STAR e avvicinamento o transizione.
+* Spostare o rimuovere il primo o l'ultimo waypoint di una procedura.
+Tutte le procedure di partenza o di destinazione vengono rimosse se l'aeroporto di partenza o di destinazione viene spostato o sostituito. Lo stesso vale se i waypoint vengono anteposti o aggiunti dopo la partenza o la destinazione.
 
-![Flight Plan Edit](../images/fpedit.jpg "Flight Plan Edit")
+! [Modifica piano di volo] (../ images / fpedit.jpg "Modifica piano di volo")
 
-_**Picture above:** Inserting a navaid into a flight plan leg by clicking and moving the leg line. A tool tip for the navaid is shown._
+_ ** Immagine sopra: ** Inserimento di un radioaiuto in una tratta del piano di volo facendo clic e spostando la linea della tratta. Viene mostrato un suggerimento per il radioaiuto._
 
-![Flight Plan Edit](../images/fpedit2.jpg "Flight Plan Edit")
+! [Modifica piano di volo] (../ images / fpedit2.jpg "Modifica piano di volo")
 
-_**Picture above:** Replacing VOR TRA in the flight plan with another one by simply clicking and moving the waypoint TRA onto KLO. A selection menu pops up for disambiguation._
-
+_ ** Immagine sopra: ** Sostituzione di VOR TRA nel piano di volo con un altro semplicemente facendo clic e spostando il waypoint TRA su KLO. Viene visualizzato un menu di selezione per il chiarimento delle ambiguità.

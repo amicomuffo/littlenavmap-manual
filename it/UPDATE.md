@@ -1,53 +1,53 @@
-## ![Checking for Updates](../images/icons/revert.png "Checking for Updates") Checking for Updates {#checking-for-updates}
+##! [Verifica aggiornamenti] (../ images / icons / revert.png "Verifica aggiornamenti") Verifica aggiornamenti {# verifica-per-aggiornamenti}
 
-_Little Navmap_ will automatically check its [home page](https://albar965.github.io/) for available updates on startup. Frequency and update channels are configurable. See below for configuration options.
+_Little Navmap_ controllerà automaticamente la sua [home page] (https://albar965.github.io/) per gli aggiornamenti disponibili all'avvio. La frequenza e i canali di aggiornamento sono configurabili. Vedi sotto per le opzioni di configurazione.
 
-You can always check manually for updates by selecting `Main Menu` -&gt; `Help` -&gt; `Check for Updates`.
+Puoi sempre controllare manualmente gli aggiornamenti selezionando "Menu principale" - & gt; `Aiuto` - & gt; "Controlla aggiornamenti".
 
-Note that the installation still has to be done manually.
+Si noti che l'installazione deve ancora essere eseguita manualmente.
 
-### Notification
+### Notifica
 
-The dialog showing available updates contains a change log, various other messages and one or more download links.
+La finestra di dialogo che mostra gli aggiornamenti disponibili contiene un registro delle modifiche, vari altri messaggi e uno o più collegamenti per il download.
 
-#### Ignore this Update
-Pressing this button will put the shown version on a black list. You will not see any reminders for this version again but for newer versions.
+#### Ignora questo aggiornamento
+Premendo questo pulsante, la versione mostrata verrà inserita in una lista nera. Non vedrai più promemoria per questa versione ma per le versioni più recenti.
 
-This button is not visible when checking manually.
+Questo pulsante non è visibile durante il controllo manuale.
 
-Note that manually checking for updates ignore the black listed updates.
+Notare che il controllo manuale degli aggiornamenti ignora gli aggiornamenti elencati in nero.
 
-#### Remind me Later
+#### Ricordamelo più tardi
 
-Dismisses the dialog. You will be notified again on next startup depending on selected frequency. You can also press `Esc` to trigger this action.
+Chiudi la finestra di dialogo. Verrai nuovamente avvisato al prossimo avvio in base alla frequenza selezionata. Puoi anche premere `Esc` per attivare questa azione.
 
-This button is not visible when checking manually.
+Questo pulsante non è visibile durante il controllo manuale.
 
-![Update Notification](../images/updatedialog.jpg "Update Notification")
+! [Notifica aggiornamento] (../ images / updatedialog.jpg "Notifica aggiornamento")
 
-_**Picture above:** Update notification dialog showing an available beta version including change log and download link._
+_ ** Immagine sopra: ** Aggiorna la finestra di notifica che mostra una versione beta disponibile con registro delle modifiche e link per il download ._
 
-### Options
+### Opzioni
 
-#### Check for Updates:
-`Daily`, `Weekly` or `Manual`.
+#### Controlla gli aggiornamenti:
+`Giornalemnte`,` Settimanalmente` o `Manuale`.
 
-Select `Main Menu` -&gt; `Help` -&gt; `Check for Updates` to search manually for new versions.
+Seleziona "Menu principale" - & gt; `Aiuto` - & gt; Cerca aggiornamenti per cercare manualmente le nuove versioni.
 
-Note that the daily or weekly check is only done when starting the program.
+Si noti che il controllo giornaliero o settimanale viene eseguito solo all'avvio del programma.
 
-#### Update Channels:
-`Stable Versions only`: This will show only notifications for tested and stable versions also containing a complete manual.
+#### Aggiorna canali:
+"Solo versioni stabili": questo mostrerà solo le notifiche per le versioni testate e stabili che contengono anche un manuale completo.
 
-`Stable and Beta Versions`: Will additionally check for beta/test versions. Beta versions are program releases that already contain all planned features for a stable release but are still not tested carefully. The manual might be incomplete.
+"Versioni stabili e beta": verificherà inoltre la presenza di versioni beta / di prova. Le versioni beta sono versioni di programmi che contengono già tutte le funzionalità pianificate per una versione stabile ma non sono ancora testate attentamente. Il manuale potrebbe essere incompleto.
 
-`Stable, Beta and Development Versions`: _Little Navmap_ will also show notifications for development releases. These are neither complete nor well tested. Features might change over time and the manual is not updated for new functionality.
+`Versioni stabili, beta e di sviluppo`: _Little Navmap_ mostrerà anche le notifiche per le versioni di sviluppo. Questi non sono né completi né ben testati. Le funzionalità potrebbero cambiare nel tempo e il manuale non viene aggiornato per le nuove funzionalità.
 
-A backup of all settings is recommended before running a development version.
+Si consiglia un backup di tutte le impostazioni prima di eseguire una versione di sviluppo.
 
-#### Check for Updates now
-Checks for updates immediately. This will use the current settings as shown in the dialog. It will also show notifications for updates that were ignored by pressing the `Ignore this Update` on the notification dialog.
+#### Verifica aggiornamenti per ora
+Verifica immediatamente gli aggiornamenti. Questo utilizzerà le impostazioni correnti come mostrato nella finestra di dialogo. Mostrerà anche le notifiche per gli aggiornamenti che sono stati ignorati premendo il tasto "Ignora questo aggiornamento" nella finestra di dialogo di notifica.
 
-![Update Options](../images/updateoptions.jpg "Update Options")
+! [Opzioni di aggiornamento] (../ images / updateoptions.jpg "Opzioni di aggiornamento")
 
-_**Picture above:** Update notification settings in dialog _`Options`_._
+_ ** Immagine sopra: ** Aggiorna le impostazioni di notifica nella finestra di dialogo _`Opzioni` _._

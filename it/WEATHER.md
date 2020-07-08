@@ -1,62 +1,59 @@
-## Weather {#weather}
 
-_Little Navmap_ can display METARs from several sources:
+## Meteo {#meteo}
 
-* FSX or P3D if connected. This also applies to network setups.
-* X-Plane real time weather from the `METAR.rwx` file. Not when using network setups.
-* [NOAA](http://www.weather.gov) online weather service
-* [VATSIM](http://www.vatsim.net) network online weather service
-* [HiFi Simulation Technologies](http://www.hifisimtech.com):
-  * _Active Sky Next_ \(ASN\)
+_Little Navmap_ può visualizzare METAR da diverse fonti:
+
+* FSX o P3D se collegato. Questo vale anche per le impostazioni di rete.
+* Meteo in tempo reale X-Plane dal file `METAR.rwx`. Non quando si utilizzano le impostazioni di rete.
+* Servizio meteo online [NOAA] (http://www.weather.gov)
+* Servizio meteorologico online della rete [VATSIM] (http://www.vatsim.net)
+* [HiFi Simulation Technologies] (http://www.hifisimtech.com):
+  * _Active Sky Next_ \ (ASN \)
   * _AS16_
-  * _Active Sky for Prepar3D v4_ \(ASP4\)
+  * _Active Sky for Prepar3D v4_ \ (ASP4 \)
 
-You can define in the `Options` dialog on the `Weather` tab which sources are used to display the METAR information in tooltips or the tab `Weather` in the `Information` dock window.
+È possibile definire nella finestra di dialogo `Opzioni` sulla scheda` Meteo` quali fonti vengono utilizzate per visualizzare le informazioni METAR in suggerimenti o la scheda `Meteo` nella finestra ancorata` Informazioni`.
 
-You have to set the base path for X-Plane in the `Load Scenery Library` dialog to enable reading of the weather file. Certain features like regions of manually created weather files are not supported.
+Devi impostare il percorso di base per X-Plane nella finestra di dialogo "Carica libreria di scenari" per abilitare la lettura del file meteorologico. Alcune funzioni come le regioni di file meteorologici creati manualmente non sono supportate.
 
-METARs are shown in the airport tooltips and on the `Airport` overview tab. Decoded weather information for all sources is available in the tab `Weather`.
+I METAR sono mostrati nelle descrizioni degli aeroporti e nella scheda panoramica "Aeroporto". Le informazioni meteo decodificate per tutte le fonti sono disponibili nella scheda "Meteo".
 
-**Notes about X-Plane weather:**
-*Little Navmap* can only read the X-Plane `METAR.rwx` file which contains downloaded online weather. The program cannot read custom weather situations from X-Plane. *Little Navmap* has only access to the local weather around the aircraft if you use a custom weather situation. This can result in the situation that you use custom weather and *Little Navmap* still displays information from an old downloaded weather file.
+** Note sul tempo di X-Plane: **
+* Little Navmap * può leggere solo il file `METAR.rwx` di X-Plane che contiene il meteo online scaricato. Il programma non è in grado di leggere situazioni meteorologiche personalizzate da X-Plane. * Little Navmap * ha accesso al clima locale intorno all'aeromobile solo se si utilizza una situazione meteorologica personalizzata. Ciò può comportare la situazione in cui si utilizza il meteo personalizzato e * Little Navmap * visualizza ancora informazioni da un vecchio file meteorologico scaricato.
 
-![Weather tab](../images/weather.jpg "Weather tab")
+! [Scheda meteo] (../ images / weather.jpg "Scheda meteo")
 
-_**Picture above:** Decoded weather information from two online sources. Flight simulator is not connected._
+_ ** Immagine sopra: ** Informazioni meteo decodificate da due fonti online. Il simulatore di volo non è collegato._
 
-### Flight Simulator
+### Simulatore di volo
 
-Weather information from a flight simulator or the X-Plane `METAR.rwx` file can be displayed in three kinds for METARs and decoded weather which depends on
-the selected airport:
+Le informazioni meteorologiche da un simulatore di volo o dal file `METAR.rwx` del piano X possono essere visualizzate in tre tipi per METAR e tempo decodificato che dipende dall'aeroporto selezionato:
 
-* `Station`: The airport has a weather station. This is the most precise weather indication.
-* `Nearest`: The clicked airport has no weather station and the nearest weather was fetched. The ident of the nearest station is shown in the METAR and on the decoded weather tab. Note that the nearest weather station is not necessarily an airport.
-* `Interpolated` \(Not for X-Plane\): The weather is interpolated by the flight simulator using the three nearest stations. This is usually the only option available on airports that are far away from the user aircraft. The ident of the clicked airport is used in the METAR report for this kind of weather report.
+* `Stazione`: l'aeroporto ha una stazione meteorologica. Questa è l'indicazione meteorologica più precisa.
+* `Più vicino`: l'aeroporto selezionato non ha una stazione meteorologica e il tempo più vicino è stato recuperato. L'identificativo della stazione più vicina è mostrata nel METAR e nella scheda meteo decodificata. La stazione meteorologica più vicina non è necessariamente un aeroporto.
+* `Interpolato` \ (non per piano X \): il tempo viene interpolato dal simulatore di volo usando le tre stazioni più vicine. Questa è di solito l'unica opzione disponibile sugli aeroporti che sono lontani dall'aeromobile dell'utente. L'identificativo dell'aeroporto cliccato viene utilizzato nel rapporto METAR per questo tipo di bollettino meteorologico.
 
-The flight simulator weather is updated every 15 seconds to catch changes in the weather theme.
+Il meteo del simulatore di volo viene aggiornato ogni 15 secondi per rilevare le modifiche nel tema meteo.
 
-*Little Navmap* watches the X-Plane `METAR.rwx` file for changes and will apply updates immediately.
+* Little Navmap * guarda il file `METAR.rwx` di X-Plane per le modifiche e applicherà immediatamente gli aggiornamenti.
 
-Note that the nearest weather will not necessarily depict the weather at the clicked station due to the interpolation between multiple stations which is done by the simulator.
+Si noti che il tempo più vicino non rappresenterà necessariamente il tempo sulla stazione cliccata a causa dell'interpolazione tra più stazioni che viene eseguita dal simulatore.
 
 ### Online - NOAA and VATSIM
 
-Online weather from both sources is updated every 10 minutes.
+
+Il tempo online da entrambe le fonti viene aggiornato ogni 10 minuti.
 
 ### Active Sky
 
-All _Active Sky_ programs are recognized automatically on startup for each simulator.
-The `current_wx_snapshot.txt` and `activeflightplanwx.txt` files are loaded and monitored for changes. Weather will be reloaded and updated in the
-information display if necessary.
+Tutti i programmi _Active Sky_ vengono riconosciuti automaticamente all'avvio per ciascun simulatore.
+I file `current_wx_snapshot.txt` e` activeflightplanwx.txt` vengono caricati e monitorati per le modifiche. Il tempo verrà ricaricato e aggiornato nella visualizzazione delle informazioni se necessario.
 
-You can also select the `current_wx_snapshot.txt` file manually. In that case the
-METARs from this file are displayed for all installed flight simulators. The `activeflightplanwx.txt` will be loaded from the same directory.
+Puoi anche selezionare manualmente il file `current_wx_snapshot.txt`. In tal caso il
+I METAR di questo file vengono visualizzati per tutti i simulatori di volo installati. `Activeflightplanwx.txt` verrà caricato dalla stessa directory.
 
-Manual file selection can also be useful if a new _Active Sky_ version is not supported by _Little Navmap_ yet.
+La selezione manuale dei file può anche essere utile se una nuova versione di _Active Sky_ non è ancora supportata da _Little Navmap_.
 
-Departure and destination weather will be displayed if a flight plan is loaded into one of the
-_Active Sky_ programs. A suffix `Destination` or `Departure` will indicate the usage of Active Sky flight plan weather
-on the tab `Weather`. This gives _Active Sky_ users the most precise weather indication for departure and destination.
+Il tempo di partenza e quello di destinazione verranno visualizzati se un piano di volo viene caricato in uno dei Programmi _Active Sky_. Un suffisso "Destinazione" o "Partenza" indicherà l'utilizzo del tempo del piano di volo Active Sky nella scheda "Meteo". Ciò fornisce agli utenti di _Active Sky_ le indicazioni meteorologiche più precise per la partenza e la destinazione.
 
-Note that the indication of `Departure` or `Destination` depends entirely on the flight plan loaded into _Active Sky_ and not the flight plan in _Little Navmap_.
-
+Si noti che l'indicazione di `Partenza` o` Destinazione` dipende interamente dal piano di volo caricato in _Active Sky_ e non dal piano di volo in _Little Navmap_.

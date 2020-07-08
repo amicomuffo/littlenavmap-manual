@@ -1,16 +1,17 @@
-## Creating or adding Map Themes {#creating-or-adding-map-themes}
 
-To add an arbitrary online of an offline map to _Little Navmap_ simply add the map directory from a downloaded or self created map theme to the `data\maps\earth` directory.
+## Creazione o aggiunta dei temi della mappa {# creando-o-aggiungendo-temi-mappa}
 
-The full path to the DGML file \(see links below for more details about DGML\) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
+Per aggiungere un tema casuale online di una mappa offline a _Little Navmap_ è sufficiente aggiungere la directory della mappa da un tema della mappa scaricata o auto-creata nella directory `data \ maps \ earth`.
 
-The menu `Main Menu` -&gt; `Map` -&gt; `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
+Il percorso completo del file DGML \ (vedere i collegamenti seguenti per maggiori dettagli su DGML \) descrive la mappa storiche deve essere `c: \ Own Programs \ Little Navmap \ data \ maps \ earth \ opencyclemap \ opencyclemap.dgml` se ti piace aggiungere [OpenCycleMap] (http://www.opencyclemap.org) per esempio. Il file DGML può fare riferimento a un servizio di mappe online o ai dati di mappe offline inclusi. Di solito un tema della mappa contiene molti più file oltre al solo DGML.
 
-The options `Show Country and City Names` and `Show Hillshading` are enabled for all additional map themes but might not work depending on properties defined in the map's DGML file.
+Il menu `Main Menu` - & gt; `Mappa` - & gt; "Tema" e la casella a discesa della barra degli strumenti, riceveranno una voce per ciascun tema della mappa aggiuntivo.
 
-More maps and information about map configuration and DGML files can be found here on the Marble/KDE pages:
+Le opzioni `Mostra nomi di paesi e città` e` Mostra ombreggiatura della collina` sono abilitate per tutti i temi mappa aggiuntivi, ma potrebbero non funzionare a seconda delle proprietà definite nel file DGML della mappa.
 
-* Download more maps for the Marble widget \(only Earth maps are supported in `Little Navmap`\): [Additional Maps](https://marble.kde.org/maps.php)
-* A tutorial that shows how to create a map theme based on tiled images: [Marble/CustomMaps](https://techbase.kde.org/Marble/CustomMaps)
-* A tutorial showing how to create a map theme based on [OSM Slippy Maps](http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [How to create map themes based on OSM slippy maps](https://techbase.kde.org/Marble/OSMSlippyMaps)
-* How to create a historical map for Marble: [Historical Maps for Marble](https://techbase.kde.org/Marble/HistoricalMaps)
+Altre mappe e informazioni sulla configurazione delle mappe e sui file DGML sono disponibili qui nelle pagine di Marble / KDE:
+
+* Scarica più mappe per il widget Marble \ (solo le mappe della Terra sono supportate in `Little Navmap` \): [Mappe aggiuntive] (https://marble.kde.org/maps.php)
+* Un tutorial che mostra come creare un tema mappa basato su immagini affiancate: [Marble / CustomMaps] (https://techbase.kde.org/Marble/CustomMaps)
+* Un tutorial che mostra come creare un tema cartografico basato su [OSM Slippy Maps] (http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [Come creare temi cartografici basati su mappe slippy OSM] (https: // techbase.kde.org/Marble/OSMSlippyMaps)
+* Come creare una mappa storica per Marble: [Mappe storiche per Marble] (https://techbase.kde.org/Marble/HistoricalMaps)

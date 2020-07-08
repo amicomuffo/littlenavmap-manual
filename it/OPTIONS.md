@@ -1,151 +1,146 @@
-## ![Options](../images/icons/settings.png "Options") Options Dialog {#options-dialog}
 
-Most options are self explaining and tooltips contain more detailed explanations if applicable.
+##! [Opzioni] (../ images / icons / settings.png "Opzioni") Finestra di dialogo Opzioni {# opzioni-finestra di dialogo}
 
-You can immediately check the effect of your changes on the map display by moving the dialog
-`Options` to the side and pressing `Apply`.
+La maggior parte delle opzioni sono autoesplicative e le descrizioni dei comandi contengono spiegazioni più dettagliate se applicabile.
 
-The button `Restore Defaults` only restores the options of this dialog back to default. Other
-settings like map display, table views or dock window positions are not affected. To reset all
-saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
+È possibile verificare immediatamente l'effetto delle modifiche sulla visualizzazione della mappa spostando la finestra di dialogo
+`Opzioni` a lato e premendo` Applica`.
 
-### Startup {#startup}
+Il pulsante "Ripristina predefiniti" ripristina le opzioni di questa finestra di default. Altri settaggi,come la visualizzazione della mappa, le viste della tabella o le posizioni della finestra ancorata non sono interessate. Per ripristinare completamente tutte le impostazioni salvate vedi [Risoluzione dei problemi] (APPENDIX.md # risoluzione dei problemi).
 
-Allows to customize what should be loaded and shown on startup of _Little Navmap_.
+### Avvio {#Avvio}
 
-You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information.
+Permette di personalizzare ciò che deve essere caricato e mostrato all'avvio di _Little Navmap_.
 
-### User Interface {#user-interface}
+È inoltre possibile configurare la frequenza di controllo e delle reti degli aggiornamenti automatici. Vedere [Verifica aggiornamenti] (UPDATE.md) per ulteriori informazioni.
 
-Has options for text sizes in information windows and flight plan as well as the search result table.
+### Interfaccia utente {# utente-interfaccia}
 
-You can also change the overall style for the graphical user interface. The user interface styles
-contain a `Night` mode that can be used for night flights in dark rooms. You can also dim the map and
-elevation profile display.
+Dispone di opzioni per le dimensioni del testo nelle finestre di informazione e nel piano di volo, nonché nella tabella dei risultati della ricerca.
 
-A restart is not needed but recommended after changing a style.
+Puoi anche cambiare lo stile generale per l'interfaccia grafica dell'utente. Gli stili dell'interfaccia utente contengono una modalità "Notte" che può essere utilizzata per i voli notturni in stanze buie. Puoi anche oscurare la mappa e la visualizzazione del profilo altimetrico.
 
-The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
+Non è necessario un riavvio, ma è consigliato dopo aver modificato uno stile.
 
-This tab also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
+I colori per gli stili `Fusione` e` Notte` possono essere cambiati modificando i file di configurazione. Vedere [Personalizzare] (CUSTOMIZE.md) per ulteriori informazioni.
 
-![User Interface](../images/optionsui.jpg "User Interface")
+Questa scheda contiene anche opzioni per forzare la lingua del programma e le impostazioni locali \ (numero, formato data e ora \) in inglese se non si desidera usare un'interfaccia utente tradotta.
 
-_**Picture above:** Tab `User Interface` using the style `Night`._
+! [Interfaccia utente] (../ images / optionsui.jpg "Interfaccia utente")
 
-### Map {#map}
+_ ** Immagine sopra: ** Scheda `Interfaccia utente` usando lo stile` Notte`._
 
-Has map related customization options. Allows to set the click sensitivity, zoom distances and more.
+### Mappa {#map}
 
-### Map Display {#map-display}
+Opzioni di personalizzazione relative alla mappa. Permette di impostare la sensibilità del clic, le distanze dello zoom e altro.
 
-This tab contains options for symbol and text sizes, flight plan and aircraft trail colors and more.
+### Visualizzazione mappa {# mappa-visualizzazione}
 
-The right side of the tab contains a tree that allows to select the text labels that should be shown at
-airports, user aircraft and AI/multiplayer aircraft.
+Questa scheda contiene opzioni per  le dimensioni del simbolo e del testo, del piano di volo e  dei colori delle tracce dell'aereo ed altro.
 
-![Map Display](../images/optionmapdisplay.jpg "Map Display")
+Il lato destro della scheda contiene una struttura ad albero che consente di selezionare le schede di testo che dovrebbero essere mostrate negli aeroporti, velivoli utente e velivoli AI / multiplayer.
 
-_**Picture above:** Tab `Map Display`._
+! [Visualizzazione mappa] (../ images / optionmapdisplay.jpg "Visualizzazione mappa")
 
-### Units {#units}
+_ ** Immagine sopra: ** Scheda `Visualizzazione mappa`._
 
-You can change all units that are used by _Little Navmap_ on this tab between nautical, imperial and metric.
-Mixed settings like meter for altitude and nautical miles for distance are possible.
+### Unità {#unità}
 
-Note that any numbers used in the program are not converted when changing units. That means that you will
-have a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation` from feet to meter.
-This also applies to flight plan altitude. Therefore, do not forget to adapt these numbers after changing units.
+Puoi modificare tutte le unità utilizzate da _Little Navmap_ in questa scheda, tra nautica, imperiale e metrica.
+Sono possibili impostazioni miste come metro per l'altitudine e miglia nautiche per  la distanza.
 
-### Simulator Aircraft {#simulator-aircraft}
+Si noti che tutti i numeri utilizzati nel programma non vengono convertiti quando si cambiano unità. Questo significa che avrai
+un buffer di altitudine minima di 1000 metri, dopo aver modificato l'impostazione "Altitudine ed elevazione" da piedi a metro.
+Questo vale anche per l'altitudine del piano di volo. Pertanto, non dimenticare di adattare questi numeri dopo aver cambiato unità.
 
-Allows to change various aspects around the display of the user aircraft. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
 
-### Cache and Files {#cache}
+### Aereo del simulatore {# simulatore-aereo}
 
-#### Map Display {#cache-map-display}
+Permette di cambiare vari aspetti relativamente alla visualizzazione dell'aereo dell'utente. Tutte le impostazioni che determinano una visualizzazione più fluida degli aerei useranno più CPU e possono potenzialmente provocare balbettamenti nel simulatore.
 
-Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles from the online maps like the _OpenStreetMap_, _OpenMapSurfer_  or _OpenTopoMap_.
+### Cache e file {#cache}
 
-All image tiles expire after two weeks and will be reloaded from the online services then.
+#### Visualizzazione mappa {# cache-mappa-visualizzazione}
 
-Note that a reduction of size or erasing the disk cache is done in background and can take a while.
+Qui è possibile modificare la dimensione dello cache nella RAM e sul disco. Questi cache vengono utilizzati per memorizzare le tessere delle immagini scaricate dalle mappe online come _OpenStreetMap_, _OpenMapSurfer_ o _OpenTopoMap_.
 
-The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
+Tutte le tessere dell'immagine scadono dopo due settimane e verranno ricaricate dai servizi online.
 
-The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
+Si noti che una riduzione delle dimensioni o la cancellazione dello cache del disco viene eseguita in background e può richiedere del tempo.
 
-#### Flight Plan Elevation Profile {#cache-elevation}
+Lo cache RAM ha una dimensione minima di 100 MB e una dimensione massima di 2 GB.
 
-The lower part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
+Lo cache del disco ha una dimensione minima di 500 MB e una dimensione massima di 8 GB.
 
-Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
+#### Profilo di elevazione del piano di volo {# cache-elevazione}
 
-![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")
+La parte inferiore di questa scheda consente di installare i dati di elevazione scaricabili liberamente [GLOBE - Global Land One-km Base Elevation Project] (https://ngdc.noaa.gov/mgg/topo/globe.html).
 
-_**Picture above:** Tab `Cache and Files` with properly selected GLOBE elevation data._
+Scarica l'archivio ZIP dal link nella finestra di dialogo ed estrailo. Seleziona la directory estratta usando `Seleziona directory GLOBE ...` in modo che punti ai file da `a10g` a` p10g`. L'avviso nella finestra di dialogo mostrerà un errore se il percorso non è valido.
 
-### Flight Plan {#flight-plan}
+! [GLOBE Dati di elevazione] (../ images / optionelevation.jpg "GLOBE Elevation Data")
 
-Here you can set preferences for flight plan calculation or adjust the rule of thumb for the top of descent display.
+_ ** Immagine sopra: ** Scheda `Cache e file` con i dati di elevazione GLOBE correttamente selezionati ._
 
-### Weather {#weather}
+### Piano di volo {# piano di volo}
 
-You can select the various weather sources that should be shown in the `Information` dock window or in the map
-tooltips.
+Qui puoi impostare le preferenze per il calcolo del piano di volo o adeguare la regola empirica per la visualizzazione del top of descend.
 
-The weather type `Flight Simulator` will either display weather from the FSX or P3D connection or from X-Planes `METAR.rwx` weather file.
+### Meteo {#meteo}
+È possibile selezionare le varie sorgenti meteorologiche che dovrebbero essere visualizzate nella finestra ancorata "Informazioni" o nella mappa suggerimenti.
 
-_Active Sky_ can only be selected if either _Active Sky Next_, _AS16_ or _Active Sky for Prepar3D v4_ are installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
+Il genere meteorologico `Flight Simulator` visualizzerà il meteo dalla connessione FSX o P3D o dal file meteorologico X-Planes` METAR.rwx`.
 
-The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services change the URLs.
+_Active Sky_ può essere selezionato solo se _Active Sky Next_, _AS16_ o _Active Sky for Prepar3D v4_ sono installati o il file meteorologico è dierttamente selezionato. La selezione diretta del file meteorologico _Active Sky_ può essere utile se si esegue un'installazione in rete. Utilizzare le condivisioni di Windows o un servizio cloud per ottenere l'accesso al file sul computer remoto.
 
-The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect to Internet. Check your firewall settings if these fail.
+Gli URL del tempo NOAA e VATSIM possono essere modificati se si desidera utilizzare un'altra fonte o i servizi cambiano gli URL.
 
-![Weather Options](../images/optionsweather.jpg "Weather Options")
+I pulsanti di prova per i servizi meteorologici online possono anche essere utilizzati per scoprire se _Little Navmap_ può connettersi a Internet. Controlla le impostazioni del firewall se falliscono.
 
-_**Picture above:** Tab `Weather` with manually selected Active Sky weather file on a network share._
+! [Opzioni meteo] (../ images / optionsweather.jpg "Opzioni meteo")
 
-### Scenery Library Database {#scenery-library-database}
+_ ** Immagine sopra: ** Scheda `Meteo` con file meteo Active Sky selezionato manualmente su una condivisione di rete._
 
-Allows to configure the loading of the scenery library database.
+### Database delle librerie di scenari {# scenerio-libreria-database}
 
-Note that these paths apply to all Flight Simulators, FSX, P3D and X-Plane.
+Consente di configurare il caricamento del database della libreria degli scenari.
 
-You have to reload the scenery database in order for the changes to
-take effect.
+Si noti che questi percorsi si applicano a tutti i simulatori di volo, FSX, P3D e X-Plane.
 
-#### Select Paths to exclude from loading {#scenery-library-database_exclude}
+È necessario ricaricare il database degli scenari per consentire alle modifiche di
+avere effetto.
 
-All directories including sub-directories in this list will be omitted when loading the scenery
-library into the _Little Navmap_ database. You can also use this list to speed up database loading
-if you exclude directories that do not contain airports or navaids (landclass, elevation data and others).
 
-#### Select Paths to exclude add-on recognition {#scenery-library-database_exclude-add-on}
+#### Seleziona Percorsi da escludere dal caricamento {# scenery-library-database_exclude}
 
-All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be
-highlighted on the map and also considered during search for add-ons.
+Tutte le directory, incluse quelle secondarie in questo elenco, verranno omesse durante il caricamento dello scenario
+libreria nel database _Little Navmap_. È inoltre possibile utilizzare questo elenco per accelerare il caricamento del database
+se si escludono directory che non contengono aeroporti o navaidi (classe di terra, dati di elevazione e altri).
 
-You can use this list to modify this behavior.
+#### Seleziona Percorsi per escludere il riconoscimento del componente aggiuntivo {# scenery-library-database_exclude-add-on}
 
-Add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct certain aspects
-of airports like elevation, magnetic variance or others. All these airports will be recognized as add-on airports
-since all their files are not stored in the base flight simulator `Scenery` directory.
+Tutti i dati di scenario che si trovano al di fuori della directory `Scenery` del simulatore di volo di base sono considerati un componente aggiuntivo e lo saranno
+evidenziato sulla mappa e considerato anche durante la ricerca di componenti aggiuntivi.
 
-Insert the corresponding directory into this list to avoid unwanted highlighting of these airports as add-ons.
+È possibile utilizzare questo elenco per modificare questo comportamento.
 
-![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
+I componenti aggiuntivi, come _Orbx FTX Vector_ o _fsAerodata_, aggiungono file di scenari che correggono determinati aspetti
+di aeroporti come elevazione, varianza magnetica o altro. Tutti questi aeroporti saranno riconosciuti come aeroporti aggiuntivi
+poiché tutti i loro file non sono memorizzati nella directory `Scenery` del simulatore di volo di base.
 
-_**Picture above:** Tab `Scenery Library Database` with three directories excluded from loading and two directories
-excluded from add-on recognition._
+Inserire la directory corrispondente in questo elenco per evitare l'evidenziazione indesiderata di questi aeroporti come componenti aggiuntivi.
 
-#### Examples
+! [Database di librerie di scenari] (../ images / optionscenery.jpg "Database di librerie di scenari")
 
-Provided your simulator is installed in `C:\Games\FSX`.
+_ ** Immagine sopra: ** Scheda `Database libreria scenario` con tre directory escluse dal caricamento e due directory escluse dal riconoscimento del componente aggiuntivo ._
+
+#### Esempi
+
+A condizione che il simulatore sia installato in `C: \ Games \ FSX`.
 
 ##### ORBX Vector
 
-Exclude the directories below from add-on recognition. Do not exclude them from loading since you will see wrong airport altitudes.
+Escludere le directory seguenti dal riconoscimento dei componenti aggiuntivi. Non escluderli dal caricamento poiché vedrai altitudini aeroportuali errate.
 
 * `C:\Games\FSX\ORBX\FTX_VECTOR\FTX_VECTOR_AEC`
 * `C:\Games\FSX\ORBX\FTX_VECTOR\FTX_VECTOR_APT`
@@ -153,7 +148,22 @@ Exclude the directories below from add-on recognition. Do not exclude them from 
 
 ##### Flight1 Ultimate Terrain Europe
 
-Exclude these directories from loading to speed up the process:
+
+#### Esempi
+
+A condizione che il simulatore sia installato in `C: \ Games \ FSX`.
+
+##### ORBX Vector
+
+Escludere le directory seguenti dal riconoscimento dei componenti aggiuntivi. Non escluderli dal caricamento poiché vedrai altitudini aeroportuali errate.
+
+* `C: \ Games \ FSX \ ORBX \ FTX_VECTOR \ FTX_VECTOR_AEC`
+* `C: \ Games \ FSX \ ORBX \ FTX_VECTOR \ FTX_VECTOR_APT`
+
+
+##### Flight1 Ultimate Terrain Europe
+
+Escludere queste directory dal caricamento per accelerare il processo:
 
 * `C:\Games\FSX\Scenery\UtEurAirports`
 * `C:\Games\FSX\Scenery\UtEurGP`
@@ -164,7 +174,7 @@ Exclude these directories from loading to speed up the process:
 
 ##### ORBX Regions
 
-Exclude these directories from loading:
+Escludere queste directory dal caricamento:
 
 * `C:\Games\FSX\ORBX\FTX_NZ\FTX_NZSI_07_MESH`
 * `C:\Games\FSX\ORBX\FTX_NA\FTX_NA_CRM07_MESH`

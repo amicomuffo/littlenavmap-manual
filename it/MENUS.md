@@ -1,704 +1,710 @@
-## Menus and Toolbars {#menus-and-toolbars}
 
-This chapter describes all the menu items of _Little Navmap_. You will find most of this functionality on the toolbars as well which are not be described separately. Key combinations can be seen on the menu items and are not listed in this manual.
+## Menu e barre degli strumenti {# menu-e-barre degli strumenti}
 
-![Little Navmap Menu and Toolbars](../images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
+Questo capitolo descrive tutte le voci di menu di _Little Navmap_. Troverai la maggior parte di questa funzionalità anche sulle barre degli strumenti che non sono descritte separatamente. Le combinazioni di tasti sono visibili nelle voci di menu e non sono elencate in questo manuale.
 
-_**Picture above:** Menu and toolbars docked in default positions._
+! [Menu e barre degli strumenti di Navmap] (../ images / menutoolbar.jpg "Menu e barre degli strumenti di Navmap")
 
-### File Menu {#file-menu}
+_ ** Immagine sopra: ** Menu e barre degli strumenti ancorate nelle posizioni predefinite._
 
-#### ![New Flight Plan](../images/icons/filenew.png "New Flight Plan") New Flight Plan {#new-flight-plan}
+### Menu File {# file-menu}
 
-Erases the current flight plan.
+####! [Nuovo piano di volo] (../ images / icons / filenew.png "Nuovo piano di volo") Nuovo piano di volo {# new-flight-plan}
 
-You have to use the [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu),  the [Map Context Menu](MAPDISPLAY.md#map-context-menu) or the [Flight Plan Route Description](ROUTEDESCR.md) dialog to create a flight plan.
+Cancella l'attuale piano di volo.
 
-#### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Open Flight Plan {#open-flight-plan}
+Devi usare il [Menu contestuale vista tabella risultati ricerca] (SEARCH.md # menu-contesto-ricerca-risultati-tabella-visualizzazione), il [Menu contestuale mappa] (MAPDISPLAY.md # menu-contesto-mappa) o il menu Finestra di dialogo [Descrizione percorso piano di volo] (ROUTEDESCR.md) per creare un piano di volo.
 
-Opens a FSX PLN, a FS9 PLN, a X-Plane FMS or a FLP flight plan file. The type of file is determined by content and not file extension. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
+####! [Apri piano di volo] (../ images / icons / fileopen.png "Apri piano di volo") Apri piano di volo {# open-flight-plan}
 
-An opened flight plan file will be reloaded on start up \(reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab\).
+Apre un PLN FSX, un PLN FS9, un FMS X-Plane o un file del piano di volo FLP. Il tipo di file è determinato dal contenuto e non dall'estensione del file. Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md) per ulteriori informazioni.
 
-Procedure information and ground speed will be added to the flight plan if a PLN file is saved by _Little Navmap_. The additional information will be ignored by FSX or P3D but allows to reload all information by _Little Navmap_.
+Un file del piano di volo aperto verrà ricaricato all'avvio \ (ricaricare e centrare possono essere disattivati nella finestra di dialogo `Opzioni` nella scheda` Avvio` e `Interfaccia utente`).
 
-#### ![Append flight plan](../images/icons/fileappend.png "Append flight plan") Append Flight Plan {#append-flight-plan}
+Le informazioni sulla procedura e la velocità al suolo verranno aggiunte al piano di volo se un file PLN viene salvato da _Little Navmap_. Le informazioni aggiuntive verranno ignorate da FSX o P3D ma consentono di ricaricare tutte le informazioni con _Little Navmap_.
 
-Adds departure, destination and all waypoints to the current flight plan.
+####! [Aggiungi piano di volo] (../ images / icons / fileappend.png "Aggiungi piano di volo") Aggiungi piano di volo {# aggiungi-volo-piano}
 
-Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as required. See [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
+Aggiunge partenza, destinazione e tutti i waypoint al piano di volo corrente.
 
-All arrival procedures will be removed when appending a flight plan.
+L'uso di "Aggiungi piano di volo" consente di caricare o unire piani di volo completi o frammenti di piani di volo in un nuovo piano. Tutti i waypoint vengono aggiunti alla fine del piano di volo corrente. Quindi è possibile utilizzare le voci del menu contestuale `Elimina tratti selezionati` e` Sposta tratti selezionati su / giù` per disporre i waypoint e gli aeroporti come richiesto. Vedi [Menu contestuale vista tabella piano di volo] (FLIGHTPLAN.md # menu contestuale vista-piano-tabella-volo).
 
-#### ![Save Flight Plan](../images/icons/filesave.png "Save Flight Plan") Save Flight Plan {#save-flight-plan}
+Tutte le procedure di arrivo verranno rimosse quando si aggiunge un piano di volo.
 
-#### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Save Flight Plan as PLN {#save-flight-plan-as}
+####! [Salva piano di volo] (../ images / icons / filesave.png "Salva piano di volo") Salva piano di volo {# salva-volo-piano}
 
-Saves the flight plan to a FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*.
+####! [Salva piano di volo come PLN] (../ images / icons / filesaveas.png "Salva piano di volo come PLN") Salva piano di volo come PLN {# save-flight-plan-as}
 
-`Save Flight Plan as PLN` changes the current file type and name in *Little Navmap* which means that all further saves will go into the new PLN file.
+Salva il piano di volo in un file PLN FSX / P3D \ (formato XML \). Questo formato con annotazioni consente di salvare tutti gli attributi del piano di volo di * Little Navmap *.
 
-It is recommended to save all flight plans in this format to keep all information of a plan. Even when using the limited FMS format for X-Plane. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
+"Salva piano di volo come PLN" modifica il tipo e il nome del file corrente in * Little Navmap *, il che significa che tutti gli ulteriori salvataggi andranno nel nuovo file PLN.
 
-_Little Navmap_ will allow flight plans to be created that may be useful as a flight plan snippet but are unusable by the flight simulator. This occurs if a flight plan does not have a departure or destination airport. A warning dialog will be shown when saving a incomplete flight plan.
+Si consiglia di salvare tutti i piani di volo in questo formato per conservare tutte le informazioni di un piano. Anche quando si utilizza il formato FMS limitato per X-Plane. Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md) per ulteriori informazioni.
 
-A warning dialog will also be shown if the departure airport has parking positions but none is assigned in the flight plan.
+_Little Navmap_ consentirà la creazione di piani di volo che possono essere utili come frammenti di piani di volo, ma che sono inutilizzabili dal simulatore di volo. Ciò si verifica se un piano di volo non ha un aeroporto di partenza o di destinazione. Una finestra di avviso verrà visualizzata quando si salva un piano di volo incompleto.
 
-Procedures will be saved as an annotation in the flight plan file if the flight plan contains any. This causes no problem for the simulators and most other programs. Use [Export clean Flight Plan](MENUS.md#export-clean-flight-plan) if a program has problems reading the PLN files saved by _Little Navmap_.
+Verrà inoltre visualizzata una finestra di avviso se l'aeroporto di partenza ha posizioni di parcheggio ma nessuna è assegnata nel piano di volo.
 
-Note that the waypoints of a procedure are not saved with the flight plan. This is not supported by FSX or P3D. Use the GPS, FMC or other ways to select a procedure in your aircraft.
+Le procedure verranno salvate come annotazione nel file del piano di volo se il piano di volo ne contiene. Ciò non causa problemi ai simulatori e alla maggior parte degli altri programmi. Utilizzare [Esporta piano di volo pulito] (MENUS.md # exporta-pulito-volo-piano) se un programma ha problemi a leggere i file PLN salvati da _Little Navmap_.
 
-The set ground speed is also saved with the flight plan.
+Si noti che i waypoint di una procedura non vengono salvati con il piano di volo. Questo non è supportato da FSX o P3D. Utilizzare il GPS, FMC o altri modi per selezionare una procedura sul proprio velivolo.
 
-#### ![Save Flight Plan as X-Plane FMS 11](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS 11") Save Flight Plan as X-Plane FMS 11 {#save-flight-plan-as-fms11}
+Anche la velocità di avanzamento impostata viene salvata con il piano di volo.
 
-Saves the flight plan using the new X-Plane FMS 11 format. **This format can only be used in X-Plane 11.10 and above. Do not try to load it into the FMS or GPS of X-Plane 11.05. It might crash the simulator.**
+####! [Salva piano di volo come X-Plane FMS 11] (../ images / icons / saveasfms.png "Salva piano di volo come X-Plane FMS 11") Salva piano di volo come X-Plane FMS 11 {# Salva-volo-piano-come-fms11}
 
-A warning dialog will be shown with the warning above when saving.
+Salva il piano di volo utilizzando il nuovo formato X-Plane FMS 11.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+** Questo formato può essere utilizzato solo in X-Plane 11.10 e versioni successive. Non tentare di caricarlo nell'FMS o GPS dell'X-Plane 11.05. Potrebbe causare l'arresto anomalo del simulatore. **
 
-This function changes the current file type and name which means that all further saves will go into the new FMS file and the file will be reloaded on next start.
+Una finestra di avviso verrà mostrata con sopra l'avviso durante il salvataggio.
 
-Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS, the G1000 or the FMS.
+Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md) per ulteriori informazioni sulle limitazioni.
 
-#### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
+Questa funzione modifica il tipo e il nome del file corrente, il che significa che tutti gli altri salvataggi andranno nel nuovo file FMS e il file verrà ricaricato al prossimo avvio.
 
-Exports the current flight plan as a FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan.
+Conservare i file FMS nella directory "Output / Piani FMS" all'interno della directory X-Plane se si desidera utilizzare il piano di volo in X-Plane GPS, G1000 o FMS.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+####! [Salva piano di volo FLP] (../ images / icons / saveasflp.png "Salva piano di volo FLP") Salva piano di volo come FLP {# salva-volo-piano-come-flp}
 
-This function changes the current file type and name which means that all further saves will go into the new FLP file and the file will be reloaded on next start.
+Esporta l'attuale piano di volo come file FLP utilizzabile da X-Plane FMS, Aerosoft Airbus e altri aeromobili aggiuntivi. Questo formato è limitato, quindi viene visualizzata una finestra di dialogo se vengono rilevate funzionalità non supportate nel piano di volo corrente.
 
-Store FLP files into the `Output/FMS plans` directory inside the X-Plane directory if you want to load it into the FMS.
+Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md) per ulteriori informazioni sulle limitazioni.
 
-#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Export as Clean PLN {#export-clean-flight-plan}
+Questa funzione modifica il tipo e il nome del file corrente, il che significa che tutti gli altri salvataggi andranno nel nuovo file FLP e il file verrà ricaricato al prossimo avvio.
 
-Saves a flight plan without any procedure or speed annotations if programs have problems reading the PLN files saved by _Little Navmap_. This is rarely needed.
+Memorizzare i file FLP nella directory "Output / FMS piani" all'interno della directory X-Plane se si desidera caricarli nell'FMS.
 
-Like any other export function this does not change the current file name and type. Further saves will still use the same file name and format as before.
+####! [Esporta come PLN pulito] (../ images / icons / filesaveclean.png "Esporta come PLN pulito") Esporta come PLN pulito {# esporta-pulito-volo-piano}
 
-See also [Flight Plan Formats](FLIGHTPLANFMT.md).
+Salva un piano di volo senza alcuna procedura o velocizza le annotazioni se i programmi hanno problemi a leggere i file PLN salvati da _Little Navmap_. Questo raramente è necessario.
 
-#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Export Flight Plan as X-Plane FMS 3 {#export-flight-plan-as-fms3}
+Come qualsiasi altra funzione di esportazione, questo non cambia il nome e il tipo di file corrente. Ulteriori salvataggi continueranno a utilizzare lo stesso nome e formato di file di prima.
 
-Saves the flight plan using the older X-Plane FMS 3 format which is limited but can be loaded by X-Plane 10 and X-Plane 11.05. A warning dialog is shown if any unsupported features are detected in the current flight plan.
+Vedi anche [Formati del piano di volo] (FLIGHTPLANFMT.md).
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+####! [Esporta piano di volo come X-Plane FMS 3] (../ images / icons / saveasfms.png "Esporta piano di volo come X-Plane FMS 3") Esporta piano di volo come X-Plane FMS 3 {# esporta-volo-piano-come-fms3}
 
-This export function this does not change the current file name and type. Further saves will still use the same file name and format as before.
+Salva il piano di volo utilizzando il vecchio formato X-Plane FMS 3 che è limitato, ma può essere caricato da X-Plane 10 e X-Plane 11.05. Viene visualizzata una finestra di avviso, se vengono rilevate funzionalità non supportate nel piano di volo corrente.
 
-Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS or FMS.
+Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md) per ulteriori informazioni sulle limitazioni.
 
-#### Export Sub-Menu {#export-submenu}
+Questa funzione di esportazione non modifica il nome e il tipo del file corrente. Ulteriori salvataggi utilizzeranno comunque lo stesso nome e formato di file di prima.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
+Conservare i file FMS nella directory "Output / Piani FMS" all'interno della directory X-Plane se si desidera utilizzare il piano di volo in X-Plane GPS o FMS.
 
-Export functions do not change the current file name and type. Further saves will still use the same file name and format as before.
+#### Esporta sottomenu {# esporta-sottomenu}
 
-##### Export Flight Plan to FPL for the Reality XP GNS {#save-flight-plan-as-rxpgns}
+Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md) per informazioni più dettagliate sui formati di esportazione disponibili.
 
-Save flight plan as FPL file usable by the _Reality XP GNS 530W/430W V2_.
+Le funzioni di esportazione non cambiano il nome e il tipo del file corrente. Ulteriori salvataggi utilizzeranno comunque lo stesso nome e formato di file di prima.
 
-Procedures or their respective waypoints are not included in the exported file.
+##### Esporta piano di volo in FPL per Reality XP GNS {# salva-volo-piano-come-rxpgns}
 
-The default directory to save the flight plans for the GNS units is
-`C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+Salva il piano di volo come file FPL utilizzabile da _Reality XP GNS 530W / 430W V2_.
 
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
+Le procedure oi rispettivi punti di passaggio non sono inclusi nel file esportato.
 
-##### Export Flight Plan as GFP for Reality XP GTN {#save-flight-plan-as-rxpgtn}
+La directory predefinita per salvare i piani di volo per le unità GNS è
+`C: \ ProgramData \ Garmin \ GNS Trainer Data \ GNS \ FPL`
+per tutti i simulatori. La directory verrà creata automaticamente da _Little Navmap_ alla prima esportazione, se non esiste.
 
-Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_. This format allows to save procedures and airways.
+Vedi anche [Note sui formati Garmin GFP e FPL] (FLIGHTPLANFMT.md # garmin-notes).
 
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes) for information about paths and other remarks.
+##### Esporta piano di volo come GFP per Reality XP GTN {# salva-volo-piano-come-rxpgtn}
 
-##### Export Flight Plan as Garmin GTN GFP {#save-flight-plan-as-gfp}
+Salva il piano di volo come file GFP utilizzabile dal _Reality XP GTN 750/650 Touch_. Questo formato consente di salvare procedure e vie aeree.
 
-Exports the flight plan in GFP format used by the _Flight1 GTN 650/750_.
+Vedere anche [Note sui formati Garmin GFP e FPL] (FLIGHTPLANFMT.md # garmin-notes) per informazioni sui percorsi e altre osservazioni.
 
-Procedures or their respective waypoints are not included in the exported file.
+##### Esporta piano di volo come Garmin GTN GFP {# salva-volo-piano-come-gfp}
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md#flight-plan-formats-gfp) for more information about this export format and how to work around locked waypoints.
+Esporta il piano di volo in formato GFP utilizzato da _Flight1 GTN 650 / 750_.
 
-##### Export Flight Plan as PMDG RTE {#export-flight-plan-as-rte}
+Le procedure oi rispettivi punti di passaggio non sono inclusi nel file esportato.
 
-Exports the current flight plan as a PMDG RTE file.
+Vedere [Formati del piano di volo] (FLIGHTPLANFMT.md # flight-plan-format-gfp) per ulteriori informazioni su questo formato di esportazione e su come aggirare i waypoint bloccati.
 
-Procedures or their respective waypoints are not included in the exported file.
+##### Esporta piano di volo come PMDG RTE {# esporta-volo-piano-come-rte}
 
-##### Export Flight Plan as TXT {#export-flight-plan-as-txt}
+Esporta il piano di volo corrente come file RTE PMDG.
 
-Exports the current flight plan as a TXT file usable by JARDesign or Rotate Simulations aircraft
 
-Neither procedures nor their respective waypoints are included in the exported file.
+Le procedure oi rispettivi punti di passaggio non sono inclusi nel file esportato.
 
-##### Export Flight Plan as Majestic Dash FPR {#export-flight-plan-as-fpr}
+##### Esporta piano di volo come TXT {# esporta-volo-piano-come-txt}
 
-Exports the current flight plan for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints.
+Esporta l'attuale piano di volo come file TXT utilizzabile dagli aerei JARDesign o Rotate Simulation
 
-The flight plan has to be saved to `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\nav\routes`.
+Né le procedure né i rispettivi waypoint sono inclusi nel file esportato.
 
-##### Export Flight Plan as IXEG FPL {#export-flight-plan-as-fpl}
+##### Esporta piano di volo come Majestic Dash FPR {# esporta-volo-piano-come-fpr}
 
-Exports the current flight plan as a FPL file usable by the IXEG Boeing 737 classic.
+Esporta l'attuale piano di volo per Majestic Software MJC8 Q400. Si noti che l'esportazione è attualmente limitata a un elenco di waypoint.
 
-SIDs, STARs or approach procedures are not exported.
+Il piano di volo deve essere salvato in `YOURSIMULATOR \ SimObjects \ Airplanes \ mjc8q400 \ nav \ route`.
 
-The file should be saved to `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroutes`. You might have to create the directory manually if it does not exist.
+##### Esporta piano di volo come IXEG FPL {# esporta-volo-piano-come-fpl}
 
-##### Export Flight Plan to corte.in for Flight Factor Airbus {#export-flight-plan-as-fpl}
+Esporta l'attuale piano di volo come file FPL utilizzabile dal classico IXEG Boeing 737.
 
-Appends the the flight plan to a new or already present `corte.in` company routes file for the Flight Factor Airbus aircraft.
+SID, STAR o procedure di avvicinamento non vengono esportati.
 
-The file will be automatically created if it does not exist. Otherwise the flight plan will be appended to the file. You have to remove the flight plan manually from the `corte.in` file with a simple text editor if you wish to get rid of it.
+Il file deve essere salvato in `XPLANE \ Aircraft \ X-Aviation \ IXEG 737 Classic \ coroutes`. Potrebbe essere necessario creare la directory manualmente se non esiste.
 
-Location of the file depends on aircraft type.
+##### Esporta piano di volo in corte.in per Flight Factor Airbus {# esporta-volo-piano-come-fpl}
 
-##### Export Flight Plan as GPX {#export-flight-plan-as-gpx}
+Aggiunge il piano di volo a un file di rotte di compagnia `corte.in` nuovo o già presente per l'aereo Airbus Flight Factor.
+Il file verrà creato automaticamente se non esiste. In caso contrario, il piano di volo verrà aggiunto al file. Devi rimuovere manualmente il piano di volo dal file `corte.in` con un semplice editor di testo se vuoi sbarazzartene.
 
-Exports the current flight plan into a GPS Exchange Format file which can be read by Google Earth and most other GIS applications.
+La posizione del file dipende dal tipo di aeromobile.
 
-The flight plan is exported as a route and the flown aircraft trail as a track including simulator time and altitude.
+##### Esporta piano di volo come GPX {# esporta-volo-piano-come-gpx}
 
-The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
+Esporta l'attuale piano di volo in un file di formato di scambio GPS che può essere letto da Google Earth e dalla maggior parte delle altre applicazioni GIS.
 
-**Do not forget to clear the aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
+Il piano di volo viene esportato come rotta e la rotta dell'aeromobile in volo come traccia includendo il tempo e l'altitudine del simulatore.
 
-#### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
+Il percorso ha un'altitudine di partenza e di destinazione e un'altitudine di crociera impostata per tutti i waypoint. I waypoint di tutte le procedure sono inclusi nel file esportato. Si noti che i waypoint non consentiranno di riprodurre tutte le parti di una procedura come le prese o le svolte della procedura.
 
-Allows addition of one or more Google Earth KML or KMZ files to the map display. All added KML or KMZ files will be reloaded on start up. Reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab.
+** Non dimenticare di cancellare la pista dell'aeromobile \ ([Cancella la traccia dell'aereo] (MENUS.md # cancella-aereo-traccia) \) prima del volo, per evitare i vecchi segmenti di pista nel file GPX esportato. Oppure, disabilitare il ricaricamento del percorso nella finestra di dialogo delle opzioni sulla pagina ** `Avvio` **. **
 
-Due to the variety of KML files it is not guaranteed that all files will show up properly on the map.
+####! [Aggiungi Google Earth KML] (../ images / icons / kmlfileopen.png "Aggiungi Google Earth KML") Aggiungi Google Earth KML {# aggiungi-google-earth-kml}
 
-#### ![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map") Clear Google Earth KML from Map {#clear-google-earth-kml-from-map}
+Consente l'aggiunta di uno o più file KML o KMZ di Google Earth alla visualizzazione della mappa. Tutti i file KML o KMZ aggiunti verranno ricaricati all'avvio. Ricarica e centratura possono essere disattivate ​​nella finestra di dialogo `Opzioni` nella scheda` Avvio` e `Interfaccia utente`.
 
-Removes all loaded KML files from the map.
+A causa della varietà di file KML, non è garantito che tutti i file vengano visualizzati correttamente sulla mappa.
 
-#### ![Offline](../images/icons/offline.png "Offline") Work Offline {#work-offline}
+####! [Cancella KML di Google Earth dalla mappa] (../ images / icons / cancel.png "Cancella KML di Google Earth dalla mappa") Cancella KML di Google Earth dalla mappa {# cancella-google-earth-kml-dalla -carta geografica}
 
-Stops loading of map data from the Internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
-A red `Offline.` indication is shown in the status bar if this mode is enabled.
+Rimuove tutti i file KML caricati dalla mappa.
 
-You should restart the application after going online again.
+####! [Offline] (../ images / icons / offline.png "Offline") Lavora offline {# lavora-offline}
 
-### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Save Map as Image {#save-map-as-image}
+Interrompe il caricamento dei dati della mappa da Internet. Ciò influisce su _OpenStreetMap_, _OpenTopoMap_ e su tutti gli altri temi delle mappe online, nonché i dati di elevazione.
+Un'indicazione rossa "Offline" viene visualizzata nella barra di stato se questa modalità è abilitata.
 
-Saves the current map view as an image file. Allowed formats are JPEG, PNG and BMP.
+È necessario riavviare l'applicazione dopo essere tornati online.
 
-### ![Print Map](../images/icons/printmap.png "Print Map") Print Map {#print-map}
+###! [Salva mappa come immagine] (../ images / icons / mapsaveasimage.png "Salva mappa come immagine") Salva mappa come immagine {# salva-mappa-come-immagine}
 
-Allows to print the current map view. See [Printing the Map](PRINT.md#printing-the-map) for more information.
+Salva la vista della mappa corrente come file immagine. I formati consentiti sono JPEG, PNG e BMP.
 
-### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan {#print-flight-plan}
+###! [Stampa mappa] (../ images / icons / printmap.png "Stampa mappa") Stampa mappa {# stampa-mappa}
 
-Opens a print dialog that allows you to select flight plan related information to be printed. See [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan) for more information.
+Consente di stampare la vista della mappa corrente. Vedere [Stampa della mappa] (PRINT.md # stampa-la-mappa) per ulteriori informazioni.
 
-### ![Quit](../images/icons/application-exit.png "Quit") Quit {#file-quit}
+###! [Stampa piano di volo] (../ images / icons / printflightplan.png "Stampa piano di volo") Stampa piano di volo {# stampa-volo-piano}
 
-Exits the application. Will ask for confirmation if there is a changed flight plan.
+Apre una finestra di dialogo di stampa che consente di selezionare le informazioni relative al piano di volo da stampare. Vedere [Stampa piano di volo mappa] (PRINT.md # stampa-il-piano-volo) per ulteriori informazioni.
 
-### Flight Plan Menu {#flight-plan-menu}
+###! [Esci] (../ images / icons / application-exit.png "Esci") Esci {# file-esci}
 
-#### ![Undo](../images/icons/undo.png "Undo")![Redo](../images/icons/redo.png "Redo") Undo/Redo {#undo-redo}
+Esce dall'applicazione. Chiederà conferma se c'è un piano di volo modificato.
 
-Allows undo and redo of all flight plan changes.
+### Menu del piano di volo {# volo-piano-menu}
 
-#### ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure") Select a Start Position for Departure {#select-a-start-position-for-departure}
+####! [Annulla] (../ images / icons / undo.png "Annulla")! [Ripeti] (../ images / icons / redo.png "Ripeti") Annulla / Ripeti {# annulla-ripeti }
 
-A parking spot \(gate, ramp or fuel box\), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
+Consente di annullare e ripetere tutte le modifiche del piano di volo.
 
-![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
+####! [Seleziona una posizione iniziale per la partenza] (../ images / icons / parkingstartset.png "Seleziona una posizione iniziale per la partenza") Seleziona una posizione iniziale per la partenza {# seleziona-una-partenza-posizione-per-partenza}
 
-_**Picture above:** The start position selection dialog for EDDN._
+Un posto di parcheggio \ (gate, rampa o serbatoio di carburante \), pista o eliporto può essere selezionato come posizione di inizio all'aeroporto di partenza. Una posizione di parcheggio può anche essere selezionata nella voce di menu contestuale della mappa [Imposta come partenza piano di volo] (MAPDISPLAY.md # imposta-come-piano-di-partenza-volo) quando si fa clic con il tasto destro su una posizione di parcheggio. Se non viene selezionata alcuna posizione, la fine della pista primaria più lunga viene selezionata automaticamente come inizio.
 
-#### ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map") Edit Flight Plan on Map {#edit-flight-plan-on-map}
+! [Seleziona la finestra di dialogo Posizione iniziale] (../ images / selectstartposition.jpg "Seleziona la finestra di dialogo Posizione iniziale")
 
-Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing).
 
-#### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") New Flight Plan from Route Description {#new-flight-plan-from-description}
+_ ** Immagine sopra: ** La finestra di dialogo per la selezione della posizione iniziale per EDDN._
 
-Opens a dialog with the route description of the current flight plan that also allows to modify the current flight plan or enter a new one.
-[Flight Plan from Route Description](ROUTEDESCR.md) gives more information about this topic.
+####! [Modifica piano di volo sulla mappa] (../ images / icons / routeedit.png "Modifica piano di volo sulla mappa") Modifica piano di volo sulla mappa {# modifica-piano-volo-sulla-mappa}
 
-#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copy Flight Plan Route to Clipboard {#flight-plan-route-clipboard}
+Attiva o disattiva la modalità di modifica del piano di volo sulla mappa. Vedi [Modifica del piano di volo] (MAPFPEDIT.md # modifica del piano di volo mappa).
 
-Copies the route description of the current flight plan to the clipboard using the settings from the [Flight Plan from Route Description](ROUTEDESCR.md#flight-plan-from-route-description) dialog.
+####! [Nuovo piano di volo dalla descrizione del percorso] (../ images / icons / newroutefromstring.png "Nuovo piano di volo dalla descrizione del percorso") Nuovo piano di volo dalla descrizione del percorso {# nuovo-volo-piano-da-descrizione }
 
-#### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Calculate Direct {#calculate-direct}
+Apre una finestra di dialogo con la descrizione del percorso del piano di volo corrente che consente anche di modificare il piano di volo corrente o inserirne uno nuovo.
+[Piano di volo dalla descrizione del percorso] (ROUTEDESCR.md) fornisce ulteriori informazioni su questo argomento.
 
-Deletes all intermediate waypoints and connects departure and destination using a great circle line.
+####! [Copia il percorso del piano di volo negli Appunti] (../ images / icons / routestring.png "Copia il percorso del piano di volo negli Appunti") Copia il percorso del piano di volo negli Appunti {# volo-piano-rotta-appunti}
 
-You can calculate a flight plan between any kind of waypoints, even user defined waypoints \(right click on the map and select `Add Position to Flight plan` to create one\). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
+Copia la descrizione del percorso del piano di volo corrente negli Appunti utilizzando le impostazioni della finestra di dialogo [Piano di volo dalla descrizione del percorso] (ROUTEDESCR.md # piano di volo-da-percorso-descrizione).
 
-#### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Calculate Radionav {#calculate-radionav}
+####! [Calcola diretto] (../ images / icons / routedirect.png "Calcola diretto") Calcola diretto {# calcola-diretto}
 
-Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME only stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Build the flight plan manually if this is the case.
+Elimina tutti i waypoint intermedi e collega la partenza e la destinazione utilizzando una grande linea circolare.
 
-This calculation can also be used to create a flight plan snippet between any kind of waypoint.
+È possibile calcolare un piano di volo tra qualsiasi tipo di waypoint, anche waypoint definiti dall'utente \ (fare clic con il tasto destro sulla mappa e selezionare `Aggiungi posizione al piano di volo` per crearne uno \). Ciò consente la creazione di frammenti che possono essere uniti in piani di volo. Ad esempio è possibile utilizzare questa funzione per attraversare il Nord Atlantico con diverse partenze e destinazioni. Questo vale per tutte le modalità di calcolo del piano di volo.
 
-#### ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude") Calculate high Altitude {#calculate-high-altitude}
+####! [Calcolate la Radionavigazione] (../ images / icons / routeradio.png "Calcolate la  Radionavigazione") Calcolate la Radionavigazione {# calcola-radionavigazione}
+Crea un piano di volo che utilizza solo stazioni VOR e NDB come waypoint e cerca di garantire la ricezione di almeno una stazione, lungo l'intero piano di volo. Si noti che le stazioni VOR sono preferite prima delle stazioni NDB e DME, che, se possibile, sono evitate. Il calcolo fallirà se non si trovano abbastanza radio aiuti tra la partenza e la destinazione. Costruisci il piano di volo manualmente se questo è il caso.
 
-Uses Jet airways to create a flight plan.
+Questo calcolo può essere utilizzato anche per creare un frammento del piano di volo tra qualsiasi tipo di waypoint.
 
-Calculated flight plans along airways will obey all airway restrictions like minimum and altitude. The program will also adhere to one-way and maximum altitude restrictions for X-Plane based navdata.
+####! [Calcola altitudine elevata] (../ images / icons / routehigh.png "Calcola altitudine elevata") Calcola altitudine elevata {# calcola-altitudine elevata}
 
-The resulting minimum altitude is set into the flight plan altitude field. The flight plan altitude field is not changed if no altitude restrictions were found along the flight plan.
+Utilizza le vie aeree Jet per creare un piano di volo.
 
-A simplified east/west rule is used to adjust the cruise altitude to odd/even values \(this can be switched off in the `Options` dialog on the `Flight Plan` tab\).
+I piani di volo calcolati lungo le vie aeree obbediranno a tutte le restrizioni sulle vie aeree come il minimo e l'altitudine. Il programma aderirà anche alle restrizioni di sola andata e di altitudine massima per i navdata basati su X-Plane.
 
-The default behavior is to jump from the departure airport to the next waypoint of a suitable airway and vice versa for the destination. This can be changed in `Options` dialog on the `Flight Plan` tab if VOR or NDB stations are preferred as transition points to airways.
+L'altitudine minima risultante viene impostata nel campo dell'altitudine del piano di volo. Il campo di altitudine del piano di volo non viene modificato se non sono state rilevate restrizioni di altitudine lungo il piano di volo.
 
-The airway network of Flight Simulator is not complete \(the north Atlantic tracks are missing for example - these change daily\), therefore calculation across large ocean areas can fail.
+Una regola est / ovest semplificata viene utilizzata per regolare l'altitudine di crociera su valori pari / dispari \ (questo può essere disattivato nella finestra di dialogo `Opzioni` nella scheda` Piano di volo` \).
 
-Create the airway manually as a workaround or use an online planning tool to obtain a route string and use the `New Flight Plan from String` option to create the flight plan.
+Il comportamento predefinito è saltare dall'aeroporto di partenza al successivo waypoint di una via aerea adatta e viceversa per la destinazione. Questo può essere modificato nella finestra di dialogo "Opzioni" nella scheda "Piano di volo" se si preferiscono le stazioni VOR o NDB come punti di transizione alle vie aeree.
 
-This calculation can also be used to create a flight plan snippet between any kind of waypoint.
+La rete delle vie aeree di Flight Simulator non è completa \ (mancano ad esempio le piste del Nord Atlantico - queste cambiano quotidianamente \), quindi il calcolo su grandi aree oceaniche può fallire.
 
-#### ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude") Calculate low Altitude {#calculate-low-altitude}
+Creare manualmente le vie aeree come soluzione alternativa o utilizzare uno strumento di pianificazione online per ottenere una stringa di rotta, utilizzare l'opzione `Nuovo piano di volo da stringa` per creare il piano di volo.
 
-Uses Victor airways to create a flight plan. Everything else is the same as in `Calculate high Altitude`.
+Questo calcolo può essere utilizzato anche per creare un frammento del piano di volo tra qualsiasi tipo di waypoint.
 
-#### ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude") Calculate based on given Altitude {#calculate-based-on-given-altitude}
+####! [Calcola bassa altitudine] (../ images / icons / routelow.png "Calcola bassa altitudine") Calcola bassa altitudine {# calcola-bassa altitudine}
 
-Use the value in the altitude field of the flight plan to find a flight plan along Victor and/or Jet airways. Calculation will fail if the altitude value is too low. Everything else is the same as in `Calculate high Altitude`.
+Utilizza le vie aeree Victor per creare un piano di volo. Tutto il resto è uguale a "Calcola altitudine elevata".
 
-#### ![Reverse Flight Plan](../images/icons/routereverse.png "Reverse Flight Plan") Reverse Flight Plan {#reverse-flight-plan}
+####! [Calcola in base a una determinata altitudine] (../ images / icons / routealt.png "Calcola in base a una determinata altitudine") Calcola in base a una determinata altitudine {# calcola in base a una determinata altitudine}
 
-Swaps departure and destination and reverses order of all intermediate waypoints. A default runway is assigned for the new departure start position.
+Utilizzare il valore nel campo dell'altitudine del piano di volo per trovare un piano di volo lungo le vie aeree Victor e / o Jet. Il calcolo fallirà se il valore dell'altitudine è troppo basso. Tutto il resto è uguale a "Calcola altitudine elevata".
 
-Note that this function does not consider one-way airways in the X-Plane database and might result in an invalid flight plan.
+####! [Piano di volo inverso] (../ images / icons / routereverse.png "Piano di volo inverso") Piano di volo inverso {# inverso-volo-piano}
 
-#### ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png "Adjust Flight Plan Altitude") Adjust Flight Plan Altitude {#adjust-flight-plan-alt}
+Scambia la partenza e la destinazione e inverte l'ordine di tutti i waypoint intermedi. Viene assegnata una pista predefinita per la nuova posizione di partenza di partenza.
 
-Changes the flight plan altitude according to a simplified East/West rule and the current route type \(IFR or VFR\). Rounds the altitude up to the nearest even 1000 feet \(or meter\) for westerly flight plans or odd 1000 feet \(or meter\) for easterly flight plans. Adds 500 feet for VFR flight plans.
+Si noti che questa funzione non considera le vie aeree a senso unico nel database X-Plane e potrebbe comportare un piano di volo non valido.
 
-### Map Menu {#map-menu}
+####! [Regola l'altitudine del piano di volo] (../ images / icons / routeadjustalt.png "Regola l'altitudine del piano di volo") Regola l'altitudine del piano di volo {# regola-volo-piano-alt}
 
-#### ![Goto Home](../images/icons/home.png "Goto Home") Goto Home {#goto-home}
+Modifica l'altitudine del piano di volo in base a una regola est / ovest semplificata e al tipo di rotta corrente \ (IFR o VFR \). Arrotonda l'altitudine fino al più vicino valore pari a 1000 piedi \ (o metro \) per i piani di volo occidentali o dispari 1000 piedi \ (o metro \) per i piani di volo orientali. Aggiunge 500 piedi per i piani di volo VFR.
 
-Goes to the home area that was set using [Set Home](MAPDISPLAY.md#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
+### Menu Mappa {# mappa-menu}
 
-#### ![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search") Go to Center for Distance Search {#go-to-center-for-distance-search}
+####! [Vai a Home] (../ images / icons / home.png "Vai a Home") Vai a Home {# vai a-home}
 
-Go to the center point used for distance searches. See [Set Center for Distance Search](MAPDISPLAY.md#set-center-for-distance-search).The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
+Passa all'area di Home impostata utilizzando [Imposta home] (MAPDISPLAY.md # imposta-home) utilizzando la posizione salvata e la distanza di zoom. Il centro dell'area di home è evidenziato da un simbolo! [Simbolo di home] (../immagine / icone / homesymbol.png "Simbolo di home").
 
-#### ![Center Flight Plan](../images/icons/centerroute.png "Center Flight Plan") Center Flight Plan {#center-flight-plan}
+####! [Vai al centro per la ricerca della distanza] (../ images / icons / centermark.png "Vai al centro per la ricerca della distanza") Vai al centro per la ricerca della distanza {# vai-al-centro-per-distanza-ricerca}
 
-Zooms out the map \(if required\) to display the whole flight plan on the map.
+Vai al punto centrale utilizzato per le ricerche a distanza. Vedi [Imposta centro per la ricerca della distanza] (MAPDISPLAY.md # stabilire-centro-per-distanza-ricerca). Il centro per la ricerca della distanza è evidenziato da un! [Simbolo di ricerca della distanza] (../immagine / icone / segno di distanza. png "Simbolo ricerca distanza").
 
-#### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Center Aircraft {#center-aircraft}
+####! [Centro piano di volo] (../ images / icons / centerroute.png "Centro piano di volo") Piano di volo centra {# centra-volo-piano}
 
-Zooms to the user aircraft if directly connected to a flight simulator or remotely connected using [Little Navconnect](https://albar965.github.io/littlenavconnect.html) and keeps the aircraft centered on the map.
+Ingrandisce la mappa \ (se necessario \) per visualizzare l'intero piano di volo sulla mappa.
 
-The centering of the aircraft can be changed in the `Options` dialog on the `Simulator Aircraft` tab.
+####! [Centra Aereo] (../ images / icons / centeraircraft.png "Centra Aereo") Centra Aereo {# centra-aereo}
 
-#### ![Reset Display Settings](../images/icons/centeraircraft.png "Reset Display Settings") Reset Display Settings {#reset-display-settings}
+Esegue lo zoom sull'aeromobile dell'utente se collegato direttamente a un simulatore di volo o connesso in remoto tramite [Little Navconnect] (https://albar965.github.io/littlenavconnect.html) e mantiene l'aereo centrato sulla mappa.
 
-Resets all map display settings back to default.
+Il centraggio dell'aereo può essere modificato nella finestra di dialogo "Opzioni" nella scheda "aereo del simulatore".
 
-![By Reset Affected Settings](../images/resetdisplaysettings.jpg "By Reset Affected Settings")
+####! [Ripristina impostazioni di visualizzazione] (../ images / icons / centeraircraft.png "Ripristina impostazioni di visualizzazione") Ripristina impostazioni di visualizzazione {# ripristina-schermo-settaggi}
 
-_**Picture above:** All setting tool buttons highlighted that are affected by _`Reset Display Settings`_._
+Ripristina tutte le impostazioni di visualizzazione della mappa ai valori predefiniti.
 
-#### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Delete Aircraft Trail {#delete-aircraft-trail}
+! [Ripristina impostazioni interessate] (../ images / resetdisplaysettings.jpg "Ripristina impostazioni interessate")
 
-Removes the user aircraft trail. It is also deleted when connecting to a flight simulator. The trail is saved and will be reloaded on program startup.
+_ ** Immagine sopra: ** Tutti i pulsanti dello strumento di impostazione evidenziati che sono interessati da _`Ripristina schermo Settaggi` _._
 
-#### ![Map Position Back](../images/icons/back.png "Map Position Back") ![Map Position Forward](../images/icons/next.png "Map Position Forward") Map Position Back/Forward {#map-position-back-forward}
+####! [Elimina percorso aereo] (../ images / icons / aircrafttraildelete.png "Elimina percorso aereo") Elimina percorso aereo {# elimina-aereo-percorso}
 
-Jumps forward or backward in the map position history. The complete history is saved and restored when starting _Little Navmap_.
+Rimuove la traccia dell'aeromobile dell'utente. Viene inoltre eliminato durante la connessione a un simulatore di volo. Il percorso viene salvato e verrà ricaricato all'avvio del programma.
 
-#### Details
+####! [Tornare  indietro sulla mappa] (../ images / icons / back.png "Tornare indietro sulla mappa")! [Posizione della mappa in avanti] (../ images / icons / next.png "Posizione della mappa in avanti") Posizione mappa avanti / indietro {# posizione-mappa-indietro-avanti}
 
-##### ![More Details](../images/icons/detailmore.png "More Details") More Details {#more-details}
+Salta avanti o indietro nella cronologia delle posizioni della mappa. La cronologia completa viene salvata e ripristinata all'avvio di _Little Navmap_.
 
-##### ![Default Details](../images/icons/detaildefault.png "More Details") Default Details {#default-details}
+#### Dettagli
 
-##### ![Less Details](../images/icons/detailless.png "Less Details") Less Details {#less-details}
+#####! [Ulteriori dettagli] (../ images / icons / detailmore.png "Ulteriori dettagli") Ulteriori dettagli {# ulteriori-dettagli}
 
-Increases or decreases details on the map. More details means more airports, more navaids, more text information and bigger icons.
+#####! [Dettagli predefiniti] (../ images / icons / detaildefault.png "Ulteriori dettagli") Dettagli predefiniti {# predefiniti-dettagli}
 
-Note that map information will be truncated if too much detail is chosen. A red warning message will be shown in the statusbar if this is the case.
+#####! [Meno dettagli] (../ images / icons / detailless.png "Meno dettagli") Meno dettagli {# meno-dettagli}
 
-The detail level is shown in the statusbar. Range is -5 for few details to +5 for most details.
+Aumenta o diminuisce i dettagli sulla mappa. Maggiori dettagli significano più aeroporti, più radioaiuti, più informazioni di testo e icone più grandi.
 
-#### Projection {#projection}
+Nota che le informazioni sulla mappa verranno troncate se si scelgono troppi dettagli. In questo caso verrà visualizzato un messaggio di avviso rosso nella barra di stato.
 
-##### Mercator {#mercator}
+Il livello di dettaglio è mostrato nella barra di stato. L'intervallo è da -5 per alcuni dettagli a +5 per la maggior parte dei dettagli.
 
-A flat projection that gives the most fluid movement and the sharpest map when using picture tile based online maps themes like _OpenStreetMap_ or _OpenTopoMap_.
+#### Proiezione {#proiezione}
 
-##### Spherical {#spherical}
+##### Mercatore {#mercatore}
 
-Shows earth as a globe which is the most natural projection. Movement can stutter slightly when using the picture tile based online maps themes like _OpenStreetMap_ or _OpenTopoMap_. Use the `Simple`, `Plain` or `Atlas` map themes to prevent this.
+Una proiezione piatta che offre il movimento più fluido e la mappa più nitida quando si utilizzano temi di mappe online basati su riquadri come _OpenStreetMap_ o _OpenTopoMap_.
 
-Online maps can appear slightly blurred when using this projection. This is a result from converting the flat image tiles to the spherical display.
 
-![Little Navmap Spherical projection and Simple Map Theme](../images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
+##### Sferico {#sferico}
 
-_**Picture above:** Spherical map projection with _`Simple`_ offline map theme selected._
+Mostra la terra come un globo che è la proiezione più naturale. Il movimento può tartagliare leggermente quando si utilizzano temi di mappe online basati su riquadri come _OpenStreetMap_ o _OpenTopoMap_. Usa i temi della mappa `Semplice`,` Pianura` o `Atlante` per evitarlo.
 
-#### Theme {#theme}
+Le mappe online possono apparire leggermente sfocate quando si utilizza questa proiezione. Questo è il risultato della conversione dei riquadri di immagini piatte nella visualizzazione sferica.
 
-Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](MAPTHEMES.md) for more information.
+! [Piccola proiezione sferica Navmap e tema mappa semplice] (../ images / sphericalpolitical.jpg "Piccola proiezione sferica Navmap e tema mappa semplice")
+
+_ ** Immagine sopra: ** Proiezione di mappe sferiche con _`Simple`_ tema della mappa offline selezionato._
+
+#### Tema {#tema}
+
+Tutte le mappe online vengono fornite da servizi gratuiti, pertanto non è possibile garantire velocità di download elevate e disponibilità elevata. In ogni caso è facile rilasciare e installare una nuova provenienza di mappe online senza creare una nuova versione di _Little Navmap_. Vedere [Creazione o aggiunta di temi della mappa] (MAPTHEMES.md) per ulteriori informazioni.
 
 ##### OpenStreetMap {#openstreetmap}
 
-This is an online raster \(i.e. based on images\) map that includes a hill shading option. Note that the _OpenStreetMap_ hill shading does not cover the whole globe.
+Questa è una mappa raster online (ovvero basata su immagini \) che include un'opzione di ombreggiatura delle colline. Nota che l'ombreggiatura _OpenStreetMap_ non copre l'intero globo.
 
-![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
+! [OpenStreetMap e ombreggiatura della collina] (../ images / osmhillshading.jpg "OpenStreetMap e ombreggiatura della collina")
 
-_**Picture above:** View at an Italian airport using OpenStreetMap theme and hill shading._
+_ ** Immagine sopra: ** Visualizzare in un aeroporto italiano usando il tema OpenStreetMap e l'ombreggiatura della collina._
 
 ##### OpenMapSurfer {#openmapsurfer}
 
-The [OSM Roads](http://korona.geog.uni-heidelberg.de) layer provided by [Heidelberg University](http://giscience.uni-hd.de). This theme includes optional hill shading which is available worldwide.
+Il livello [OSM Roads] (http://korona.geog.uni-heidelberg.de) fornito da [Heidelberg University] (http://giscience.uni-hd.de). Questo tema include l'ombreggiatura opzionale della collina, disponibile in tutto il mondo.
 
-Note that the hill shading option of this map is marked experimental.
+Si noti che l'opzione di ombreggiatura della collina di questa mappa è contrassegnata come sperimentale.
 
-Map data for this map is provided by © [OpenStreetMap](http://osm.org) contributors, rendering by [GIScience Research Group @ Heidelberg University](http://giscience.uni-hd.de) and map styling by Maxim Rylov.
+I dati della mappa per questa mappa sono forniti dai collaboratori di © [OpenStreetMap] (http://osm.org), resi da [GIScience Research Group @ Heidelberg University] (http://giscience.uni-hd.de) e lo stile della mappa da Maxim Rylov.
 
-[SRTM](http://srtm.csi.cgiar.org); ASTER GDEM is a product of [METI](http://www.meti.go.jp/english/index.html) and [NASA](https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
+[SRTM] (http://srtm.csi.cgiar.org); ASTER GDEM è un prodotto di [METI] (http://www.meti.go.jp/english/index.html) e [NASA] (https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
 
-![OSM Roads and Hill shading](../images/osmroad.jpg "OSM Roads and Hill shading")
+! [OSM strade and Ombreggiatura collina] (../ images / osmroad.jpg "OSM strade e ombreggiatura collina")
 
-_**Picture above:** View at an Italian airport using the OpenMapSurfer theme and hill shading._
+_ ** Immagine sopra: ** Visualizzare in un aeroporto italiano usando il tema OpenMapSurfer e l'ombreggiatura della collina._
 
 ##### OpenTopoMap {#opentopomap}
 
-An online raster map that mimics a topographic map. Includes hill shading and elevation contour lines at lower zoom distances.
+Una mappa raster online che imita una mappa topografica. Include l'ombreggiatura della collina e le linee di contorno dell'elevazione a distanze di zoom inferiori.
 
-The tiles for this map are provided by [OpenTopoMap](http://www.opentopomap.org).
+I riquadri per questa mappa sono forniti da [OpenTopoMap] (http://www.opentopomap.org).
 
-![OpenTopoMap](../images/otm.jpg "OpenTopoMap")
+! [OpenTopoMap] (../ images / otm.jpg "OpenTopoMap")
 
-_**Picture above:** View at the eastern Alps using OpenTopoMap theme. A flight plan is shown north of the Alps._
+_ ** Immagine sopra: ** Visualizza sulle Alpi orientali usando il tema OpenTopoMap. Un piano di volo è mostrato a nord delle Alpi ._
 
-##### Stamen Terrain {#stamen-terrain}
+##### Stamen Terrain {# stamen-terrain}
 
-A terrain map featuring hill shading and natural vegetation colors. The hill shading is available worldwide.
+Una mappa del terreno con ombreggiatura delle colline e colori naturali della vegetazione. L'ombreggiatura delle colline è disponibile in tutto il mondo.
 
-Map tiles by [Stamen Design](http://stamen.com), under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+Mappa tassellata di [Stamen Design] (http://stamen.com), sotto [CC BY 3.0] (http://creativecommons.org/licenses/by/3.0). Dati di [OpenStreetMap] (http://openstreetmap.org), sotto [ODbL] (http://www.openstreetmap.org/copyright).
 
-![Stamen Terrain](../images/stamenterrain.jpg "Stamen Terrain")
+! [Stamen Terrain] (../ images / stamenterrain.jpg "Stamen Terrain")
 
-_**Picture above:** View showing Stamen Terrain theme._
+_ ** Immagine sopra: ** Visualizza il tema del terreno stamen ._
 
-##### CARTO Light {#carto-light} \(New in version 1.4.4\)
+##### CARTO Light {# carto-light} \ (Novità nella versione 1.4.4 \)
 
-A very bright map called *Positron* which allows to concentrate on the aviation features on the map display. The map includes the same hill shading option as the _OpenStreetMap_.
+Una mappa molto luminosa chiamata * Positron * che consente di concentrarsi sulle funzioni di aviazione sul display della mappa. La mappa include la stessa opzione di ombreggiatura della collina di _OpenStreetMap_.
 
-Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+Mappa tassellata e stile di [CARTO] (https://carto.com/). Dati di [OpenStreetMap] (http://openstreetmap.org), sotto [ODbL] (http://www.openstreetmap.org/copyright).
 
-##### CARTO Dark {#carto-light} \(New in version 1.4.4\)
+##### CARTO Dark {# carto-light} \ (Novità nella versione 1.4.4 \)
 
-A dark map called *Dark Matter*. The map includes the same hill shading option as the _OpenStreetMap_.
+Una mappa scura chiamata * Conenuto oscuro oscura*. La mappa include la stessa opzione di ombreggiatura della collina di _OpenStreetMap_.
 
-Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+Mappa tassellata e stile di [CARTO] (https://carto.com/). Dati di [OpenStreetMap] (http://openstreetmap.org), sotto [ODbL] (http://www.openstreetmap.org/copyright).
 
-##### Simple \(Offline\) {#simple-offline}
+##### Semplice \ (Offline \) {# semplice-offline}
 
-This is a political map using colored country polygons. Boundaries and water bodies are depicted coarse. The map included in _Little Navmap_ has an option to display city and country names.
+Questa è una mappa politica che utilizza poligoni colorati del paese. Confini e complessi idrici sono raffigurati grossolani. La mappa inclusa in _Little Navmap_ ha un'opzione per visualizzare i nomi delle città e dei paesi.
 
-##### Plain \(Offline\) {#plain-offline}
+##### Piano \ (Offline \) {# piano-offline}
 
-A very simple map. The map is included in _Little Navmap_ and has an option to display city and country names. Boundaries and water bodies are depicted coarse.
+Una mappa molto semplice. La mappa è inclusa in _Little Navmap_ e ha un'opzione per visualizzare i nomi delle città e dei paesi. Confini e complessi idrici sono raffigurati grossolani.
 
-##### Atlas \(Offline\) {#atlas-offline}
+##### Atlas \ (Offline \) {# atlas-offline}
 
-A very simple map including coarse hill shading and land colors. The map is included in _Little Navmap_ and has an option to display city and country names. Boundaries and water bodies are depicted coarse.
+Una mappa molto semplice che include sfumature grossolane delle colline e colori della terra. La mappa è inclusa in _Little Navmap_ e ha un'opzione per visualizzare i nomi delle città e dei paesi. Confini e corpi idrici sono raffigurati grossolani.
 
 #### Airspaces
 
-##### ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") Show Airspaces {#show-airspaces}
+#####! [Mostra spazi aerei] (../ images / icons / airspace.png "Mostra spazi aerei") Mostra spazi aerei {# mostra-spazi aerei}
 
-Allows to enable or disable the display of all airspaces with one click. Use the menu items below this one or the toolbar buttons to display or hide the various airspace types.
+Permette di abilitare o disabilitare la visualizzazione di tutti gli spazi aerei con un clic. Utilizzare le voci di menu sotto questo o i pulsanti della barra degli strumenti per visualizzare o nascondere i vari tipi di spazio aereo.
 
-The airspaces toolbar contains buttons each having a drop down menu that allows to configure the airspace display like showing or hiding certain airspace types. Each drop down menu also has a `All` and `None` entry to check or deselect all types in the menu.
+La barra degli strumenti degli spazi aerei contiene pulsanti ciascuno con un menu a discesa che consente di configurare la visualizzazione dello spazio aereo come mostrare o nascondere determinati tipi di spazio aereo. Ogni menu a discesa ha anche una voce `Tutto` e` Niente` per controllare o deselezionare tutti i tipi nel menu.
 
-##### ![ICAO Airspaces](../images/icons/airspaceicao.png "ICAO Airspaces") ICAO Airspaces {#icao-airspaces}
+#####! [ICAO spazi aerei] (../ images / icons / airspaceicao.png "ICAO spazi aerei") ICAO Spaziaerei {# icao-spaziaerei}
 
-Allows selection of Class A to Class E airspaces.
+Consente la selezione di spazi aerei da Classe A a Classe E.
 
-##### ![FIR Airspaces](../images/icons/airspacefir.png "FIR Airspaces") FIR Airspaces {#fir-airspaces}
+#####! [FIR spazi aerei] (../ images / icons / airspacefir.png "FIR spazi aerei") FIR Spazi aerei {# fir-spazi aerei}
 
-Allows selection of the Class F and Class G airspaces or flight information regions.
+Consente la selezione degli spazi aerei di Classe F e Classe G o regioni di informazioni di volo.
 
-##### ![Restricted Airspaces](../images/icons/airspacerestr.png "Restricted Airspaces") Restricted Airspaces {#restricted-airspaces}
+#####! [Spazi aerei limitati] (../ images / icons / airspacerestr.png "Spazi aerei limitati") Spazi aerei limitati {# limitati-spazi aerei}
 
-Show or hide MOA \(military operations area\), restricted, prohibited and danger airspaces.
+Mostra o nascondi MOA \ (area operazioni militari \), spazi riservati, vietati e pericolosi.
 
-##### ![Special Airspaces](../images/icons/airspacespec.png "Special Airspaces") Special Airspaces {#special-airspaces}
+#####! [Spazi aerei speciali] (../ images / icons / airspacespec.png "Spazi aerei speciali") Spazi aerei speciali {# speciali-spazi aerei}
 
-Show or hide warning, alert and training airspaces.
+Mostra o nascondi avvisi, allarmi e spazi aerei di tirocinio .
 
-##### ![Other Airspaces](../images/icons/airspaceother.png "Other Airspaces") Other Airspaces {#other-airspaces}
+#####! [Altri spazi aerei] (../ images / icons / airspaceother.png "Altri spazi aerei") Altri spazi aerei {# altri-spazi aerei}
 
-Show or hide center, tower, mode C and other airspaces.
+Mostra o nascondi centro, torre, modalità C e altri spazi aerei.
 
-##### ![Airspace Altitude Limitations](../images/icons/airspacealt.png "Airspace Altitude Limitations") Airspace Altitude Limitations {#airspace-altitude-limitations}
+#####! [Limitazioni dell'altitudine dello spazio aereo] (../ images / icons / airspacealt.png "Limitazioni dell'altitudine dello spazio aereo") Limitazioni dell'altitudine dello spazio aereo {# limiti dello spazio aereo-altitudine}
 
-Allows filtering of the airspace display by altitude. Either below or above 10,000 ft or 18,000 ft or only airspaces intersecting with the flight plan altitude.
+Consente il filtro della visualizzazione dello spazio aereo in base all'altitudine. Al di sotto o al di sopra di 10.000 piedi o 18.000 piedi, solo spazi aerei che si intersecano con l'altitudine del piano di volo.
 
-#### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force Show Addon Airports {#force-show-addon-airports}
+####! [Forza visualizzazione aeroporti aggiuntivi] (../ images / icons / airportaddon.png "Forza visualizzazione aeroporti aggiuntivi") visualizzazione  gli aeroporti aggiuntivi {# forza-visualizzazione -aggiuntivi-aeroporti}
 
-Add-on airports are always shown independent of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
+Gli aeroporti aggiuntivi vengono sempre visualizzati indipendentemente dalle altre impostazioni della mappa dell'aeroporto se questa opzione è selezionata. Ciò consente di visualizzare solo gli aeroporti aggiuntivi selezionando questa opzione e disabilitando la visualizzazione di aeroporti con piste dure, morbide e vuoti.
 
-#### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Show Airports with hard Runways {#show-airports-with-hard-runways}
+####! [Mostra aeroporti con piste dure] (../ images / icons / airport.png "Mostra aeroporti con piste dure") Mostra aeroporti con piste dure {# mostra-aeroporti-con-dure-piste}
 
-Show airports that have at least one runway with a hard surface.
+Mostra gli aeroporti che hanno almeno una pista con una superficie dura.
 
-#### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Show Airports with soft Runways {#show-airports-with-soft-runways}
+####! [Mostra aeroporti con piste morbide] (../ images / icons / airportoft.png "Mostra aeroporti con piste morbide") Mostra aeroporti con piste morbide {# mostra-aeroporti-con-morbide-piste}
 
-Show airports that have only soft surfaced runways or only water runways. This type of airport might be hidden on the map depending on zoom distance.
+Mostra gli aeroporti che hanno solo piste a superficie morbida o solo piste d'acqua. Questo tipo di aeroporto potrebbe essere nascosto sulla mappa a seconda della distanza dello zoom.
 
-#### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Show empty Airports {#show-empty-airports}
+####! [Mostra aeroporti vuoti] (../ images / icons / airportempty.png "Mostra aeroporti vuoti") Mostra aeroporti vuoti {# Mostra-vuoti-aeroporti}
 
-Shows empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
+Mostra aeroporti vuoti. Questo pulsante o voce di menu, potrebbe non essere visibile a seconda delle impostazioni, nella finestra di dialogo "Opzioni" nella scheda "Visualizzazione mappa". Lo stato di questo pulsante è combinato con gli altri pulsanti dell'aeroporto. Ciò significa, ad esempio: è necessario abilitare la visualizzazione degli aeroporti con superficie morbida e aeroporti vuoti per vedere gli aeroporti privi di contenuto con solo piste morbide.
 
-An empty airport is defined as one which has neither parking nor taxiways nor aprons and is not an add-on. These airports are treated differently in _Little Navmap_ since they are the most boring of all default airports. Empty airports are drawn gray and behind all other airports on the map.
 
-Airports having only water runways are excluded from this definition to avoid unintentional hiding.
+Un aeroporto vuoto è definito come uno che non ha né parcheggi né piste di rullaggio né aprons e non è un componente aggiuntivo. Questi aeroporti sono trattati diversamente in _Little Navmap_ in quanto sono i più noiosi di tutti gli aeroporti standard. Gli aeroporti vuoti sono disegnati in grigio e dietro tutti gli altri aeroporti sulla mappa.
 
-#### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Show VOR Stations {#show-vor-stations}
+Gli aeroporti che hanno solo piste d'acqua sono esclusi da questa definizione per evitare occultamenti involontari.
 
-#### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Show NDB Stations {#show-ndb-stations}
+####! [Mostra stazioni VOR] (../ images / icons / vor.png "Mostra stazioni VOR") Mostra stazioni VOR {# mostra-vor-stazioni}
 
-#### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Show Waypoints {#show-waypoints}
+####! [Mostra stazioni NDB] (../ images / icons / ndb.png "Mostra stazioni NDB") Mostra stazioni NDB {# mostra-ndb-stazioni}
 
-#### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Show ILS Feathers {#show-ils-feathers}
+####! [Mostra waypoint] (../ images / icons / waypoint.png "Mostra waypoint") Mostra waypoint {# mostra-waypoint}
 
-#### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Show Jet Airways {#show-jet-airways}
+####! [Mostra alette ILS] (../ images / icons / ils.png "Mostra alette ILS") Mostra alette ILS {# mostra-ils-alette}
 
-#### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Show Victor Airways {#show-victor-airways}
+####! [Mostra Jet Aerovie] (../ images / icons / airwayjet.png "mostra Jet Aerovie") Show Jet Airways {# show-jet-aerovie}
 
-Shows or hides these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
+####! [Mostra Victor aerovie] (../ images / icons / airwayvictor.png "Mostra Victor Aerovie") Mostra Victor Aerovie {# mostra-victor-aerovie}
 
-#### ![Show Flight Plan](../images/icons/route.png "Show Flight Plan") Show Flight Plan {#show-flight-plan}
+Mostra o nasconde queste strutture o radioaiuti sulla mappa. I radioaiuti potrebbero essere nascosti sulla mappa a seconda della distanza dello zoom.
 
-Shows or hides the flight plan. The flight plan is shown independent of the zoom distance.
+####! [Mostra piano di volo] (../ images / icons / route.png "Mostra piano di volo") Mostra piano di volo {# mostra-volo-piano}
 
-#### ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches") Show Missed Approaches {#show-missed-approaches}
+Mostra o nasconde il piano di volo. Il piano di volo viene mostrato indipendentemente dalla distanza dello zoom.
 
-Shows of hides the missed approaches of the current flight plan. This does not affect the preview in the search tab `Procedures`.
+####! [Mostra avvicinamenti persi] (../ images / icons / missed.png "Mostra avvicinamenti persi") Mostra avvicinamenti persi {# mostra-Persi-avvicinamenti}
 
-**Note that this function changes the active flight plan leg sequencing:** Sequencing the active leg will stop if the destination is reached and missed approaches are not displayed. Otherwise sequencing will continue with the missed approach and the simulator aircraft progress will show the remaining distance to the end of the missed instead.
+Mostra o nasconde gli avvicinamenti mancati dell'attuale piano di volo. Ciò non influisce sull'anteprima nella scheda di ricerca "Procedure".
 
-#### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Show Aircraft {#show-aircraft}
+** Si noti che questa funzione modifica la sequenza delle tratte del piano di volo attivo: ** La sequenza della tratta attiva si arresterà se la destinazione viene raggiunta e gli avvicinaemnti persi non vengono visualizzati. Altrimenti la sequenza continuerà con l'avvicinamento mancato e l'avanzamento dell'aereo del simulatore mostrerà invece la distanza rimanente alla fine del mancato avvicinamento.
 
-Shows the user aircraft and keeps it centered on them map if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
+####! [Mostra Aereo] (../ images / icons / aircraft.png "Mostra Aereo") Mostra Aereo {# mostra-aereo}
 
-A click on the user aircraft shows more information in the `Simulator Aircraft` dock window.
+Mostra l'aereo dell'utente e lo mantiene centrato sulla mappa se collegato al simulatore. L'aereo dell'utente viene sempre mostrato indipendentemente dalla distanza dello zoom.
 
-The aircraft centering will be switched off when using one of the following functions:
+Un clic sull'aereo dell'utente mostra ulteriori informazioni nella finestra ancorata "Aereo Simulatore".
 
-* Double click into a table view or map display to zoom to an airport or a navaid.
-* Context menu item `Show on map`.
-* `Goto Home` or `Goto Center for Distance Search`.
-* `Map` link in `Information` dock window.
-* `Show Flight Plan`. Either manually in a menu item or after loading.
-* Centering a Google Earth KML/KMZ file after loading
+La centratura dell'aeromobile verrà disattivato quando si utilizza una delle seguenti funzioni:
 
-This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` and enable `Show Aircraft` again.
+* Fare doppio clic su una vista tabella o visualizzazione mappa per eseguire lo zoom su un aeroporto o un radioaiuto.
+* Voce di menu contestuale "Mostra sulla mappa".
+* `Vai a Home` o` vai al centro per la ricera della distanza`.
+* collegamento `Mappa` nella finestra ancorata` Informazioni`.
+* "Mostra piano di volo". O manualmente in una voce di menu o dopo il caricamento.
+* Centrato sul file KML / KMZ di Google Earth dopo il caricamento
 
-#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Show Aircraft Trail {#show-aircraft-trail}
+Ciò consente una rapida ispezione di un aeroporto o di un radioaiuto durante il volo. Per visualizzare di nuovo l'aereo, utilizzare "Tornare indietro sulla mappa" e abilitare nuovamente "Mostra aereo".
 
-Shows the user aircraft trail. The trail is always shown independent of the zoom distance. It is saved and will be reloaded on program startup.
+####! [Mostra traccia Aereo] (../ images / icons / aircrafttrail.png "Mostra traccia Aereo") Mostra Traccia Aereo {# mostra-aereo-traccia}
 
-The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail`. The trail is also deleted when the user aircraft jumps over large distance when assigning a new airport, for example.
+Mostra la traccia dell'aeromobile dell'utente. Il percorso viene sempre mostrato indipendentemente dalla distanza dello zoom. Viene salvato e verrà ricaricato all'avvio del programma.
 
-The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
 
-#### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") ![Show AI and Multiplayer Ships](../images/icons/boatai.png "Show AI and Multiplayer Ships") Show AI and Multiplayer Aircraft or Ships {#show-map-ai-aircraft}
+Il percorso viene eliminato quando ci si collega a un simulatore di volo oppure può essere eliminato manualmente selezionando "Menu principale" - & gt; `Mappa` - & gt; "Elimina traccia aereo". Il percorso viene anche eliminato quando, ad esempio, l'aereo dell'utente salta su grande distanza durante l'assegnazione di un nuovo aeroporto.
 
-Shows AI and multiplayer aircraft or ships on the map. Multiplayer vehicles can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
+I formati del percorso sono limitati per motivi di prestazioni. I punti verranno rimossi dall'inizio quando diventa troppo lungo.
 
-Note that ship traffic is not available and AI aircraft information is limited in X-Plane.
+####! [Mostra gli aerei AI e Multiplayer] (../ images / icons / aircraftai.png "Mostra gli aerei AI e Multiplayer")! [Mostra Navi AI e Multiplayer] (../ images / icons / boatai.png "Mostra navi AI e multiplayer") Mostra aerei AI e multiplayer o navi {# mostra-mappa-ai-aerei}
 
-A click on the AI aircraft or ship shows more information in the `Simulator Aircraft` dock window in the tab `AI / Multiplayer`.
+Mostra gli aerei o le navi AI e multiplayer sulla mappa. I veicoli multigiocatore possono essere visualizzati ad es. Sessioni FSCloud, VATSIM o Steam.
 
-The displayed vehicles are limited by the used multiplayer system. Multiplayer aircraft will disappear depending on distance to user aircraft. For AI in FSX or P3D this is currently about 100 nautical miles or around 200 kilometers.
+Si noti che in X-Plane il traffico navale non è disponibile e le informazioni sugli aerei AI sono limitate.
 
-Smaller ships are only generated by the simulator within a small radius around the user aircraft.
+Un clic sull'aeromobile o sulla nave AI mostra maggiori informazioni nella finestra ancorata ` Aerei Simulatore` nella scheda` AI / Multiplayer`.
 
-_Little Navmap_ limits the display of AI vehicles depending on size. Zoom close to see small aircraft or boats.
+I veicoli visualizzati sono limitati dal sistema multiplayer utilizzato. Gli aeromobili multigiocatore scompaiono a seconda della distanza dall'aeromobile dell'utente. Per gli AI in FSX o P3D questo è attualmente di circa 100 miglia nautiche o circa 200 chilometri.
 
-On the lowest zoom distance all aircraft and ships are drawn to scale on the map.
+Le navi più piccole vengono generate dal simulatore entro un piccolo raggio attorno all'aeromobile dell'utente.
 
-#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
+_Little Navmap_ limita la visualizzazione dei veicoli AI in base alle dimensioni. Zoom ravvicinato per vedere piccoli aerei o barche.
 
-Shows a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
+Alla minima distanza di zoom tutti gli aeromobili e le navi vengono disegnati per ridimensionarsi sulla mappa.
 
-#### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Show Country and City Names {#show-country-and-city-names}
+####! [Mostra griglia mappa] (../ images / icons / mapgrid.png "Mostra griglia mappa") Mostra griglia mappa {# mostra-mappa-griglia}
 
-Show county, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
+Mostra una griglia di latitudine / longitudine e il [meridiano] (https://en.wikipedia.org/wiki/Prime_meridian) e [anti meridiano] (http://en.wikipedia.org/wiki/180th_meridian) \ ( vicino alla linea della data \) sulla mappa.
 
-#### ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading") Show Hillshading {#show-hillshading}
+####! [Mostra nomi di paesi e città] (../ images / icons / cities.png "Mostra nomi di paesi e città") Mostra i nomi di paesi e città {# mostra-paesi-e-città-nomi}
 
-Shows hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
+Mostra contea, città e altri punti di interesse. La disponibilità di queste opzioni dipende dal tema della mappa selezionato. Vedi [Tema] (MENUS.md # tema).
 
-### Scenery Library Menu {#scenery-library-menu}
+####! [Show ombreggiatura colline] (../ images / icons / hillshading.png "mostra ombreggiatura colline") Mostra Ombreggiatura Colline {# mostra-Ombreggiatura Colline}
 
-#### Flight Simulators {#flight-simulators}
+Mostra l'ombreggiatura della collina sulla mappa. La disponibilità di queste opzioni dipende dal tema della mappa selezionato. Vedi [Tema] (MENUS.md # tema).
 
-One menu item is created for each Flight Simulator installation or database found. These menu items allow switching of databases on the fly. The menu item is disabled if only one Flight Simulator was found.
+### Menu Libreria scenari {# scenari-libreria-menu}
 
-The loaded AIRAC cycle is displayed only for X-Plane since the information is not available for FSX or P3D simulators.
+#### Simulatore di volo {# Volo-simulatore}
 
-**You have to set the base path to the X-Plane directory in the **`Load Scenery Library Dialog`** first to enable the X-Plane menu item.**
+Viene creata una voce del menu per ogni installazione o database del Simulatore di volo trovato. Queste voci di menu consentono il cambio dei database del volo. La voce di menu è disabilitata se viene trovato un solo simulatore di volo.
 
-This menu is synchronized with simulator selection in the [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog). Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
+Il ciclo AIRAC caricato viene visualizzato solo per X-Plane poiché le informazioni non sono disponibili per i simulatori FSX o P3D.
 
-**Note that the program does not keep you from using a X-Plane scenery database while being connected to FSX/Prepar3D or vice versa. You will get unwanted effects like wrong weather information if using such a setup.**
+** Si deve prima impostare il percorso di base nella directory X-Plane nella ** Finestra di dialogo carica libreria scenari ** ** per abilitare la voce di menu X-Plane. **
 
-The program might change a loaded flight plan if you switch between different databases. This can happen if a departure position is set in the plan which does not exist in the other database. Click `New Flight Plan` before switching to avoid this.
+Questo menu è sincronizzato con la selezione del simulatore nella [Finestra di dialogo carica libreria Scenari] (SCENERY.md # carica-scenari-libreria-dialogo). Una volta caricato correttamente un database, la visualizzazione, il piano di volo e la ricerca passeranno ai dati del simulatore appena caricati.
+
+** Si noti che il programma non impedisce di utilizzare un database di scenari X-Plane durante la connessione a FSX / Prepar3D o viceversa. Otterrai effetti indesiderati come informazioni meteorologiche errate se utilizzi tale impostazione. **
+
+Il programma potrebbe modificare un piano di volo caricato se si passa da un database all'altro. Ciò può accadere se nel piano è impostata una posizione di partenza che non esiste nell'altro database. Fai clic su "Nuovo piano di volo" per evitarlo, prima di cambiare.
 
 #### Navigraph {#navigraph}
 
-This sub menu also indicating the AIRAC cycle is added if a Navigraph database is found in the database directory.
+Questo sottomenu indica anche il ciclo AIRAC se viene trovato un database Navigraph nella directory del database.
 
-See the chapter [Navigation Databases](NAVDATA.md) for more information about these databases and the three different display modes shown below.
+Consultare il capitolo [Database di navigazione] (NAVDATA.md) per ulteriori informazioni su questi database e le tre diverse modalità di visualizzazione mostrate di seguito.
 
-##### Use Navigraph for all Features {#navigraph-all}
+##### Usa Navigraph per tutte le funzioni {# navigraph-tutto}
 
-Completely ignores the simulator database and takes all information from the Navigraph database.
+Ignora completamente il database del simulatore e prende tutte le informazioni dal database Navigraph.
 
-##### Use Navigraph for Navaids and Procedures {#navigraph-navaid-proc}
+##### Usa Navigraph per radioaiuti e Procedure {# navigraph-radioaiuto-proc}
 
-This mode blends navaids and more from the Navigraph database with the simulator database. This affects the map display, all information and and all search windows.
+Questa modalità unisce radioaiuti e altro dal database Navigraph al database del simulatore. Ciò influisce sulla visualizzazione della mappa, su tutte le informazioni e su tutte le finestre di ricerca.
 
-##### Do not use Navigraph Database {#navigraph-none}
+##### Non utilizzare il database di  Navigraph {# navigraph-niente}
 
-Ignores the Navigraph database and shows only information read from the simulator scenery.
+Ignora il database Navigraph e mostra solo le informazioni lette dallo scenario del simulatore.
 
-#### Show Database Files {#show-database-files}
+#### Mostra file di database {# mostra-database-files}
 
-This opens _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer \(e.g. Windows, Mac or Linux\) using the same database that was created on the computer running the flight simulator.
+Questo apre la directory del database di _Little Navmap_ in un file manager. Vedere [Esecuzione senza installazione del simulatore di volo] (RUNNOSIM.md # in esecuzione senza installazione del simulatore di volo) per ulteriori informazioni sulla copia dei file di database tra computer diversi. Ciò consente a _Little Navmap_ di essere eseguito su un computer remoto \ (ad esempio Windows, Mac o Linux \) utilizzando lo stesso database creato sul computer dove è avviato il simulatore di volo.
 
-#### ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library {#load-scenery-library}
+####! [Carica libreria scenari] (../ images / icons / database.png "Carica libreria scenari") Carica libreria scenari {# carica-scenari-libreria}
 
-Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
+Apre la finestra di dialogo "Carica libreria scenari". Vedere [Finestra di dialogo carica libreria scenari] (SCENERY.md # carica-scenari-libreria-dialogo) per ulteriori informazioni. Questa voce di menu è disabilitata se non viene trovata alcuna installazione del simulatore di volo.
 
-#### ![Copy Airspaces to X-Plane Database](../images/icons/airspacecopy.png "Copy Airspaces to X-Plane Database") Copy Airspaces to X-Plane Database {#copy-airspaces-to-xplane}
+####! [Copia degli spazi aerei nel database X-Plane] (../ images / icons / airspacecopy.png "Copia degli spazi aerei nel database X-Plane") Copia gli spazi aerei nel database X-Plane {# copia-spazi aerei-su- XPLANE}
 
-This allows to copy airspace information from a FSX or P3D database to a X-Plane database. This is needed since X-Plane comes with limited airspace information.
+Ciò consente di copiare le informazioni sullo spazio aereo, da un database FSX o P3D a un database X-Plane. Ciò è necessario poiché X-Plane viene fornito con informazioni limitate sullo spazio aereo.
 
-All airspaces already loaded from X-Plane are deleted before copying. See [X-Plane Airspaces](SCENERY.md#load-scenery-library-dialog-xp-airspaces) for more information.
+Tutti gli spazi aerei già caricati da X-Plane vengono eliminati prima della copia. Vedere [ spazi aerei X-Plane ] (SCENERY.md # carica-scenari-libreria-dialogo-xp-spazi aerei) per maggiori informazioni.
 
-You have to switch to a FSX or P3D simulator database first to enable this menu item.
+Devi prima passare a un database di simulatore FSX o P3D per abilitare questa voce di menu.
 
-The airspace information is deleted when reloading the X-Plane database. Therefore you have to copy the airspaces again after reloading.
+Le informazioni sullo spazio aereo vengono eliminate quando si ricarica il database X-Plane. Pertanto, è necessario copiare nuovamente gli spazi aerei dopo il ricaricamento.
 
-### Tools Menu {#tools-menu}
+### Menu Strumenti {# strumenti-menu}
 
-#### ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Flight Simulator Connection {#flight-simulator-connection}
+####! [Connessione al simulatore di volo] (../ images / icons / network.png "Connessione al simulatore di volo") Connessione al simulatore di volo {# volo-simulatore-connessione}
 
-Opens the `Connect` dialog allowing _Little Navmap_ to connect directly to a Flight Simulator, the *Little Xpconnect* X-Plane plugin, or remotely using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information.
+Apre la finestra di dialogo `Connetti` che consente a _Little Navmap_ di connettersi direttamente a un simulatore di volo, al plug-in * Little Xpconnect * X-Plane, o in remoto utilizzando il [Little Navconnect] (https://albar965.github.io/littlenavconnect.html) agente. Vedere [Connessione a un simulatore di volo] (CONNECT.md # connessione a un simulatore di volo) per ulteriori informazioni.
 
-#### Reset all Messages {#reset-all-messages}
+#### Ripristina tutti i messaggi {# ripristina-tutti- i messaggi}
 
-This will re-enable all dialogs that were disabled by selecting `Do not show this dialog again` or similar messages.
+Ciò riattiverà tutte le finestre di dialogo che sono state disabilitate selezionando "Non mostrare più questa finestra" o messaggi simili.
 
-#### ![Options](../images/icons/settings.png "Options") Options {#options}
+####! [Opzioni] (../ images / icons / settings.png "Opzioni") Opzioni {#opzioni}
 
-Opens the [Options dialog](OPTIONS.md#options-dialog).
+Apre la [Finestra di dialogo Opzioni] (OPTIONS.md # finestra di dialogo opzioni).
 
-### Window Menu {#window-menu}
+### Menu Window {# window-menu}
 
-#### Map Overlays {#map-overlays}
+#### copertura mappe {# mappe-coperte}
 
-Allows hiding of the floating map overlays, like the overview on the top left or the compass on the top right corner of the map window.
+Consente di nascondere le sovrapposizioni di mappe mobili, come la panoramica in alto a sinistra o la bussola nell'angolo in alto a destra della finestra della mappa.
 
-#### ![Search](../images/icons/searchdock.png "Search") Search {#search}
+####! [Cerca] (../ images / icons / searchdock.png "Cerca") Cerca {#cerca}
 
-#### ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flight Plan {#flight-plan}
+####! [Piano di volo] (../ images / icons / routedock.png "Piano di volo") Piano di volo {# piano di volo}
 
-#### ![Information](../images/icons/infodock.png "Information") Information {#information}
+####! [Informazioni] (../ images / icons / infodock.png "Informazioni") Informazioni {#informazioni}
 
-#### ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Flight Plan Elevation Profile {#flight-plan-elevation-profile}
+####! [Profilo di elevazione del piano di volo] (../ images / icons / profiledock.png "Profilo di elevazione del piano di volo") Profilo di elevazione del piano di volo {# volo-piano-elevazione-profilo}
 
-#### ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulator Aircraft {#simulator-aircraft}
+####! [Aereo simulatore] (../ images / icons / aircraftdock.png "Aereo simulatore") Aereo Simulatore {# simulatore-aereo}
 
-#### ![Legend](../images/icons/legenddock.png "Legend") Legend {#legend}
+####! [Legenda] (../ images / icons / legenddock.png "Legenda") Legenda {#legenda}
 
-Opens or closes these dock windows. The map dock window cannot be closed.
+Apre o chiude queste finestre ancorate. La finestra ancorata della mappa non può essere chiusa.
 
-#### Main Toolbar, Map Toolbar, Map Airspaces Toolbar, Map Options Toolbar, Flight Plan Toolbar, Dock Window Toolbar, Statusbar {#main-toolbar-options}
+#### Barra degli strumenti principale, Barra degli strumenti della mappa, Barra degli strumenti degli spazi aerei della mappa, Barra degli strumenti delle opzioni della mappa, Barra degli strumenti del piano di volo, Barra degli strumenti della finestra ancorata, Barra di stato {# principale-barra degli strumenti-opzioni}
 
-Shows or hides these toolbars and the statusbar.
+Mostra o nasconde queste barre degli strumenti e la barra di stato.
 
-#### Reset Window Layout {#reset-layout}
+#### Ripristina struttura finestra {# ripristina-struttura}
 
-Resets the main window layout back to default. This involves visibility, position and state of all dock windows as well as the toolbars. This function can be helpful if a dock window gets lost on multi monitor setups.
+Ripristina la struttura della finestra principale di default. Ciò implica visibilità, posizione e stato di tutte le finestre ancorate e delle barre degli strumenti. Questa funzione può essere utile se una finestra ancorata si perde nelle configurazioni multi monitor.
 
-### Help Menu {#help-menu}
+### Menu di aiuto {#aiuto-menu}
 
-#### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contents \(Online\) {#help-contents}
+#### ![Contenuti \(Online\)](../images/icons/help.png "Contents \(Online\)") Contenuti \(Online\) {#aiuto-contenuti}
 
-Shows the online user manual in the default web browser.
+Mostra il manuale  utente online nel browser Web predefinito.
 
-#### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contents \(Offline, PDF\) {#help-contents-offline}
+####! [Sommario \ (Offline, PDF \)] (../ images / icons / help.png "Contenuti \ (Offline, PDF \)") Sommario \ (Offline, PDF \) {# aiuto-contenuti -disconnesso}
 
-Shows the included PDF user manual in the default PDF viewer.
+Mostra il manuale dell'utente PDF incluso nel programma di visualizzazione PDF predefinito.
 
-#### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legend {#navmap-legend-map-legend}
+####! [legenda mappa navigazione] (../ images / icons / help.png "Legenda mappa navigazione") Legenda mappa navigazione{# mappa navigazione-legenda-mappa-legenda}
 
-Shows the navigation related map legend in the `Legend` dock window. You can also access the legend here: [Navmap Legend](LEGEND.md).
+Mostra la legenda della mappa relativa alla navigazione nella finestra ancorata `Legenda`. Puoi anche accedere alla legenda qui: [Legenda mappa navigazione] (LEGEND.md).
 
-#### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Map Legend for current Map Theme {#navmap-legend-map-legend}
+####! [Legenda della mappa per l'attuale tema della mappa] (../ images / icons / help.png "Legenda della mappa per il tema attuale della mappa") Legenda della mappa per il tema attuale della mappa {# mappanavigazione-legenda-mappa-legenda}
 
-Shows the map theme dependent base legend in the `Legend` dock window. Note that the legend is not available for all map themes.
+Mostra la legenda base che dipende dal tema della mappa nella finestra ancorata `Legenda`. Nota che la legenda non è disponibile per tutti i temi della mappa.
 
-#### ![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap") About Little Navmap {#about-little-navmap}
+####! [Informazioni su Little Navmap] (../ images / icons / littlenavmap.png "Informazioni su Little Navmap") Informazioni su Little Navmap {# a proposito di-little-navmap}
 
-Shows version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author's e-mail address.
+Mostra la versione e il numero di revisione per _Little Navmap_, contiene anche collegamenti alla directory del database, al file di configurazione, al file di registro e all'indirizzo e-mail dell'autore.
 
-#### ![About Marble](../images/icons/marble.png "About Marble") About Marble {#about-marble}
+####! [Informazioni su Marble] (../ images / icons / marble.png "Informazioni su Marble") Informazioni su Marble {# a proposito di-marble}
 
-Information about the [Marble widget](https://marble.kde.org) that is used to download and show the maps.
+Informazioni sul [congegno di Marble] (https://marble.kde.org) utilizzato per scaricare e mostrare le mappe.
 
-#### ![About Qt](../images/icons/qticon.png "About Qt") About Qt {#about-qt}
+####! [Informazioni su Qt] (../ images / icons / qticon.png "Informazioni su Qt") Informazioni su Qt {# a proposito di -qt}
 
-Information about the [Qt application framework](https://www.qt.io) that is used by _Little Navmap_.
+Informazioni sul [Qt applicazione framework] (https://www.qt.io) utilizzato da _Little Navmap_.
 
-#### ![Dontate for this Program](../images/icons/about.png "Dontate for this Program") Dontate for this Program {#donate}
+####! [Donate per questo programma] (../ images / icons / about.png "Dontate for this Program") Donate per questo programma {#donate}
 
-Opens the donation web page in your default browser.
+Apre la pagina Web delle donazioni nel browser predefinito.
 
-If you would like to show your appreciation you can donate there using PayPal.
+Se desideri mostrare il tuo apprezzamento, puoi effettuare una donazione tramite PayPal.
 
-Donations are purely optional but greatly appreciated.
+Le donazioni sono puramente opzionali, ma molto apprezzate.
 
-#### ![Check for Updates](../images/icons/revert.png "Check for Updates") Check for Updates {#check-updates}
+####! [Controlla aggiornamenti] (../ images / icons / revert.png "Controlla aggiornamenti") Controlla aggiornamenti {# controlla-aggiornamenti}
 
-Allows to manually check for updates. This will also show updates that were recently ignored by pressing the `Ignore this Update` on the notification dialog.
+Consente di verificare manualmente la presenza di aggiornamenti. Questo mostrerà anche gli aggiornamenti che sono stati recentemente ignorati premendo il tasto "Ignora questo aggiornamento" nella finestra di dialogo di notifica.
 
-See [Checking for Updates](UPDATE.md) for more information.
+Vedere [Verifica aggiornamenti] (UPDATE.md) per ulteriori informazioni.
 
-## Statusbar {#statusbar}
 
-The statusbar shows various indications \(from left to right\):
+## Barra di Stato {#statusbar}
 
-* Last action or short help to explain a menu item or toolbar button.
-* Indicator that shows airport types, airspaces, navaids or AI vehicles currently visible on the map. The tooltip gives more details.
-  * A red warning message `Too many objects` will be shown if too many objects are displayed on the map due to too high a detail level. The map display will be incomplete if this happens.
-  * A red `Database empty` message will be shown if the currently selected database has no content and needs to be loaded.
-* Connection status for a local or remote connection. The tooltip gives more details about the status like the hostname for remote connections.
-  * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
-  * `Connected`: A connection was established.
-  * `Disconnected`: The simulator or _Little Navconnect_ exited.
-* Map detail level. Range is -5 for few details to +5 for most details.
-* Online map download progress indicator. This shows the state of the current map download. The text is prefixed with a red `Offline.` indication if offline mode is enabled.
-  * `Done.`: All map data loaded successfully.
-  * `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
-  * `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
-  * `Incomplete.`: Download failed. Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region or if you zoom in too close when using certain online maps.
-* Zoom distance \(viewpoint to earth surface\) in nautical miles or kilometers.
-* Cursor position on map in degrees/minutes/seconds or decimal degrees latitude and longitude depending on selected unit in the dialog `Options`. Also shows the ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
+La barra di stato mostra varie indicazioni \ (da sinistra a destra \):
 
-![Statusbar](../images/statusbar.jpg "Statusbar")
+* Ultima azione o breve aiuto per spiegare una voce di menu o un pulsante della barra degli strumenti.
+* Indicatore che mostra i tipi di aeroporto, gli spazi aerei, i radioaiuti o i veicoli AI attualmente visibili sulla mappa. La descrizione comandi fornisce ulteriori dettagli.
+  * Verrà visualizzato un messaggio di avviso in rosso `Troppi oggetti` se troppi oggetti vengono visualizzati sulla mappa a causa di un livello di dettaglio troppo elevato. La visualizzazione della mappa sarà incompleta in questo caso.
+  * Verrà visualizzato un messaggio rosso "Database vuoto" se il database attualmente selezionato non ha contenuto e deve essere caricato.
+* Stato della connessione per una connessione locale o remota. La descrizione comandi fornisce ulteriori dettagli sullo stato come il nome host per le connessioni remote.
+  * `Connessione in corso ...`: il programma sta tentando di stabilire una connessione avviata manualmente o automaticamente.
+  * `Connesso`: è stata stabilita una connessione.
+  * `Disconnesso`: il simulatore o _Little Navconnect_ è uscito.
+* Livello di dettaglio della mappa. L'intervallo è compreso tra -5 per alcuni dettagli e +5 per la maggior parte dei dettagli.
+* Indicatore di avanzamento del download della mappa online. Questo mostra lo stato del download della mappa corrente. Il testo è preceduto da un'indicazione rossa "Offline" se la modalità offline è abilitata.
+  * `Fatto.`: tutti i dati della mappa caricati correttamente.
+  * `In attesa dei dati ...`: i dati della mappa mancano nella cache e sono stati richiesti. Ora aspetta una risposta.
+  * `In attesa di aggiornamenti ...`: i dati della mappa sono già stati caricati ma sono scaduti dopo due settimane. In attesa di nuovi dati dopo aver richiesto un aggiornamento.
+  * `Incompleto.`: download non riuscito. Si noti che l'indicatore di avanzamento può sembrare bloccato nel messaggio "In attesa di dati ..." se non è disponibile l'ombreggiatura di una collina per una regione _OpenStreetMap_, o se si ingrandisce molto vicino quando si utilizzano determinate mappe online.
+* Distanza zoom \ (punto di vista dalla superficie terrestre \) in miglia o chilometri nautici.
+* Posizione del cursore sulla mappa in gradi / minuti / secondi o gradi decimali latitudine e longitudine a seconda dell'unità selezionata nella finestra di dialogo `Opzioni`. Mostra anche l'altezza del suolo sotto il cursore dopo un breve ritardo se vengono selezionati i dati di elevazione offline [GLOBE] (https://ngdc.noaa.gov/mgg/topo/globe.html).
 
-_**Picture above:** Status bar with message about the last action on the left side \(_`Options changed.`_\), the connection status and a tooltip that indicates what is currently shown on the map. All map features are shown. The map detail level is unchanged and the map coordinates are shown on the bottom right. Altitude at cursor is shown too since offline elevation data is installed. The online map download progress indicator shows _`Done.`_ indicating all map tiles were downloaded. Zoom distance is 7.8 nautical miles._
+! [Barra di stato] (../ images / statusbar.jpg "barra di stato")
 
+_ ** Immagine sopra: ** Barra di stato con messaggio sull'ultima azione sul lato sinistro \ (_ `Opzioni modificate.`_ \), lo stato della connessione e una descrizione comandi che indica ciò che è attualmente mostrato sulla mappa. Vengono visualizzate tutte le funzionalità della mappa. Il livello di dettaglio della mappa è invariato e le coordinate della mappa sono mostrate in basso a destra. Anche l'altitudine vicino al  cursore viene mostrata, poiché sono installati i dati di elevazione offline. L'indicatore di avanzamento del download della mappa online mostra _`Fatto`_ che indica che sono state scaricate tutte le tessere della mappa. La distanza di zoom è di 7,8 miglia nautiche.

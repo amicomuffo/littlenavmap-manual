@@ -1,184 +1,185 @@
-## Flight Plan Route Description {#flight-plan-from-route-description}
+## Descrizione del percorso del piano di volo {# volo-piano-da-rotta-descrizione}
 
-This dialog allows you to create a flight plan from a route description as they are generated or provided
-by various online services.
+Questa finestra di dialogo consente di creare un piano di volo da una descrizione del percorso man mano che vengono generati o forniti
+da vari servizi online.
 
-When opened it will show the route description for the current flight plan which also contains information about speed and cruise altitude if enabled.
+Una volta aperto, mostrerà la descrizione del percorso per il piano di volo corrente che contiene anche informazioni sulla velocità e sull'altitudine di crociera, se abilitata.
 
-The upper part of the dialog shows the route description input field and the lower part shows any messages, warnings or errors that occur during reading.
+La parte superiore della finestra di dialogo, mostra il campo di input della descrizione del percorso e la parte inferiore mostra eventuali messaggi, avvisi o errori che si verificano durante la lettura.
 
-The menu button ![Menu Button](../images/icons/menubutton.png "Menu Button") provides a dropdown menu than can be used to customize the generated route string.
+Il pulsante menu! [Pulsante menu] (../ images / icons / menubutton.png "Pulsante menu") fornisce un menu a discesa che può essere utilizzato per personalizzare la stringa di percorso generata.
 
-The description parser will try to use as much of the route as possible even if parts of the flight plan
-like waypoints or airways cannot be found or names are ambiguous. You will see warnings in the lower output field if that is the case.
+Il parser di descrizione proverà a utilizzare la maggior numero possibile della rotta anche se parti del piano di volo
+come waypoint o vie aeree non possono essere trovati o i nomi sono ambigui. Verranno visualizzati avvisi nel campo dell' output inferiore, se questo è il caso.
 
-For long flight plans it can happen that far away waypoints are added if names are not unique. Remove these manually if needed.
+Per i piani di volo estesi può accadere che vengano aggiunti waypoint lontani se i nomi non sono univoci. Rimuovere questi manualmente se necessario.
 
-Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are
-used together with flight simulator stock data from 2005. It is recommended to use a navigation data update for the stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/), [SimBrief](https://www.simbrief.com) or [SkyVector](https://skyvector.com).
+Molti waypoint e vie aeree non saranno trovati se le descrizioni della rotta dalle ultime fonti AIRAC, sono usate unitamente ai dati di base del simulatore di volo del 2005. Si consiglia di utilizzare un aggiornamento dei dati di navigazione per lo scenario di base quando si leggono le descrizioni dei percorsi da fonti online come [RouteFinder] (http://rfinder.asalink.net/), [Volo online Pianificatore] (http://onlineflightplanner.org/), [SimBrief] (https://www.simbrief.com) o [SkyVector] (https://skyvector.com).
 
-Otherwise, use an AIRAC cycle from the online services that is closest to the flight simulator navigation data age at the end of 2005 if a navigation data update is not an option.
+Altrimenti, utilizzare un ciclo AIRAC dai servizi online più vicino all'età dei dati di navigazione del simulatore di volo alla fine del 2005 se non è un'opzione, un aggiornamento dei dati di navigazione .
 
-Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases. This happens due to navaid ambiguities like NDB and VOR stations having the same names or errors in the source data.
+Si noti che anche i piani di volo calcolati in _Little Navmap_, in alcuni casi, non possono essere riconvertiti esattamente. Ciò accade a causa di ambiguità sul radioaiuto, come stazioni NDB e VOR con gli stessi nomi o errori nei dati di origine.
 
-The cruise speed and altitude are used to create the flight plan if given. Otherwise the cruise altitude is automatically determined by the flight plan type \(IFR or VFR\) and the minimum altitude of the used airway segments.
+La velocità e l'altitudine di crociera vengono utilizzate per creare il piano di volo, se indicato. In caso contrario, l'altitudine di crociera viene determinata automaticamente dal tipo di piano di volo \ (IFR o VFR \) e dall'altitudine minima dei segmenti delle vie aeree utilizzate.
 
-SID and STAR procedures require a navdata update except for X-Plane which already comes with a complete navigation database.
+Le procedure SID e STAR richiedono un aggiornamento di dati di navigazione ad eccezione di X-Plane che è già dotato di un database di navigazione completo.
 
-![Route Description Dialog](../images/routedescr.jpg "Route Description Dialog")
+! [Finestra di dialogo Descrizione percorso] (../ images / routedescr.jpg "Finestra di dialogo Descrizione percorso")
 
-_**Picture above:** A route description that was read successfully with a few warnings about ignored elements. The waypoint _`LLL`_ could not be found. Speed, altitude, SID and STAR were recognized. The ground speed of 433 knots is calculated based on given mach number 0.74 and standard atmosphere conditions._
+_ ** Immagine sopra: ** Una descrizione del percorso che è stata letta correttamente con alcuni avvertimenti sugli elementi ignorati. Impossibile trovare il waypoint _`LLL`_. Velocità, altitudine, SID e STAR sono stati riconosciuti. La velocità al suolo di 433 nodi viene calcolata in base al numero di mach 0.74 e alle condizioni atmosferiche standard.
 
-### Buttons {#buttons}
 
-* `To Clipboard`: Copies the current description as plain text to the clipboard.
-* `From Clipboard`: Inserts text from clipboard to the input field. The inserted text is converted to  upper case and all invalid characters are removed from the text.
-* `Update from Flight Plan`: Creates the route string from the current flight plan again. Use this after changing settings with drop down menu button.
-* `Read Route Description`: Reads the route description and prints any messages, warnings and errors in the lower output field. The current flight plan is not affected by this action.
-* `IFR` / `VFR`: Defines the type of the generated flight plan and the automatically determined cruise altitude.
-* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"):
-  * `Add departure and destination airport`: Note that disabling this option will result in a route string which cannot be read back into a flight plan.
-  * `Add DCT (direct) instructions`: Add `DCT` for any direct waypoint connections in the flight plan.
-  * `Add cruise speed and altitude instruction`: Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
-  * `Add SID and STAR`: Add SID and STAR names if any are used for departure or arrival.
-  * `Add generic SID and STAR`: Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
-  * `Add Waypoints instead of Airways`: Does not insert any airway names but uses waypoints only.
-* `Create Flight Plan`: Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before creating a flight plan.
+Pulsanti ### {#pulsanti}
 
-### Format {#format}
+* `Negli Appunti`: Copia la descrizione corrente come testo normale negli Appunti.
+* "Dagli Appunti": inserisce il testo dagli Appunti nel campo di input. Il testo inserito viene convertito in maiuscolo e tutti i caratteri non validi vengono rimossi dal testo.
+* "Aggiorna dal piano di volo": crea nuovamente la stringa di rotta dal piano di volo corrente. Utilizzare questo dopo aver modificato le impostazioni con il pulsante del menu a discesa.
+* `Leggi descrizione percorso`: legge la descrizione del percorso e stampa eventuali messaggi, avvisi ed errori nel campo di output inferiore. L'attuale piano di volo non è interessato da questa azione.
+* `IFR` /` VFR`: definisce il tipo di piano di volo generato e l'altitudine di crociera determinata automaticamente.
+* ** Pulsante Menu **! [Pulsante Menu] (../ images / icons / menubutton.png "Pulsante Menu"):
+  * `Aggiungi aeroporto di partenza e di destinazione`: Nota che disabilitare questa opzione comporterà una stringa di rotta che non può essere riletta in un piano di volo.
+  * `Aggiungi istruzioni DCT (diretto )`: aggiungi` DCT` per tutte le connessioni dirette al waypoint nel piano di volo.
+  * `Aggiungi velocità di crociera e istruzioni altitudine`: aggiunge l'altitudine di crociera dal piano di volo e la velocità al suolo come impostato nella finestra ancorata del piano di volo.
+  * `Aggiungi SID e STAR`: aggiungi i nomi SID e STAR se ne vengono utilizzati uno per la partenza o l'arrivo.
+  * `Aggiungi SID e STAR` generici: aggiungi le parole chiave` SID` e `STAR` generiche se non sono stati selezionati SID e / o STAR reali.
+  * `Aggiungi waypoint anziché Aerovie`: non inserisce nomi di aerovie ma utilizza solo waypoint.
+* "Crea piano di volo": chiude la finestra di dialogo e crea un nuovo piano di volo per la descrizione del percorso analizzata e sostituisce il piano corrente. Devi fare clic su "Leggi la descrizione del percorso" prima di creare un piano di volo.
 
-The route description has to follow the format rules below:
+### Formato {#formato}
 
-`FROM[ETD] [SPEEDALT] [SID][.TRANS] [ENROUTE] [STAR][.TRANS] TO[ETA] [ALTERNATES]`
+La descrizione del percorso deve seguire le regole di formato seguenti:
 
-All elements in square brackets are optional.
+`DA [ETD] [SPEEDALT] [SID] [. TRANS] [ENROUTE] [STAR] [. TRANS] A [ETA] [ALTERNATES]`
 
-`FROM` and `TO`: These are the required 3 or 4 letter idents for departure and destination airports.
+Tutti gli elementi tra parentesi quadre sono opzionali.
 
-Examples: `KEAT`, `CYPU`, `S16`.
+`DA` e `A`: questi sono gli identificativi richiesti di 3 o 4 lettere per gli aeroporti di partenza e di destinazione.
 
-`ALTERNATES`: Alternate airports are optional and are simply appended to the flight plan. Alternates cannot be used in combination with an approach procedure.
+Esempi: `KEAT`,` CYPU`, `S16`.
 
-`SPEEDALT`: An optional entry that contains the cruise speed and altitude. See below for a details.
+"ALTERNATI": gli aeroporti alternati sono opzionali e vengono semplicemente aggiunti al piano di volo. Gli alternati non possono essere utilizzati in combinazione con una procedura di avvicinamento.
 
-`ENROUTE`: This is a list of either `WAYPOINT` or an `AIRWAYWAYPOINT` forming the actual flight plan. The first entry has to be an airport, waypoint, VOR or NDB.
+`SPEEDALT`: una voce opzionale che contiene la velocità e l'altitudine di crociera. Vedi sotto per un dettaglio.
 
-`WAYPOINT`: A waypoint, VOR, NDB, airport or user defined coordinates. See below for a details about coordinates. A waypoint can be prefixed with `DCT` to indicate a direct connection not using an airway. Waypoints can be suffixed with an optional `/SPEEDALT` value although this is ignored.
+`ENROUTE`: questo è un elenco di` WAYPOINT` o `AIRWAYWAYPOINT` che formano il piano di volo effettivo. La prima voce deve essere un aeroporto, waypoint, VOR o NDB.
 
-Examples: `TAU`, `BOMBI`, `AST`, `CL`, `EDDF`.
+`WAYPOINT`: un waypoint, VOR, NDB, aeroporto o coordinate definite dall'utente. Vedi sotto per i dettagli sulle coordinate. Un waypoint può essere preceduto da "DCT" per indicare una connessione diretta che non utilizza una via aerea. I waypoint possono essere suffissati con un valore `/ SPEEDALT` opzionale sebbene questo sia ignorato.
 
-`AIRWAYWAYPOINT`: Airway and end waypoint on the airway separated by a space.
+Esempi: `TAU`,` BOMBI`, `AST`,` CL`, `EDDF`.
 
-Examples: `V495 CONDI`, `V338 YVR`, `V330 TRENA`.
+`AIRWAYWAYPOINT`: vie aeree e waypoint finale sulle vie aeree sono separate da uno spazio.
 
-`SID.TRANS` and `STAR.TRANS`: Either the words `SID` or `STAR` or real SID, STAR and transition names where the optional transition is separated by a `.`. The generic keywords `SID` and `STAR` create a direct connection to the en route part.
+Esempi: `V495 CONDI`,` V338 YVR`, `V330 TRENA`.
 
-Examples: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
+`SID.TRANS` e` STAR.TRANS`: Entrambe le parole `SID` o` STAR` o SID realie, STAR e nomi delle transizioni dove la transizione opzionale è separata da un `.`. Le parole chiave generiche `SID` e` STAR` creano una connessione diretta alla parte di rotta.
 
-#### Features not supported
+Esempi: `RDHK2.HOLLE`,` OHIO3.LFK`, `RDHK2`,` OHIO3`.
 
-`ETD` and `ETA`: Four digit departure and arrival time attached to the airport ident are ignored.
+#### Funzionalità non supportate
 
-`WAYPOINT.SPEEDALT`: For example `BOMBI/N0090A060`. Altitude changes at waypoints are not supported and ignored when reading.
+`ETD` e` ETA`: l'orario di partenza e di arrivo a quattro cifre associato all'identificativo dell'aeroporto viene ignorato.
 
-#### Speed and Altitude {#speed-and-altitude}
+`WAYPOINT.SPEEDALT`: Ad esempio` BOMBI / N0090A060`. I cambi di altitudine ai waypoint non sono supportati e ignorati durante la lettura.
 
-Cruising ground speed and cruising level not separated by a space.
+#### Velocità e altitudine {# velocità-e-altitudine}
 
-Speed is prefixed with:
+Velocità di crociera al suolo e livello di crociera non sono  separati da uno spazio.
 
-`K`: Kilometers per hour followed by a four digit value.
+La velocità è preceduta da:
 
-`N`: Knots followed by a four digit value.
+"K": chilometri orari seguiti da un valore di quattro cifre.
 
-`M`: Mach followed by a three digit value. The mach value is converted to knots ground speed assuming standard atmosphere conditions at the give flight altitude.
+"N": nodi seguiti da un valore di quattro cifre.
 
-Altitude is prefixed with:
+`M`: Mach seguito da un valore di tre cifre. Il valore di mach viene convertito in nodi velocità del suolo ipotizzando condizioni atmosferiche standard all'altitudine di volo.
 
-`F` :Flight level in three digits.
+L'altitudine è preceduta da:
 
-`S`: Metric flight level in three digits of tens of meters.
+`F`: livello di volo in tre cifre.
 
-`A`: Altitude in hundreds of feet in three digits.
+`S`: livello di volo metrico in tre cifre di decine di metri.
 
-`M`: Altitude in tens of meter in four digits.
+"A": altitudine in centinaia di piedi in tre cifre.
 
-Examples:
+`M`: altitudine in decine di metro a quattro cifre.
 
-`N0410F310` 410 knots at flight level 310.
+Esempi:
 
-`M071F320` Mach 0.71 at flight level 320.
+`N0410F310` 410 nodi al livello di volo 310.
 
-`K0790M0710` 790 kilometers per hour at 7100 meters.
+`M071F320` Mach 0.71 al livello di volo 320.
 
-#### Coordinates {#coordinates}
+`K0790M0710` 790 chilometri orari a 7100 metri.
 
-Coordinates can be supplied in different formats:
+#### Coordinate {#coordinate}
 
-**Degrees** only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.
+Le coordinate possono essere fornite in diversi formati:
 
-Example: `51N010E`
+** Solo gradi ** \ (7 caratteri \): due cifre e indicatore nord / sud più tre cifre e indicatore est / ovest.
 
-**Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes and north/south indicator.
-Then three digits for degrees, two digits for minutes and east/west indicator.
+Esempio: `51N010E`
 
-Example: `4010N03822W`.
+** Gradi e minuti ** \ (11 caratteri \): due cifre gradi, due cifre per minuti e indicatore nord / sud.
+Quindi tre cifre per gradi, due cifre per minuti e indicatore est / ovest.
 
-**Degrees, minutes and seconds** \(15 characters\): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator.
-Then three digits for degrees, two digits for minutes, two digits for seconds and east/west indicator. This format is used by
-[SkyVector](https://skyvector.com) for example.
+Esempio: `4010N03822W`.
 
-Example: `481200N0112842E`.
+** Gradi, minuti e secondi ** \ (15 caratteri \): due cifre gradi, due cifre per minuti, due cifre per secondi e indicatore nord / sud.
+Quindi tre cifre per gradi, due cifre per minuti, due cifre per secondi e indicatore est / ovest. Questo formato è utilizzato da
+[SkyVector] (https://skyvector.com) per esempio.
 
-**North Atlantic track points** \(NAT\). Two digits degrees north and two digits degrees west followed by character `N`.
+Esempio: `481200N0112842E`.
 
-Example: `5010N`.
+** Punti di traccia del Nord Atlantico ** \ (NAT \). Due cifre gradi nord e due cifre gradi ovest seguite dal carattere "N".
 
-**Coordinate waypoint pairs** with degrees and minutes as above and prefixed with north/south and east/west indicator.
+Esempio: `5010N`.
 
-Examples: `N4200 W02000` or `N4200/W02000`.
+** Paia di waypoint coordinate ** con gradi e minuti come sopra e prefissate con l'indicatore nord / sud e est / ovest.
 
-**Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, three digits for minutes by 10. Then east/west indicator, three digits degrees, three digits minutes by 10. This format is used by the _Flight1 GTN 650/750_.
+Esempi: `N4200 W02000` o` N4200 / W02000`.
 
-Example: `N48194W123096`
+** Formato Garmin GFP ** \ (13 caratteri \) indicatore nord / sud, due cifre gradi, tre cifre per minuti di 10. Quindi indicatore est / ovest, tre cifre gradi, tre cifre minuti di 10. Questo formato è utilizzato da il _Flight1 GTN 650 / 750_.
 
-### Flight Plan Description Examples {#examples}
+Esempio: `N48194W123096`
 
-Frankfurt Main \(EDDF\) to Fiumicino \(LIRF\):
 
-**Direct connection:**
+### Esempi di descrizione del piano di volo {#esempi}
+
+Francoforte sul Meno \ (EDDF \) a Fiumicino \ (LIRF \):
+
+**Connessione diretta:**
+
 
 `EDDF LIRF` or `EDDF DCT LIRF`.
 
-**VOR to VOR:**
+** da VOR a VOR:**
 
 `EDDF FRD KPT BOA CMP LIRF`.
 
-**Same as above with departure time \(**`ETD`**\) and arrival time \(**`ETA`**\) which both will be ignored:**
+* Come sopra con orario di partenza \ (** `ETD` ** \) e orario di arrivo \ (**` ETA` ** \) che verranno ignorati entrambi: **
 
 `EDDF1200 FRD KPT BOA CMP LIRF1300`.
 
-**Same as above on flight level 310 at 410 knots:**
+** Come sopra al livello di volo 310 a 410 nodi: **
 
 `EDDF N0410F310 DCT FRD DCT KPT DCT BOA DCT CMP DCT LIRF`
 
-**Using Jet airways:**
+** Uso delle vie aeree Jet: **
 
 `EDDF ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG Y740 LORLO M738 AMTEL M727 TAQ LIRF`
 
-**Same as above on flight level 310 at mach 0.71 with an additional speed and altitude at **`NATAG`** which will be ignored:**
+** Come sopra al livello di volo 310 a mach 0,71 con velocità e altitudine aggiuntive a ** `NATAG` ** che verranno ignorate: **
 
-`EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF`
+`EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG / M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF`
 
-**User defined waypoints with degree/minute notation and an alternate airport **`LIRE`:
+** Waypoint definiti dall'utente con notazione gradi / minuti e un aeroporto alternato** `LIRE`:
 
 `EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE`
 
-**Flight plan using SID and STAR procedures with transitions:**
+** Piano di volo che utilizza le procedure SID e STAR con transizioni: **
 
 `KPWA RDHK2.HOLLE ATOKA J25 FUZ J33 CRIED J50 LFK OHIO3.LFK KHOU`
 
-**Flight plan using the generic SID and STAR keywords:**
+** Piano di volo utilizzando le parole chiave generiche SID e STAR: **
 
 `KPWA SID ATOKA J25 FUZ J33 CRIED J50 LFK STAR KHOU`
-

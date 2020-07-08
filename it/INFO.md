@@ -1,71 +1,69 @@
-## ![Information](../images/icons/infodock.png "Information") Information Dock Window {#information-dock-window}
+##! [Informazioni] (../ images / icons / infodock.png "Informazioni") Finestra ancorata informazioni {# information-dock-window}
 
-This dock window contains text information about airports in several tabs as well as information for one or more navaids, airways in another tab plus an additional tab showing airspace information.
+Questa finestra ancorata contiene informazioni di testo sugli aeroporti in diverse schede, nonché informazioni su uno o più radioaiuti, vie aeree in un'altra scheda e una scheda aggiuntiva che mostra le informazioni sullo spazio aereo.
 
-A tab `Weather` also includes decoded weather information for the selected airport.
+Una scheda "Meteo" include anche informazioni meteo decodificate per l'aeroporto selezionato.
 
-All information can be copied into the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl+A` to select all and `Ctrl+C` to copy the content to the clipboard.
+Tutte le informazioni possono essere copiate negli appunti come testo formattato. Usa il menu contestuale dei campi di testo o usa `Ctrl + A` per selezionare tutto e` Ctrl + C` per copiare il contenuto negli appunti.
 
-Information is shown when selecting one of the `Show Information for ...` context menu items in the map, flight plan dock window or the search result table.
-One airport and all navaids are loaded into the information display if multiple objects are nearby a mouse click
+Le informazioni vengono visualizzate quando si seleziona una delle voci del menu di scelta rapida "Mostra informazioni per ..." nella mappa, nella finestra ancorata del piano di volo o nella tabella dei risultati della ricerca.
+Un aeroporto e tutti i radioaiuti vengono caricati nella visualizzazione delle  informazioni se gli oggetti multipli sono vicini a un clic del mouse
 
-A blue link `Map` allows jumping to the shown airport or navaid on the map.
-Additional links for helipads are available in the tab `Runways/Helipads`.
+Un collegamento color blu "Mappa" consente di saltare all'aeroporto mostrato o radioaiuto sulla mappa.
+Ulteriori collegamenti per eliporti sono disponibili nella scheda "Piste / eliporti".
+Una via aerea viene sempre visualizzata con tutti i suoi waypoint  che sono anche collegati alle rispettive posizioni sulla mappa.
 
-An airway is always displayed with all its waypoints that are also linked to their respective map positions.
+Il display per tutti gli aeroporti e radioaiuti contiene uno o più collegamenti oltre al titolo dello scenario del simulatore di volo, nella parte inferiore dell'elenco, nella sezione "Scenario".
+Questi collegamenti puntano ai rispettivi file BGL. Un clic aprirà Esplora risorse con il file corrispondente selezionato.
 
-The display for all airports and navaids contains one or more links besides the title of the flight simulator scenery entry at the bottom of the list in section `Scenery`.
-These links point to the respective BGL files. A click will open Windows Explorer with the corresponding file selected.
+Per gli aeroporti possono comparire più collegamenti poiché questi possono essere modificati da più file BGL di diversi scenari, di componenti aggiuntivi o aggiornamenti di navdata.
 
-Multiple links can appear for airports since these can be modified by multiple BGL files from different add-on sceneries or navdata updates.
+! [Informazioni sull'aeroporto] (../ images / infoairport.jpg "Informazioni sull'aeroporto")
 
-![Airport Information](../images/infoairport.jpg "Airport Information")
+_ ** Immagine sopra: ** Panoramica delle informazioni sull'aeroporto. Le schede aggiuntive mostrano informazioni per piste, frequenze COM, avvicinamenti e condizioni meteorologiche.
 
-_**Picture above:** Airport information overview. Additional tabs show information for runways, COM frequencies, approaches and weather._
+! [Informazioni radioaiuti] (../ images / infonavaid.jpg "Informazioni Radioaiuti")
 
-![Navaid Information](../images/infonavaid.jpg "Navaid Information")
+_ ** Immagine sopra: ** Informazioni Radioaiuti. Due radioaiuti erano vicini al cursore quando vengono cliccati.
 
-_**Picture above:** Navaid information. Two navaids were close to the cursor when clicked._
 
-## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulator Aircraft Dock Window {#simulator-aircraft-dock-window}
+##! [Aereo del simulatore] (../ images / icons / aircraftdock.png "Aereo del Simulatore") Finestra ancorata del velivolo del simulatore {# simulatore-aereo-ancorata-finestra}
 
-This dock window shows information about the user aircraft and about AI or multiplayer aircraft in several tabs.
-_Little Navmap_ has to be connected to the simulator to enable this functionality.
-See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information on this topic.
+Questa finestra ancorata mostra informazioni sull'aereo dell'utente e sull'aereo AI o multiplayer in diverse schede.
+_Little Navmap_ deve essere collegato al simulatore per abilitare questa funzionalità.
+Vedere [Connessione a un simulatore di volo] (CONNECT.md # connessione-a-simulatore di volo) per ulteriori informazioni su questo argomento.
 
-### Tab Aircraft
+### Tabella dell'aereo
 
-Gives an overview about the user aircraft and shows type, weight and fuel information.
+Fornisce una panoramica dell'aereo dell'utente e mostra informazioni su tipo, peso e carburante.
 
-![Aircraft Information](../images/infoac.jpg "Aircraft Information")
+! [Informazioni sul velivolo] (../ images / infoac.jpg "Informazioni sul velivolo")
 
-_**Picture above:** Aircraft information when connected to a Flight Simulator._
+_ ** Immagine sopra: ** Informazioni sul velivolo quando è collegato a un simulatore di volo ._
 
-### Tab Progress
+### Avanzamento della scheda
 
-Shows information similar to a flight management computer about the user aircraft. This covers flight plan progress,
-altitude, speed, ambient and environment parameters.
+Mostra informazioni simili a un computer di gestione del volo, sull'aeromobile dell'utente. Questo riguarda i progressi del piano di volo,parametri di altitudine, velocità, ambiente e ambiente.
 
-![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information")
+! [Informazioni sullo stato di avanzamento dell'aereo] (../ images / infoacprogress.jpg "Informazioni sullo stato di avanzamento dell'aereo")
 
-_**Picture above:** Progress and ambient information of the current flight situation. Some fields or tables like _`Next Waypoint`_ are only available when a flight plan is loaded._
+_ ** Immagine sopra: ** Informazioni sul progresso e informatione circostante, sulla situazione attuale del volo. Alcuni campi o tabelle come _`Prossimo Waypoint`_ sono disponibili solo quando viene caricato un piano di volo._
 
-### Tab AI / Multiplayer
+### Tabella AI / Multiplayer
 
-Information about an AI or multiplayer aircraft or ship is displayed in this tab if a vehicle is clicked on the map.
+Le informazioni su un aereo o nave AI o multiplayer vengono visualizzate in questa scheda se si fa clic su un veicolo sulla mappa.
 
-This also includes departure and destination airports for aircraft that can be shown on the map by clicking on the blue links \(only for FSX or P3D and if a flight plan is filed\).
+Ciò include anche gli aeroporti di partenza e destinazione per gli aeromobili che possono essere visualizzati sulla mappa facendo clic sui collegamenti blu \ (solo per FSX o P3D e se è stato presentato un piano di volo \).
 
-Note that information on AI aircraft is limited on X-Plane where only position, altitude and heading can be displayed.
+Si noti che le informazioni sugli aerei AI sono limitate sull'aereo X in cui è possibile visualizzare solo la posizione, l'altitudine e la direzione.
 
-![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
+! [ Informazioni  aerei AI] (../ images / infoacai.jpg " Informazioni aerei AI")
 
-_**Picture above:** Information about an AI aircraft._
+_ ** Immagine sopra: ** Informazioni su un aereo AI ._
 
-## ![Legend](../images/icons/legenddock.png "Legend") Legend Dock Window {#legend-dock-window}
+##! [Legenda] (../ images / icons / legenddock.png "Legenda") Finestra ancorata legenda {# legenda-ancorata-finestra}
 
-Contains two tabs: One tab  `Navmap` explaining the various airport and navaid symbols and a tab `Map` which shows the
-general legend for the base map like the _OpenStreetMap_ for example.
+Contiene due schede: una scheda `Navmap` che spiega i vari simboli aeroporto e radioaiuto e una scheda` Mappa` che mostra la
+legenda generale per la mappa di base come ad esempio la _OpenStreetMap_.
 
-Note that the general map legend is not available for all map themes.
-
+Nota che la legenda della mappa generale non è disponibile per tutti i temi della mappa.

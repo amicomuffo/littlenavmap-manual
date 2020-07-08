@@ -1,146 +1,147 @@
-## Building a VFR Flight Plan
 
-### General
+## Costruire un piano di volo VFR
 
-This tutorial will show how to create a simple flight plan based on the map and its context menus.
+### Generale
 
-The flight will take us through the lovely valleys of the French alps. You can use this flight plan for any small aircraft like the free [Flight1 Cessna 162 SkyCatcher](http://www.flight1.com/view.asp?page=skycatcher) or the default Cessna 172.
+Questa guida mostrerà come creare un semplice piano di volo basato sulla mappa e sui suoi menu contestuali.
 
-The flight will only go through Class E airspace. There is no need to contact ATC.
+Il volo ci porterà attraverso le incantevoli vallate delle Alpi francesi. Puoi utilizzare questo piano di volo per qualsiasi piccolo aereo come quello gratuito [Flight1 Cessna 162 SkyCatcher] (http://www.flight1.com/view.asp?page=skycatcher) o il Cessna 172 predefinito.
 
-The flight plan is: _Meythet \(LFLP\) Parking 11, Ramp GA Small to Challes-les-Eaux \(LFLE\), 41 nm, 0 h 24 m, Direct_
+Il volo attraverserà solo lo spazio aereo di classe E. Non è necessario contattare l'ATC.
 
-### Departure Airport
+Il piano di volo è: _Meythet \ (LFLP \) Parking 11, Ramp GA Small to Challes-les-Eaux \ (LFLE \), 41 nm, 0 h 24 m, Direct_
 
-Find the departure airport:
-Click into the map and zoom to the French Alps. You can use the following functions to navigate:
+### Aeroporto di partenza
 
-* The map overlay on the left.
-* The mouse \(click and drag\) to move and the mousewheel to zoom.
-* The cursor keys to move and the keys `+` and `-` for zooming in and out \(click into the map window to activate it before using the  keys\).
+Trova l'aeroporto di partenza:
+Fai clic sulla mappa e ingrandisci le Alpi francesi. È possibile utilizzare le seguenti funzioni per navigare:
 
-Use the back ![Back](../images/icons/back.png) and forward ![Forward](../images/icons/next.png) buttons to jump in the position history like a web browser.
+* La mappa sovrapposta a sinistra.
+* Il mouse \ (fare clic e trascinare \) per spostare e la rotellina del mouse per ingrandire.
+* I tasti cursore per spostarsi e i tasti `+` e `-` per ingrandire e rimpicciolire \ (fare clic nella finestra della mappa per attivarlo prima di usare i tasti \).
 
-See also [Map Display](MAPDISPLAY.md).
+Utilizzare il pulsante Indietro! [Indietro] (../ images / icons / back.png) e avanti! [Forward] (../ images / icons / next.png) per saltare nella cronologia delle posizioni come un browser web.
 
-Look for the departure airport `Meythet (LFLP)` around here:
-![Meythet (LFLP)](../images/tutorial/vfrmap.jpg)
-Closer with tooltip:
-![Meythet (LFLP) Tooltip](../images/tutorial/vfrmapclose.jpg)
+Vedi anche [Visualizzazione mappa] (MAPDISPLAY.md).
 
-Now:
+Cerca l'aeroporto di partenza `Meythet (LFLP)` qui intorno:
+! [Meythet (LFLP)] (../ images / tutorial / vfrmap.jpg)
+Più vicino con la descrizione comando:
+! [Meythet (LFLP) Tooltip] (../ images / tutorial / vfrmapclose.jpg)
 
-* Zoom in until you see the airport diagram showing taxiways, runway details, parking positions and more.
-* Zoom in further until you see the white parking numbers.
-* Right click on the center of one of the green ramp parking spots \(11 is used here\).
-* Choose `Select Airport Meythet (LFLP) / Parking 11 as Flight Plan Departure` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png) in the context menu.
+Ora:
 
-![Meythet (LFLP) Parking](../images/tutorial/vfrmapparking.jpg)
+* Ingrandisci fino a visualizzare il diagramma dell'aeroporto che mostra le piste di rullaggio, i dettagli della pista, le posizioni di parcheggio e altro ancora.
+* Ingrandisci ulteriormente fino a visualizzare i numeri di parcheggio bianchi.
+* Fare clic con il tasto destro sul centro di uno dei parcheggi della rampa verde \ (qui viene utilizzato 11 \).
+* Scegli `Seleziona Aeroporto Meythet (LFLP) / Parcheggio 11 come Partenza piano di volo`! [Seleziona Aeroporto / Parcheggio come Partenza piano di volo] (../ images / icons / airportroutestart.png) nel menu contestuale.
 
-This will select your departure parking position which will be highlighted by a black/yellow circle. The airport will be added to the flight plan as departure too.
+! [Parcheggio Meythet (LFLP)] (../ images / tutorial / vfrmapparking.jpg)
 
-You can also click on the airport icon and select it for departure. A runway will be automatically assigned as departure position.
+Questo selezionerà la posizione di parcheggio di partenza che sarà evidenziata da un cerchio nero / giallo. L'aeroporto verrà aggiunto al piano di volo anche come partenza.
 
-### En Route Waypoints
+Puoi anche fare clic sull'icona dell'aeroporto e selezionarla per la partenza. Una pista verrà assegnata automaticamente come posizione di partenza.
 
-We add the waypoints now:
+### In rotta Waypoint
 
-* Scroll along the valley to the south east across the lake Lac d'Annecy.
-* Click `Append Position to Flight Plan` ![Append Position to Flight Plan](../images/icons/routeadd.png). The clicked position will be added as an user defined waypoint to the end of your plan.
+Aggiungiamo i waypoint ora:
 
-Click undo ![Undo](../images/icons/undo.png) or redo ![Redo](../images/icons/redo.png) if you don't like what you just added.
+* Scorri lungo la valle a sud-est attraverso il lago d'Annecy.
+* Fai clic su "Aggiungi posizione al piano di volo"! [Aggiungi posizione al piano di volo] (../ images / icons / routeadd.png). La posizione selezionata verrà aggiunta come waypoint definito dall'utente alla fine del piano.
 
-![Append Waypoint](../images/tutorial/vfrappend.jpg)
+Fai clic su Annulla! [Annulla] (../ images / icons / undo.png) o ripristina! [Ripeti] (../ images / icons / redo.png) se non ti piace ciò che hai appena aggiunto.
 
-Another function is `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png) which will insert  the clicked position to the nearest flight plan leg. You can use this to add user defined positions, airports or navaids in the middle of a flight plan. The nearest leg will be chosen automatically by _Little Navmap_.
+! [Aggiungi Waypoint] (../ images / tutorial / vfrappend.jpg)
 
-_Little Navmap_ will automatically assign names to the user defined waypoints. You can leave these as they are or replace them with a more meaningful name.
+Un'altra funzione è "Aggiungi posizione al piano di volo"! [Aggiungi posizione al piano di volo] (../ images / icons / routeadd.png) che inserirà la posizione cliccata sulla tratta del piano di volo più vicina. Puoi usarlo per aggiungere posizioni definite dall'utente, aeroporti o radioaiuti nel mezzo di un piano di volo. La tratta più vicina verrà scelta automaticamente da _Little Navmap_.
 
-To change a waypoint name right click on the user waypoint and select `Edit Name of User Waypoint` ![Edit Name of User Waypoint](../images/icons/routestring.png). Use nearby villages, mountains, lakes or other points of interest.
+_Little Navmap_ assegnerà automaticamente i nomi ai waypoint definiti dall'utente. Puoi lasciarli così come sono o sostituirli con un nome più significativo.
 
-The flight simulator limits the name to a certain length and to certain characters. Nothing will be added to the name if it is too long or if you type the wrong characters.
+Per cambiare il nome di un waypoint, fare clic con il tasto destro del mouse sul waypoint utente e selezionare "Modifica nome waypoint utente"! [Modifica nome waypoint utente] (../ images / icons / routestring.png). Usa villaggi, montagne, laghi o altri punti di interesse vicini.
 
-![Edit Waypoint Name](../images/tutorial/vfreditname.jpg)
+Il simulatore di volo limita il nome a una certa lunghezza e a determinati caratteri. Nulla verrà aggiunto al nome se è troppo lungo o se si digitano i caratteri sbagliati.
 
-Keep adding points and stay away from the mountains until you're at `Challes-les-Eaux (LFLE)`.
+! [Modifica nome waypoint] (../ images / tutorial / vfreditname.jpg)
 
-### Destination Airport
+Continuate ad aggiungere punti e state lontani dalle montagne fino a quando non siete a "Challes-les-Eaux (LFLE)".
 
-To add the destination:
+### Aeroporto di destinazione
 
-* Right click on `Challes-les-Eaux (LFLE)`
-* Select `Set Airport as Flight Plan Destination` ![Set Airport as Flight Plan Destination](../images/icons/airportroutedest.png).
+Per aggiungere la destinazione:
 
-![Select Destination](../images/tutorial/vfrdest.jpg)
+* Fare clic destro su "Challes-les-Eaux (LFLE)"
+* Seleziona `Imposta aeroporto come destinazione del piano di volo`! [Imposta aeroporto come destinazione del piano di volo] (../ images / icons / airportroutedest.png).
 
-Now there is a flight plan. Yours might look a bit different.
+! [Seleziona destinazione] (../ images / tutorial / vfrdest.jpg)
 
-![VFR Flight Plan](../images/tutorial/vfrflightplan.jpg)
+Ora c'è un piano di volo. Il tuo potrebbe apparire un po 'diverso.
 
-You can also use the drag and drop feature to move points or add new ones. Enable it by checking `Flight Plan` -&gt; `Edit Flight Plan on Map` ![Edit Flight Plan on Map](../images/icons/routeedit.png) and click on a flight plan waypoint to move it. Click on a flight plan leg to add a new waypoint into this leg.
+! [Piano di volo VFR] (../ images / tutorial / vfrflightplan.jpg)
 
-See [Map Flight Plan Editing](MAPFPEDIT.md) for more information.
+Puoi anche utilizzare la funzione di trascinamento della selezione per spostare punti o aggiungerne di nuovi. Abilitalo selezionando "Piano di volo" - & gt; "Modifica piano di volo sulla mappa"! [Modifica piano di volo sulla mappa] (../ images / icons / routeedit.png) e fai clic su un waypoint del piano di volo per spostarlo. Fai clic su una tratta del piano di volo per aggiungere un nuovo waypoint in questa tratta.
 
-### Cruise Altitude
+Vedere [Modifica del piano di volo della mappa] (MAPFPEDIT.md) per ulteriori informazioni.
 
-Change the flight plan type to `VFR` if not already done.
+### Altitudine di crociera
 
-![Flight Plan Type](../images/tutorial/vfrtype.jpg)
+Cambia il tipo di piano di volo in `VFR` se non lo hai già fatto.
 
-Now check the cruise altitude:
+! [Tipo di piano di volo] (../ images / tutorial / vfrtype.jpg)
 
-* Look at the flight plan elevation profile. There is a red line indicating the minimum safe altitude.
-* Adjust the flight plan cruise altitude until you're above the red line.
-* Select `Flight Plan` -&gt; `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png) to get the correct altitude adjusted by the hemispherical rule.
+Ora controlla l'altitudine della crociera:
 
-Note that the default hemispherical rule is not correct for France until you change it in the options dialog, but I'll avoid this for the sake of simplicity now.
+* Guarda il profilo altimetrico del piano di volo. C'è una linea rossa che indica l'altitudine minima di sicurezza.
+* Regola l'altitudine di crociera del piano di volo fino a quando non sei sopra la linea rossa.
+* Seleziona `Piano di volo` - & gt; "Regola l'altitudine del piano di volo"! [Regola l'altitudine del piano di volo] (../ images / icons / routeadjustalt.png) per ottenere l'altitudine corretta regolata dalla regola emisferica.
 
-![Elevation Profile](../images/tutorial/vfrprofile.jpg)
+Nota che la regola emisferica predefinita non è corretta per la Francia fino a quando non la cambi nella finestra di dialogo delle opzioni, ma per semplicità ora  lo eviterò.
 
-You probably noticed that you will get close to ground near the destination. Be prepared to circumvent some mountains there.
+! [Profilo di Elevazione] (../ images / tutorial / vfrprofile.jpg)
 
-### Airspaces
+Probabilmente hai notato che ti avvicinerai al suolo presso la destinazione. Preparati a eludere alcune montagne lì.
 
-Now look if your flight plan touches any airspaces.
 
-Click into one of the airspaces nearby start and destination and have a look at the information dock window. There are several airspaces:
+### Spazi aerei
 
-* `Geneva TMA Sector 8` which starts at 9,500 feet above mean sea level \(MSL\). This is higher than our cruise altitude and won't affect us.
-* Two Class E airspaces. The information window notes for these: `Controlled, IFR and VFR, ATC clearance required for IFR only`. No problem because we will fly using VFR.
+Ora guarda se il tuo piano di volo tocca qualche spazio aereo.
 
-The situation is similar at the destination.
+Fai clic su uno degli spazi aerei vicini all'inizio e alla destinazione e dai un'occhiata alla finestra ancorata informativa. Esistono diversi spazi aerei:
 
-![Airspaces](../images/tutorial/vfrairspace.jpg)
+* "Settore TMA di Ginevra 8" che inizia a 9.500 piedi sopra il livello medio del mare \ (MSL \). Questo è superiore alla nostra altitudine di crociera e non ci influenzerà.
+* Due spazi aerei di classe E. La finestra informativa si fà notare per questo: "Controllato, IFR e VFR, autorizzazione ATC richiesta solo per IFR". Nessun problema perché voleremo usando il  VFR.
 
-### Groundspeed
+La situazione è simile a destinazione.
 
-Now adjust the speed to your expected ground speed. This allows the program to estimate flying time for the whole plan and for the legs.
+! [Spazi aerei] (../ images / tutorial / vfrairspace.jpg)
 
-The speed is saved as an annotation in the PLN file. So when you load the plan into _Little Navmap_ it will restore the given speed. The speed value has no effect in the simulator.
+### Velocità al suolo
 
-Note that the plan is static and will not change during flight.
+Ora regola la velocità in base alla velocità al suolo prevista. Ciò consente al programma di stimare il tempo di volo per l'intero piano e per le tratte.
 
-![Cruise Speed](../images/tutorial/vfrspeed.jpg)
+La velocità viene salvata come annotazione nel file PLN. Quindi quando carichi il piano in _Little Navmap_ ripristinerà la velocità data. Il valore della velocità non ha alcun effetto nel simulatore.
 
-Save the plan using `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
+Si noti che il piano è statico e non cambierà durante il volo.
 
-### Flying
+! [velocità in crociera] (../ images / tutorial / vfrspeed.jpg)
 
-Follow the steps below to get a moving map and see your aircraft in _Little Navmap_:
+Salva il piano usando `File` - & gt; "Salva piano di volo"! [Salva piano di volo] (../ images / icons / filesave.png). Il programma di solito trova la directory giusta per i piani di volo e fornisce un nome ragionevole per impostazione predefinita.
 
-* Open the dialog `Connect` using `Tools` -&gt; `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable it if not. _Little Navmap_ will find the simulator no matter if it is already started or will be started later.
-![Connect Dialog](../images/tutorial/vfrconnect.jpg)
-* Click `Connect` which will close the dialog.
-* Enable `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep it centered if an active flight is loaded, i.e. the simulator is not in the opening screen.
-* Start the simulator if not already done, load the flight plan and go flying.
+### Volare
 
-See also [Connecting to a Flight Simulator](CONNECT.md).
+Segui i passaggi seguenti per ottenere una mappa mobile e vedere il tuo aereo in _Little Navmap_:
 
-### Looking at Places while Flying
+* Apri la finestra di dialogo `Connetti` usando` Strumenti` - & gt; "Flight Simulator Connection"! [Simulatore di volo connessione] (../ images / icons / network.png) e controlla se è selezionato "Connetti automaticamente". Abilitalo in caso contrario. _Little Navmap_ troverà il simulatore indipendentemente dal fatto che sia già stato avviato o verrà avviato in seguito.
+! [Finestra di dialogo connetti] (../ images / tutorial / vfrconnect.jpg)
+* Fai clic su "Connetti" per chiudere la finestra di dialogo.
+* Abilita `Mappa` - & gt; "centra aereo"! [Center Aircraft] (../ images / icons / centeraircraft.png). La mappa salterà sull'aereo del simulatore e la manterrà centrata se viene caricato un volo attivo, ovvero il simulatore non si trova nella schermata di apertura.
+* Avvia il simulatore se non lo hai già fatto, carica il piano di volo e vola.
 
-The program will stop following your aircraft if you start any action that zooms in to an airport or navaid \(double click, toolbar button or link in the information window\):
+Vedi anche [Collegamento a un simulatore di volo] (CONNECT.md).
 
-* Double click on the destination airport for example to zoom to the airport diagram.
-* When done click the back button ![Back](../images/icons/back.png) until you are back at your aircraft.
-* Then enable `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png) again to keep the aircraft centered.
+### Guardare località mentre voli
 
+Il programma smetterà di seguire il tuo aereo se avvii un'azione che ingrandisce un aeroporto o un radioaiuto \ (doppio clic, pulsante della barra degli strumenti o link nella finestra delle informazioni \):
+
+* Fare doppio clic sull'aeroporto di destinazione, ad esempio per ingrandire il diagramma dell'aeroporto.
+* Al termine, fai clic sul pulsante Indietro! [Indietro] (../ images / icons / back.png) fino a quando non sarai di nuovo sul tuo aereo.
+* Quindi abilita `Mappa` - & gt; "centra aereo"! [Center Aircraft] (../ images / icons / centeraircraft.png) di nuovo per mantenere l'aereo al centro.

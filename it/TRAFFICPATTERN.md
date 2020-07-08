@@ -1,31 +1,30 @@
-## ![Traffic Pattern](../images/icons/trafficpattern.png "Traffic Pattern") Traffic Pattern {#traffic-pattern}
+##! [Modello di Traffico] (../ images / icons / trafficpattern.png "Traffic Pattern") Modello di traffico {# traffico-modello}
 
-_Little Navmap_ can display an airport traffic patterns as a guidance on the map.
+_Little Navmap_ può visualizzare i modelli di traffico di un aeroporto come guida sulla mappa.
 
-Right click on an airport in the map, flight plan table or airport search result table and select [Display Airport Traffic Pattern](MAPDISPLAY.md#show-traffic-pattern).
+Fare clic con il tasto destro del mouse su un aeroporto sulla mappa, nella tabella del piano di volo o nella tabella dei risultati di ricerca dell'aeroporto e selezionare [Visualizza modello di traffico dell'aeroporto] (MAPDISPLAY.md # mostra-traffico-modello).
 
-This will show a dialog where you can select a runway and customize the pattern.
+Questo mostrerà una finestra di dialogo in cui è possibile selezionare una pista e personalizzare il modello.
 
-The title shows airport name, ICAO airport ident and elevation.
+Il titolo mostra il nome dell'aeroporto, identificativo l'ICAO, così come l'elevazione del campo .
 
-* `Runway`: Select the runway here. Shows length and surface type. The label below shows name, length, width, magnetic heading, surface and light status of the currently selected runway.
-* `Turn direction`: Select to choose between left or right turn pattern. This is automatically updated when selecting a runway from FSX or P3D.
-* `Base 45° after threshold`: Calculates the final leg length automatically when checked.
-* `Base leg to runway threshold`: Length of the final leg. Measured from turn to final to the runway threshold.
-* `Downwind to runway`: Parallel distance from downwind leg to runway.
-* `Pattern altitude`: Pattern altitude above airport elevation. This is automatically updated when selecting a runway from FSX or P3D.
-* `Entry and exit indicators`: Shows dashed lines and arrows giving hints for entry and exit points.
-* `Line Color`: Color of the pattern lines and labels.
+* `Pista`: selezionare qui la pista. Mostra la lunghezza e il tipo di superficie. L'etichetta seguente mostra il nome, la lunghezza, la larghezza, la direzione magnetica, lo stato della superficie e la condizione delle luci della pista attualmente selezionata.
+* `Direzione di svolta`: selezionare per scegliere tra il modello di svolta a sinistra o a destra. Questo viene automaticamente aggiornato quando si seleziona una pista da FSX o P3D.
+* `Base 45 ° dopo la soglia`: calcola automaticamente la lunghezza finale della tratta quando selezionata.
+* `Soglia base per la soglia della pendenza`: lunghezza dell'ultimo tratto. Misurato dalla svolta in finale fino alla soglia della pista.
+* `Sottovento alla pista`: distanza parallela dal sottovento alla pista.
+* `Altitudine ragionevole`: altitudine ragionevole sopra l'altitudine dell'aeroporto. Questo viene automaticamente aggiornata quando si seleziona una pista da FSX o P3D.
+* `Indicatori di entrata e uscita`: mostra linee tratteggiate e frecce che danno suggerimenti per i punti di entrata e uscita.
+* "Colore linea": colore delle linee del modello e delle etichette.
 
-Traffic patterns can be removed by either selecting `Map` -&gt; `Remove all Ranges, Measurements and Patterns` or by right click on the hotspot \(circle\) at the runway threshold.
+I modelli di traffico possono essere rimossi selezionando "Mappa" - & gt; "Rimuovi tutti gli intervalli, misure e modelli" o facendo clic con il pulsante destro del mouse sull'hotspot \ (cerchio \) alla soglia della pista.
 
-See [Legend - Airport Traffic  Pattern](LEGEND.md#airport-traffic-pattern) for details about the displayed numbers in the pattern.
+Vedere [Legenda - Modello di traffico dell'aeroporto] (LEGEND.md # modello di traffico dell'aeroporto) per dettagli sui numeri visualizzati nel modello.
 
-![Traffic Pattern Dialog](../images/pattern_dialog.jpg "Traffic Pattern Dialog")
+! [Finestra di dialogo modello di traffico] (../ images / pattern_dialog.jpg "Finestra di dialogo modello di traffico")
 
-_**Picture above:** Traffic pattern dialog for _`EDFE`_ runway 08 at 1000 ft above airport elevation._
+_ ** Immagine sopra: ** Finestra di dialogo del modello di traffico per _`EDFE`_ pista 08 a 1000 piedi sopra l'altitudine dell'aeroporto.
 
-![Traffic Pattern](../images/pattern.jpg "Traffic Pattern")
+! [Traffic Pattern] (../ images / pattern.jpg "Traffic Pattern")
 
-_**Picture above:** Traffic Pattern for the settings in the dialog above. Downwind leg shows pattern altitude above MSL and course and final leg shows runway name and course._
-
+_ ** Immagine sopra: ** Modello di traffico per le impostazioni nella finestra di dialogo sopra. La tratta sottovento mostra il modello di altitudine sopra MSL,la rotta e la tappa finale che mostrano il nome della pista e la rotta.

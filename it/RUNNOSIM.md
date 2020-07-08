@@ -1,23 +1,22 @@
-## Running without Flight Simulator Installation {#running-without-flight-simulator-installation}
+## Esecuzione senza installazione di Flight Simulator {# esecuzione-senza-volo-simulatore-installazione}
 
-You can use `littlenavmap.exe` on all computers no matter if SimConnect or a flight simulator are installed or not.
+Puoi usare `littlenavmap.exe` su tutti i computer, indipendentemente dal fatto che SimConnect o un simulatore di volo siano installati o meno.
 
-Follow these steps if you want to install _Little Navmap_ on a computer not containing any flight simulator installation for a networked setup, for example. No functionality is affected except direct connect capability which are not needed in this case.
+Seguire questi passaggi se si desidera installare _Little Navmap_ su un computer che non contiene alcuna installazione del simulatore di volo, ad esempio, per una configurazione di rete, . Nessuna funzionalità è interessata tranne la capacità della connessione diretta che non è necessaria in questo caso.
 
-This scenario is typically used when connecting to the flight simulator to watch the progress of a flight remotely.
+Questo scenario viene in genere utilizzato quando ci si collega al simulatore di volo per monitorare l'avanzamento di un volo in remoto.
 
-Flight plans can be created, loaded and saved on the client computer. You only have to make sure that these are transfered to the flight simulator computer using Windows shares or by other means.
+I piani di volo possono essere creati, caricati e salvati sul computer client. Devi solo assicurarti che questi vengano trasferiti sul computer del simulatore di volo usando condivisioni Windows o con altri mezzi.
 
-These instructions apply to Windows, macOS and Linux computers equally.
+Queste istruzioni si applicano anche ai computer Windows, macOS e Linux.
 
-1.  Install _Little Navmap_ on both your flying computer and the client computer without simulator.
-2.  Start it on the flying computer and generate the scenery library databases. See [Load Scenery Library Dialog](SCENERY.md) above for more information.
-3.  Select `Main Menu` -> `Scenery Library` -> `Show Database Files` on the flying computer. This will open the directory containing the database files in a file manager like Windows Explorer or Apple Finder. You will find one or more database file like `little_navmap_fsx.sqlite`, `little_navmap_p3dv3.sqlite` or `little_navmap_xp11.sqlite`.
-4.  Exit _Little Navmap_ on the flying computer.
-5.  Start _Little Navmap_ on the client/remote computer and select `Scenery Library` -> `Show Database Files`.
-6.  Exit _Little Navmap_ on the client computer so you can copy the datbase files.
-7.  Copy the database files to your client computer using network shares, USB sticks or whatever you like. Use the file manager windows opened by the procedures above.
-8.  Start _Little Navmap_ on the client computer. The menu `Scenery Library` should contain an entry for each copied database file or no entry at all if only one database file was copied. Airport icons should be visible on the map in either case. **There is no need to reload the scenery library database now since you just copied a fully populated database file.**
+1. Installa _Little Navmap_ sia sul tuo computer in cui si vola che sul computer client senza simulatore.
+2. Avviarlo sul computer in cui si vola e generare i database delle librerie di scenari. Vedere sopra [Finestra di dialogo Carica libreria scenari] (SCENERY.md) per ulteriori informazioni.
+3. Selezionare "Menu principale" -> "Libreria scenari" -> "Mostra file di database" sul computer in cui si vola. Questo aprirà la directory contenente i file del database in un file manager come Windows Explorer o Apple Finder. Troverai uno o più file di database come `little_navmap_fsx.sqlite`,` little_navmap_p3dv3.sqlite` o `little_navmap_xp11.sqlite`.
+4. Esci da _Little Navmap_ sul computer in cui si vola.
+5. Avviare _Little Navmap_ sul client / computer remoto e selezionare `Scenery Library` ->` mostra files del database`.
+6. Chiudere _Little Navmap_ sul computer client in modo da poter copiare i file del database.
+7. Copia i file del database sul tuo computer client usando condivisioni di rete, chiavette USB o tutto quello che tu vuoi. Utilizzare le finestre del file manager aperte tra le procedure sopra.
+8. Avviare _Little Navmap_ sul computer client. Il menu "Libreria scenario" dovrebbe contenere una voce per ciascun file di database copiato o nessuna voce se è stato copiato solo un file di database. Le icone dell'aeroporto dovrebbero essere visibili sulla mappa in entrambi i casi. ** Non è necessario ricaricare il database della libreria degli scenari poiché è stato appena copiato un file di database riempito completamente. **
 
-See the [Connecting to a Flight Simulator](CONNECT.md#remote-connection) for information about networked setups.
-
+Vedere [Connessione a un simulatore di volo] (CONNECT.md # connessione remota) per informazioni sulle impostazioni di rete.

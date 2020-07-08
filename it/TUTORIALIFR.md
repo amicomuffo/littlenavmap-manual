@@ -1,271 +1,277 @@
-## Building an IFR Flight Plan with Approach Procedures {#tutorial-ifr}
 
-This tutorial will show you how to create a more complex IFR flight plan including approach procedures. It introduces the advanced airport search functionality and the automatic flight plan calculation.
+## Creazione di un piano di volo IFR con procedure di avvicinamento {# guida-ifr}
 
-While this tutorial looks quite lengthy it is normally a matter of half a minute to get a flight plan if you know where to go. The planning effort shown here is bigger to highlight some of the more advanced features of the program.
+Questo guida ti mostrerà come creare un piano di volo IFR più complesso che includa le procedure di avvicinamento. Presenta la funzionalità di ricerca avanzata dell'aeroporto e il calcolo automatico del piano di volo.
 
-You should at least read through the VFR tutorial [Building a VFR Flight Plan](TUTORIALVFR.md).
+Mentre questa guida sembra piuttosto lunga, di solito è una questione di mezzo minuto per ottenere un piano di volo se sai dove andare. Lo sforzo di pianificazione mostrato qui è più grande per evidenziare alcune delle funzionalità più avanzate del programma.
 
-The flight plan will go across the UK using an IFR capable aircraft. Its maximum range should be more than 600 nautical miles including reserves and a cruise altitude of 10,000 feet.
+Dovresti almeno leggere il tutorial VFR [Costruire un piano di volo VFR] (TUTORIALVFR.md).
 
-I will not go into detailed fuel planning procedures in this tutorial. That is another story for another time.
+Il piano di volo attraverserà il Regno Unito utilizzando un velivolo abilitato all'IFR. La sua portata massima dovrebbe essere superiore a 600 miglia nautiche comprese le riserve e un'altitudine di crociera di 10.000 piedi.
 
-The tutorial assumes the following preconditions:
+In questa guida non approfondirò le procedure dettagliate di pianificazione del carburante. Questa è un'altra storia per un'altra volta.
 
-* You left your aircraft at `Bembridge (EGHJ)` at the end of the last flight or treat this as you home base.
-* You don't know where you want to fly today.
-* You know the requirements for your aircraft:
- * Range
- * Minimum runway length
- * Hard runways
- * Need a parking spot at the destination
- * Fuel for flying back
+La guida presuppone i seguenti presupposti:
 
-### Cleanup Search {#tutorial-ifr-cleanup}
+* Hai lasciato il tuo aereo a "Bembridge (EGHJ)" alla fine dell'ultimo volo o trattalo come base di partenza.
+* Non sai dove vuoi volare oggi.
+* Conosci i requisiti per il tuo aereo:
+ * autonomia
+ * Lunghezza minima della pista
+ * Piste difficili
+ * Hai bisogno di un  posto dove parcheggiare a destinazione
+ * Carburante per tornare indietro
 
-Go to the dock window `Search` and follow the steps below:
+ ### Ricerca pulita {# guida-ifr-pulita}
 
-* Right click into the result table and select `Reset Search` ![Reset Search](../images/icons/clear.png) to get rid of all search criteria that may affect the query.
-* Click the menu button  ![Menu Button](../images/icons/menubutton.png) and make sure that the search groups `Facilities`, `Runway`, `Parking` and `Distance from Mark` are checked. Deselect all others you don't need.
+ Vai alla finestra ancorata "Cerca" e segui i passaggi seguenti:
 
-![Prepare Search](../images/tutorial/ifrsearchprep.jpg)
+ * Fai clic distruggi nella tabella dei risultati e seleziona "Ripristina ricerca"! [Ripristina ricerca] (../ images / icons / clear.png) per sbarazzarsi di tutti i criteri di ricerca che possono influenzare la domanda.
+ * Fai clic sul pulsante menu! [Pulsante menu] (../ images / icons / menubutton.png) e  sui servizi che i gruppi di ricerca `Strutture`,` Pista`, `Parcheggio` e` Distanza dal segno` siano controllati. Deseleziona tutti gli altri che non ti servono.
 
-### Assign Departure {#tutorial-ifr-assign-departure}
+ ! [Prepara ricerca] (../ images / tutorial / ifrsearchprep.jpg)
 
-Now look for the departure airport:
+ ### Assegna partenza {# tutorial-ifr-assegnare-partenza}
 
-* Enter `EGHJ` in the `ICAO Code` search field on the top left \(case does not matter\).
-* Right click on the airport in the result table.
-* Choose `Set as Flight Plan Departure` ![Set as Flight Plan Departure](../images/icons/airportroutestart.png). This will assign a default runway as a start position.
+ Ora cerca l'aeroporto di partenza:
 
-![Assign Departure](../images/tutorial/ifrseldeparture.jpg)
+ * Inserisci `EGHJ` nel campo di ricerca` Codice ICAO` in alto a sinistra \ (la causa non ha importanza \).
+ * Fare clic con il tasto destro del mouse sull'aeroporto nella tabella dei risultati.
+ * Scegli `Imposta come partenza piano di volo`! [Imposta come partenza piano di volo] (../ images / icons / airportroutestart.png). Ciò assegnerà una pista predefinita come posizione iniziale.
 
-Your flight plan has one entry now. This is already sufficient if you want to fly a pattern and like to see distance, speed and time information to the airport.
+ ! [Assegna partenza] (../ images / tutorial / ifrseldeparture.jpg)
 
-Starting from a runway is not quite realistic. Let's select a parking position:
+ Il tuo piano di volo ha una voce ora. Questo è già sufficiente se si desidera seguire uno schema e si desidera visualizzare informazioni su distanza, velocità e tempo per l'aeroporto.
 
-* Go to `Flight Plan` -&gt; `Select a Start Position for Departure` ![Select a Start Position for Departure](../images/icons/parkingstartset.png).
-* Choose one of the GA small ramp positions.
-* Click `Ok` and the position will be highlighted on the map.
+ Partire da una piattaforma non è del tutto realistico. Selezioniamo una posizione di parcheggio:
 
-![Assign Parking](../images/tutorial/ifrselparking.jpg)
+ * Vai a `Piano di volo` - & gt; "Seleziona una posizione iniziale per la partenza"! [Seleziona una posizione iniziale per la partenza] (../ images / icons / parkingstartset.png).
+ * Scegli una delle posizioni di  rampa piccola GA.
+ * Fai clic su "Ok" e la posizione verrà evidenziata sulla mappa.
 
-Alternatively you can also select the start position directly on the map's context menu as described in the [VFR tutorial](TUTORIALVFR.md).
+ ! [Assegna parcheggio] (../ images / tutorial / ifrselparking.jpg)
 
-See also [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure)
+ In alternativa puoi anche selezionare la posizione iniziale direttamente dal menu contestuale della mappa come descritto nella [guida VFR] (TUTORIALVFR.md).
 
-### Search for Destination {#tutorial-ifr-search-dest}
+ Vedi anche [Imposta come partenza piano di volo] (MAPDISPLAY.md # set-as-flight-plan-partenza)
 
-Now look for a suitable destination airport:
 
-* Right click on `EGHJ` in the search result again.
-* Select `Set Center for Distance Search` ![Set Center for Distance Search](../images/icons/mark.png). You can also do this in the map. This is the center point for the spatial search.
-* Clear the `ICAO Code` search field now \(it is a common mistake to leave the text fields filled when doing distance searches which will give you an empty result table\).
+ ### Cerca la destinazione {# guida-ifr-cerca-destinazione}
 
-We will now look for airports that are in range of the aircraft but not too close. Also, certain criteria have to be fulfilled, like having parking spots that fit the aircraft and a runway which is long enough.
+ Ora cerca un aeroporto di destinazione adatto:
 
-You can also find airports in aircraft range by using the range rings where you can right click into the map on your departure airport and select `Show Range Rings` ![Show Range Rings](../images/icons/rangerings.png), although this function does not allow the detailed airport filters.
+ * Fare nuovamente clic con il tasto destro su `EGHJ` nei risultati della ricerca.
+ * Seleziona "Imposta centro per ricerca distanza"! [Imposta centro per ricerca distanza] (../ images / icons / mark.png). Puoi anche farlo sulla mappa. Questo è il punto centrale per la ricerca spaziale.
+ * Cancella il campo di ricerca "Codice ICAO" ora \ (è un errore comune lasciare i campi di testo pieni quando si eseguono ricerche distanti che ti daranno una tabella vuota di risultati\).
 
-We will use the spatial search instead of range rings since we'd like to see only suitable airports for out aircraft.
+ Ora cercheremo gli aeroporti che si trovano nel raggio di azione dell'aeromobile ma non troppo vicini. Inoltre, devono essere soddisfatti alcuni criteri, come avere luoghi di parcheggio adatti all'aeromobile e una pista abbastanza lunga.
 
-Check the following in the airport search tab:
+ Puoi anche trovare aeroporti nell'autonomia dell'aereo utilizzando gli anelli di distanza, dove puoi fare clic con il tasto destro del mouse sulla mappa del tuo aeroporto di partenza e selezionare "Mostra anelli di distanza"! [Mostra anelli di distanza] (../ images / icons / rangerings.png) , sebbene questa funzione non consenta filtri dettagliati dell'aeroporto.
 
-1. `Rating`: We'd like to get airports that are either add-ons or have basic scenery requirements, like taxiways, parking spots and more. Everything else is boring.
-2. `Procedures`: Show only airports that have procedures to spice up the approach a bit.
-3. Deselect `Military` and `Closed` \(click the checkboxes twice\): This will return only civilian airports and avoid airports that have all runways closed.
-4. Also check `Avgas` so we can fill up for our return trip and don't have beg for fuel at a nearby road.
-5. In the combo box `Any or no Ramp` select `At least Ramp GA small`. This will include only airports in the result that have suitable parking spots.
-6. In the combo box `Any Surface` select `Any is Hard` to avoid airports having only soft surfaced runways.
-7. Select a minimum runway length of 2,500 feet for your aircraft in the field `Runways:` `Min:`.
+ Useremo la ricerca spaziale anziché gli anelli di distanza poiché vorremmo vedere solo aeroporti adatti per i nostri aerei.
 
-See also [Search Dock Window - Airports and Navaids](SEARCH.md).
 
-You can also limit the maximum runway length if you are looking for a short landing challenge, but not now.
+ Controlla quanto segue nella scheda di ricerca dell'aeroporto:
 
-The search result changes on the fly while doing all these adjustments, though we are not there yet:
+ 1. `Classificazione`: vorremmo ottenere aeroporti che siano componenti aggiuntivi o che abbiano requisiti dello scenario di base, come piste di rullaggio, parcheggi e altro ancora. Tutto il resto è barboso.
+ 2. "Procedure": mostra solo gli aeroporti che dispongono di procedure per ravvivare un pò 'l'avvicinamento.
+ 3. Deseleziona `Militare` e` Chiuso` \ (fai clic due volte sulle caselle di controllo \): questo restituirà solo gli aeroporti civili ed eviterà gli aeroporti che hanno tutte le piste chiuse.
+ 4. Controlla anche "Avgas" in modo da poter fare il pieno per il nostro viaggio di ritorno e non aver bisogno di carburante per una pista vicina.
+ 5. Nella casella combinata "Qualsiasi o nessuna rampa" selezionare "Almeno GA piccola". Ciò includerà solo gli aeroporti che abbiano nei  risultati parcheggi adeguati.
+ 6. Nella casella combinata `qualsiasi superficie` selezionare` qualunque che sia dura` per evitare che gli aeroporti abbiano solo piste a superficie morbida.
+ 7. Seleziona una lunghezza minima della pista di 2.500 piedi per il tuo aereo nel campo `Piste:` `Min:`.
 
-* Check `Distance:` to activate the spatial search.
-* Change the maximum distance to 600 and the minimum to 400 nautical miles \(to avoid short hops\). The result table will now update with a small delay since the distance search is more complex.
-* To find only airports north of your position select `North` in the combo box `Any Direction`. Note that the search result is sorted by distance with the closest airport first.
-* Choose an airport for your trip. We use `Wick (EGPC)` for this tutorial.
-* ![Search for Destination](../images/tutorial/ifrsearchdest.jpg)
-* Right click on Wick in the result table.
-* Select `Show Information` ![Show Information](../images/icons/globals.png). This will fill the tabs in the dock window `Information`.
-* Select the tab `Weather` and look for the wind direction to get an idea of the expected landing runway. Start AS16 or Active Sky Next if you are using these.
+ Vedi anche [Finestra ancorata di ricerca - Aeroporti e radioaiuti] (SEARCH.md).
 
-For this tutorial we assume that the winds favor runway 13.
+ Puoi anche limitare la lunghezza massima della pista se stai cercando una piccola sfida di atterraggio, ma non ora.
 
-See also [Weather](WEATHER.md).
+ Il risultato della ricerca cambia al volo mentre si eseguono tutte queste regolazioni, sebbene non ci siamo ancora:
 
-### Select an Approach Procedure {#tutorial-ifr-select-approach}
+ * Seleziona `Distanza:` per attivare la ricerca spaziale.
+ * Modifica la distanza massima in 600 e il minimo in 400 miglia nautiche \ (per evitare salti brevi \). La tabella dei risultati verrà ora aggiornata con un piccolo ritardo poiché la ricerca della distanza è più complessa.
+ * Per trovare solo gli aeroporti a nord della tua posizione, seleziona "Nord" nella casella combinata "Qualsiasi direzione". Si noti che il risultato della ricerca viene ordinato per distanza con l'aeroporto più vicino per primo.
+ * Scegli un aeroporto per il tuo viaggio. Usiamo `Wick (EGPC)` per questa guida.
 
-We'll select an approach procedure now:
+ *! [Cerca destinazione] (../ images / tutorial / ifrsearchdest.jpg)
+ * Fare clic destro su Wick nella tabella dei risultati.
+ * Seleziona "Mostra informazioni"! [Mostra informazioni] (../ images / icons / globals.png). Questo riempirà le schede nella finestra ancorata "Informazioni".
+ * Seleziona la scheda "Meteo" e cerca la direzione del vento per avere un'idea della pista di atterraggio prevista. Avvia AS16 o Active Sky Next se li stai usando.
 
-* Go back to the search result.
-* Right click on the airport Wick again. Select `Show Procedures` ![Show Procedures](../images/icons/approach.png). This will pop up the procedure search tab.
-* Choose `Runway 13` in the `All Runways` combo box to see only approaches for 13.
-* Select `Expand All` in the context menu to see also the transitions for each approach.
-* Choose `Approach VORDME 13 FD13` using `Transition (Full) WIK10` since we expect to land on runway 13 and arrive from south.
+ Per questa guida supponiamo che i venti favoriscano la pista 13.
 
-The top label in the procedure search shows `Wick (EGPC) Approach VORDME 13 FD13 Transition (Full) WIK10` for the selected approach and/or transition. You can also see a preview on the map.
+ Vedi anche [Meteo] (WEATHER.md).
 
-![Procedure Search Tree](../images/tutorial/ifrprocselect.jpg)
+ ### Seleziona una procedura di avvicinamento {# guida-ifr-seleziona-avvicinamento}
 
-Right click on the transition and select `Show Approach and Transition on Map` ![Show Approach and Transition on Map](../images/icons/showonmap.png). This will center the procedure on the map. You can hover the mouse over the waypoints of the approach to see more information in a tooltip. You can also click on the legs in the procedure tree to see the respective start and end points.
+ Selezioneremo una procedura di avvicinaemnto ora:
 
-![Procedure Preview](../images/tutorial/ifrprocpreview.jpg)
+ * Torna al risultato della ricerca.
+ * Fare nuovamente clic con il tasto destro del mouse sull'aeroporto Wick. Seleziona "Mostra Procedure"! [Mostra Procedure] (../ images / icons / approach.png). Verrà visualizzata la scheda di ricerca della procedura.
+ * Scegli `Runway 13` nella casella combinata` tutte le piste` per vedere solo gli avvicinamenti per la 13.
+ * Seleziona `Espandi tutto` nel menu contestuale per vedere anche le transizioni per ciascun avvicinamento.
+ * Scegli `Avvicinamento VORDME 13 FD13` usando` Transizione (tutta) WIK10` poiché prevediamo di atterrare sulla pista 13 e arrivare da sud.
 
-The procedure looks sufficiently complicated to make an interesting approach.
+ L'etichetta superiore nella ricerca della procedura mostra `Wick (EGPC) Avvicinamento VORDME 13 FD13 Transizione (tutta) WIK10` per l'avvicinamento selezionato e / o la transizione. Puoi anche vedere un'anteprima sulla mappa.
 
-More information on procedure search: [Search Dock Window - Procedures](SEARCHPROCS.md). Also see [Procedures](APPROACHES.md) for general information on procedures.
+ ! [Albero di ricerca procedure] (../ images / tutorial / ifrprocselect.jpg)
 
-If you like what you see right click again on the transition and select `Use EGPC and Approach and Transition as Destination` ![Use EGPC and Approach and Transition as Destination](../images/icons/routeadd.png).
+ Fare clic con il tasto destro sulla transizione e selezionare "Mostra avvicinamento e transizione sulla mappa"! [Mostra avvicinamento e transizione sulla mappa] (../ images / icons / showonmap.png). Questo centrerà la procedura sulla mappa. È possibile passare il mouse sopra i waypoint dell'avvicinamento per visualizzare ulteriori informazioni in un suggerimento. È inoltre possibile fare clic sulle parti nella struttura della procedura per visualizzare i rispettivi punti iniziale e finale.
 
-This will do two things:
+ ! [Anteprima procedura] (../ images / tutorial / ifrprocpreview.jpg)
 
-1. Add Wick as the destination airport to the flight plan. Any previous destination in the flight plan will be replaced.
-2. Add the approach and its transition to the flight plan. The procedure legs use a dark blue color and the missed approach legs use a dark red color in the flight plan table. Flight plan en route legs are black. Again, any previous procedure is replaced with this new one.
+ La procedura sembra sufficientemente complicata da presentare un avvicinamento interessante.
 
-**About adding transition and approaches:** Approaches and transitions are closely related which is already indicated by the tree structure in the procedure search tab. You can add an approach alone but a transition always belongs to an approach.
+ Ulteriori informazioni sulla ricerca delle procedure: [Finestra ancorata di ricerca - Procedure] (SEARCHPROCS.md). Vedi anche [Procedure] (APPROACHES.md) per informazioni generali sulle procedure.
 
-You have to select the transition to add or show both, approach and transition.
+ Se ti piace quello che vedi, fai di nuovo clic con il tasto destro sulla transizione e seleziona "Usa EGPC, avvicinamento e Transizione come Destinazione"! [Usa EGPC e Avvicinamento e Transizione come Destinazione] (../ images / icons / routeadd.png).
 
-### Calculate a Flight Plan {#tutorial-ifr-calculate-flight-plan}
+ Questo farà due cose:
 
-Now we have the departure airport, an approach procedure and the destination all connected by a line. Next is the en route part of the flight plan:
+ 1. Aggiungi Wick come aeroporto di destinazione al piano di volo. Qualsiasi destinazione precedente nel piano di volo verrà sostituita.
+ 2. Aggiungi l'avvicinamento e la sua transizione al piano di volo. Le parti della procedura usano un colore blu scuro e le parti dell' avvicinamento mancate usano un colore rosso scuro nella tabella del piano di volo. Il piano di volo lungo il tragitto è nero. Ancora una volta, qualsiasi procedura precedente viene sostituita con questa nuova.
 
-* Set `IFR` as the flight plan type in the dock window `Flight Plan`. This allows the automatic flight plan calculation to adjust the cruise altitude.
-* Click `Flight Plan` -&gt; `Calculate low Altitude` ![Calculate low Altitude](../images/icons/routelow.png) to start the automatic flight plan calculation for Victor airways. The calculation will create a route from your departure airport to the intial fix of the transition.
+ ** Informazioni sull'aggiunta di transizione e avvicinamenti: ** Avvicinamenti e transizioni sono strettamente correlati, come è già indicato dalla struttura ad albero nella scheda di ricerca della procedura. È possibile aggiungere un avvicinameto da solo, ma una transizione appartiene sempre a un avvicinamento.
 
-The flight plan cruise altitude is automatically adjusted according to the hemispherical rule \(the rule can be changed in `Tools` -&gt; `Options` ![Options](../images/icons/settings.png) on the tab `Flight Plan`\), the altitude restrictions of the airways and the flight plan type \(`VFR` or `IFR`\). You can see the minimum altitude for each airway segment in the flight plan table in the column `Restriction`.
+ Devi selezionare la transizione per aggiungere o mostrare sia l'avvicinamento che la transizione.
 
-The altitude can also be adjusted according to the hemispherical rule by clicking `Flight Plan` -&gt; `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png).
 
-Now the minimum altitude of 16,000 feet is a bit too high.
+ ### Calcola un piano di volo {# guida-ifr-calcola-piano di volo}
 
-Therefore, try an alternate calculation method which limits your cruise altitude:
+ Ora abbiamo l'aeroporto di partenza, una procedura di avvicinamento e la destinazione tutti collegati da una linea. La prossima è la parte in rotta del piano di volo:
 
-* Enter 10,000 feet in the `Flight plan altitude` field.
-* Click on `Flight Plan` -&gt; `Calculate based on given Altitude` ![Calculate based on given Altitude](../images/icons/routealt.png). This will result in a flight plan that uses only airways having a minimum altitude below or equal to 10,000 feet. Note that you can get a mix of Victor and Jet airways depending on used altitude. The calculation might also fail if you set the cruise altitude too low.
+ * Impostare `IFR` come tipo di piano di volo nella finestra ancorata` Piano di volo`. Ciò consente al calcolo automatico del piano di volo di regolare l'altitudine della crociera.
+ * Fai clic su `Piano di volo` - & gt; "Calcola bassa altitudine"! [Calcola bassa altitudine] (../ images / icons / routelow.png) per iniziare il calcolo automatico del piano di volo per le aerovie Victor. Il calcolo creerà una rotta dal tuo aeroporto di partenza al fix iniziale della transizione.
 
-![Calculate Flight Plan](../images/tutorial/ifrcalcalt.jpg)
+ L'altitudine di crociera del piano di volo viene regolata automaticamente in base alla regola emisferica \ (la regola può essere modificata in `Strumenti` - & gt;` Opzioni`! [Opzioni] (../immagine / icone / impostazioni.png) nella scheda ` Piano di volo` \), i limiti di altitudine delle aerovie e il tipo di piano di volo \ (`VFR` o` IFR` \). È possibile visualizzare l'altitudine minima per ciascun segmento delle aerovie nella tabella del piano di volo nella colonna "Restrizione".
 
-Use this flight plan for now.
+ L'altitudine può anche essere regolata in base alla regola emisferica facendo clic su "Piano di volo" - & gt; "Regola l'altitudine del piano di volo"! [Regola l'altitudine del piano di volo] (../ images / icons / routeadjustalt.png).
 
-Save the plan using `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
+ Ora l'altitudine minima di 16.000 piedi è un po 'troppo alta.
 
-The waypoints of the approach procedure are not saved in the flight plan. You have to select the approach in your GPS or FMC in the simulator or fly it by radio navaids and a stopwatch.
+ Pertanto, prova un metodo di calcolo alternativo che limiti la tua altitudine di crociera:
 
-What _Little Navmap_ saves in the PLN are the procedure names which allows the program to restore the approach when loading the PLN file.
+ * Inserisci 10.000 piedi nel campo "Altitudine del piano di volo".
+ * Fai clic su `Piano di volo` - & gt; "Calcola in base alla determinata altitudine"! [Calcola in base alla determinata altitudine] (../ images / icons / routealt.png). Ciò comporterà un piano di volo che utilizza solo le aerovie con un'altitudine minima inferiore o uguale a 10.000 piedi. Si noti che è possibile ottenere un mix di aerovie Victor e Jet a seconda dell'altitudine utilizzata. Il calcolo potrebbe anche fallire se si imposta un'altitudine di crociera troppo bassa.
 
-The top label in the flight plan dock window reads now:
+ ! [Calcola piano di volo] (../ images / tutorial / ifrcalcalt.jpg)
 
-```none
-Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
-Via WIK10 and VORDME FD13 to runway 13
-517 nm, 5 h 10 m, Low Altitude
-```
-Adjust the ground speed in the flight plan dock window according to the used aircraft to get a better time estimate.
+ Utilizza questo piano di volo per ora.
 
-The plan might look different, depending if you use stock navaids or navdata updates.
+ Salva il piano usando `File` - & gt; "Salva piano di volo"! [Salva piano di volo] (../ images / icons / filesave.png). Il programma di solito trova la directory giusta per i piani di volo e fornisce un nome ragionevole per impostazione predefinita.
 
-![Flight Plan](../images/tutorial/ifrflightplan.jpg)
+I waypoint della procedura di avvicinamento non vengono salvati nel piano di volo. Devi selezionare l'avvicinamento nel tuo GPS o FMC nel simulatore o pilotarlo con radio aiuti e un cronometro.
 
-Now you can check if you pass through any airspaces:
+ Ciò che _Little Navmap_ salva nel PLN sono i nomi delle procedure che consentono al programma di ripristinare l'avvicinamento durante il caricamento del file PLN.
 
-* Enable airspaces by selecting `Map` -&gt; `Airspaces` -&gt; `Show Airspaces` ![Show Airspaces](../images/icons/airspace.png) if not already done.
-* Check `Map` -&gt; `Airspaces` -&gt; `At flight plan cruise altitude` ![At flight plan cruise altitude](../images/icons/airspaceroutealt.png) in the menu or the toolbar menu button.
+ L'etichetta superiore nella finestra ancorata del piano di volo riporta ora:
 
-![Select Airspaces](../images/tutorial/ifrairspacesel.jpg)
+ `` `None
+ Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
+ Via WIK10 e VORDME FD13 fino alla pista 13
+ 517 nm, 5 h 10 m, bassa altitudine
+ `` `
+ Regola la velocità al suolo nella finestra ancorata del piano di volo in base all'aereo  utilizzato per ottenere una stima del tempo migliore.
 
-This will display only airspaces on the map that are relevant for your cruise altitude. You can also select `Below 10000 ft only` to see all relevant airspaces in the climb or descent phase. Use the tooltips on the map to get information about airspaces like type, minimum and maximum altitude.
+ Il piano potrebbe avere un aspetto diverso, a seconda che si utilizzino aggiornamenti radioaiuti o dati di navigazione di serie.
 
-![Airspaces](../images/tutorial/ifrairspaces.jpg)
+ ! [Piano di volo] (../ images / tutorial / ifrflightplan.jpg)
 
-### Flying {#tutorial-ifr-flying}
+ Ora puoi verificare se passi attraverso gli spazi aerei:
 
-Open the dialog `Connect` using `Tools` -&gt; `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable, if not.
+ * Abilita gli spazi aerei selezionando "Mappa" - & gt; `Airspaces` - & gt; `Show Airspaces`! [mostra spazi aerei] (../ images / icons / airspace.png) se non lo hai già fatto.
+ * Controlla `Mappa` - & gt; `spazi aerei` - & gt; "All'altitudine di crociera del piano di volo"! [All'altitudine di crociera del piano di volo] (../ images / icons / airspaceroutealt.png) nel menu o nel pulsante del menu della barra degli strumenti.
 
-_Litte Navmap_ will find the simulator no matter if it is already started or if it is started later. Click `Connect`.
+ ! [Seleziona spazi aerei] (../ images / tutorial / ifrairspacesel.jpg)
 
-See also [Connecting to a Flight Simulator](CONNECT.md).
+ Questo mostrerà solo gli spazi aerei sulla mappa che sono rilevanti per la tua altitudine di crociera. Puoi anche selezionare "Solo sotto i 10000 piedi" per vedere tutti gli spazi aerei rilevanti nella fase di salita o discesa. Utilizza i suggerimenti sulla mappa per ottenere informazioni su spazi aerei come tipo, altitudine minima e massima.
 
-Enable `Map` -&gt; `Center Aircraft` ![New Flight Plan](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep it centered. This will happen only if an active flight is loaded, i.e. the simulator is not in the opening screen.
+ ! [Spazi aerei] (../ images / tutorial / ifrairspaces.jpg)
 
-Start the simulator if not already done, load the flight plan and go flying.
 
-### Top of Descent {#tutorial-ifr-top-of-descent}
+ ### Volando {# guida-ifr-volando}
 
-A top of descent indication is displayed on the map and in the elevation profile which also shows the distance from top of descent to the destination. This number includes the distance of approach procedures \(excluding holds\).
+ Apri la finestra di dialogo `Connetti` usando` Strumenti` - & gt; "Connessione al simulatore di volo"! [Connessione al simulatore di volo] (../ images / icons / network.png) e controlla se è selezionato "Connetti automaticamente". Abilita, in caso contrario.
 
-Note that altitude restrictions are not considered yet in the top of descent calculation.
+ _Litte Navmap_ troverà il simulatore indipendentemente dal fatto che sia già stato avviato o che venga avviato in seguito. Fai clic su "Connetti".
 
-You can change the descent rule in `Tools` -&gt; `Options` ![Options](../images/icons/settings.png) on the tab `Flight Plan`. The default is 3 nautical miles for 1,000 feet.
+ Vedi anche [Collegamento a un simulatore di volo] (CONNECT.md).
 
-![Top of Descent Indicator](../images/tutorial/ifrtod.jpg)
+ Abilita `Mappa` - & gt; "centra aereo"! [Nuovo piano di volo] (../ images / icons / centeraircraft.png). La mappa salterà sull'aereo del simulatore e la manterrà centrata. Ciò accadrà solo se viene caricato un volo attivo, ovvero il simulatore non si trova nella schermata di apertura.
 
-The tab `Progress` in the dock window `Simulator Aircraft` will show the distance to the top of descent in the `Flight Plan Progress` section:
+ Avvia il simulatore se non lo hai già fatto, carica il piano di volo e vola.
 
-|Flight Plan Progress|
-|---|---|
-|To Destination: |74 nm|
-|Time and Date: |21.05.17 12:33 UTC|
-|Local Time: |14:33 CEST|
-|**TOD to Destination:**|**64 nm**|
-|**To Top of Descent:**|**10,1 nm**|
+ ### Top of Descent {# Guida-ifr-top-of-descent}
 
-The section `Altitude` will show the vertical path deviation after passing the top of descent:
+ Un'indicazione del Top of Descend viene visualizzata sulla mappa e nel profilo altimetrico che mostra anche la distanza dal Top of Descend alla destinazione. Questo numero include la distanza dalle procedure di avvicinamento \ (esclusi i circuiti di attesa \).
 
-|Altitude|
-|---|---|
-|Indicated: |5,090 ft|
-|Actual: |5,051 ft|
-|Above Ground: |5,051 ft|
-|Ground Elevation: |0 ft|
-|**Vertical Path Dev.:**|**-511 ft below ▲**|
+ Si noti che le restrizioni  di altitudine non sono ancora considerate nel calcolo del Topo of Descend.
 
-### Changing Procedures {#tutorial-ifr-changing-procedures}
+ Puoi cambiare la regola di discesa in `Strumenti` - & gt; `Opzioni`! [Opzioni] (../ images / icons / settings.png) nella scheda` Piano di volo`. L'impostazione predefinita è 3 miglia nautiche per 1.000 piedi.
 
-Now the weather has changed requiring an approach to runway 31:
+ ! [ Indicatore Top of Descent] (../ images / tutorial / ifrtod.jpg)
 
-* Right click on the destination airport at the bottom of the flight plan table.
-* Choose `Show Procedures` ![Show Procedures](../images/icons/approach.png).
-* Then change the runway filter to `Runway 31`.
-* Expand the approach VORDME 31 to see the transition.
-* Select the transition.
+ La scheda "Progresso" nella finestra ancorata "Aereo del simulatore" mostrerà la distanza del Top of Descend nella sezione "Progresso del piano di volo":
 
-The label on top of the window shows now `Approach VORDME 31 FD31 Transition (Full) CHINN`.
+ | Progresso del piano di volo |
+ | --- | --- |
+ | Alla destinazione: | 74 nm |
+ | Ora e data: | 21.05.17 12:33 UTC |
+ | Ora locale: | 14: 33 CEST |
+ | ** Da TOD a destinazione: ** | ** 64 nm ** |
+ | ** al Top of Descend: ** | ** 10,1 nm ** |
 
-* Right click on the selected transition.
-* Choose `Use EGPC and Approach and Transition as Destination` ![Use EGPC and Approach and Transition as Destination](../images/icons/routeadd.png) from the context menu which will replace the current procedure in your flight plan with the new one.
+ La sezione `Altitudine` mostrerà la deviazione del percorso verticale dopo aver superato il Topo of Descend:
 
-The top label in the flight plan dock window reads now:
+ | Altitude |
+ | --- | --- |
+ | Indicato: | 5.090 ft |
+ | Effettivo: | 5.051 ft |
+ | sopra terra: | 5.051 ft |
+ | Altitudine al suolo: | 0 ft |
+ | ** Dev. Percorso verticale :******-511 ft sotto ▲ ** |
 
-```none
-Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
-Via CHINN and VORDME FD31 to runway 31
-526 nm, 5 h 15 m, Low Altitude
-```
+### Procedure di modifica {# guida-ifr-modifica-procedura}
 
-To completely get rid of a procedure:
+ Ora il tempo è cambiato e richiede un avvicinamento alla pista 31:
 
-* Select any leg of the procedure in the flight plan table.
-* Right click and choose `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) to remove the whole procedure. Alternatively press the `Del` key.
+ * Fare clic con il tasto destro del mouse sull'aeroporto di destinazione nella parte inferiore della tabella del piano di volo.
+ * Scegli "mostra procedure"! [mostra Procedure] (../ images / icons / approach.png).
+ * Quindi cambia il filtro della pista in `Pista 31`.
+ * Espandi l'avvicinamento VORDME 31 per vedere la transizione.
+ * Seleziona la transizione.
 
-If ATC clears you to the initial fix of the procedure:
+ L'etichetta nella parte superiore della finestra ora mostra "Avvicinamento VORDME 31 FD31 Transizione (tutta) CHINN".
 
-1. Delete any intermediate waypoints between your current aircraft position and the initial fix of the procedure: Right click in the flight plan table and select `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) for all waypoints between your current aircraft position and the initial fix or start of the procedure. Avoid deleting your approach \(you can also right click on a flight plan waypoint on the map and delete it from the context menu\).
-3. Then right click on your aircraft on the map and select `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png).
+ * Fare clic con il tasto destro sulla transizione selezionata.
+ * Scegli `Usa EGPC e avvicinamento e transizione come destinazione`! [Usa EGPC e Avvicinamento e transizione come destinazione] (../ images / icons / routeadd.png) dal menu contestuale che sostituirà la procedura corrente nel tuo piano di volo con quello nuovo.
 
-This will give a direct connection from your current aircraft position to the start of the procedure which you can use to get course and distance to the intial fix.
+ L'etichetta superiore nella finestra ancorata del piano di volo riporta ora:
 
-Below: After changing the approach procedure and adding a user defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition \(43 nm and 314 degrees magnetic course\).
+ `` `None
+ Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
+ Via CHINN e VORDME FD31 fino alla pista 31
+ 526 nm, 5 h 15 m, bassa altitudine
+ `` `
 
-![Changed Approach](../images/tutorial/ifrapproach.jpg)
+ Per eliminare completamente una procedura:
 
-### Going Missed {#tutorial-ifr-going-missed}
+ * Selezionare una parte della procedura nella tabella del piano di volo.
+ * Fare clic con il pulsante destro del mouse e selezionare "Elimina tratta o procedura selezionata"! [Elimina tratta o procedura selezionata] (../ images / icons / routedeleteleg.png) per rimuovere l'intera procedura. In alternativa, premere il tasto `Canc`.
 
-I recommend hiding the missed approaches on the map by unchecking `Map` -&gt; `Show Missed Approaches` ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches"). This helps uncluttering the map display.
+ Se l'ATC ti autorizza alla correzione iniziale della procedura:
 
-* **If the missed approach is not shown:** The progress window shows distance and time to destination. Activating the next leg \(shown in magenta color\) will stop if the destination \(i.e. the runway threshold\) is reached, even when passing the threshold.
-* **If the missed is shown and the aircraft passes the runway threshold:**  The first leg of the missed approach is activated and simulator aircraft progress will display the remaining distance to the end of the missed procedure.
+ 1. Elimina eventuali waypoint intermedi tra la posizione corrente del tuo aereo e la correzione iniziale della procedura: fai clic con il pulsante destro del mouse nella tabella del piano di volo e seleziona "Elimina tratta o procedura selezionata"! [Elimina tratta o procedura selezionata] (../immagine / icone /routedeleteleg.png) per tutti i waypoint tra la posizione corrente dell'aereo e la correzione iniziale o l'inizio della procedura. Evita di eliminare il tuo avvicinamento \ (puoi anche fare clic con il pulsante destro del mouse su un waypoint del piano di volo sulla mappa ed eliminarlo dal menu di scelta rapida \).
+ 3. Quindi fai clic con il pulsante destro del mouse sul tuo aereo sulla mappa e seleziona "Aggiungi posizione al piano di volo"! [Aggiungi posizione al piano di volo] (../ images / icons / routeadd.png).
+
+ Ciò fornirà una connessione diretta dalla posizione corrente del tuo aereo all'inizio della procedura che puoi utilizzare per ottenere la rotta e la distanza dalla correzione iniziale.
+
+ Sotto: dopo aver modificato la procedura di avvicinamento e aggiunto al piano di volo un waypoint definito dall'utente nella posizione dell'aereo. Ora otteniamo indicazioni di rotta e altitudine per una tratta diretta verso l'inizio della transizione \ (43 nm e 314 gradi di rotta magnetica \).
+
+ ! [Avvicinamento modificato] (../ images / tutorial / ifrapproach.jpg)
+
+ ### Andati persi {# guida-ifr-andati-persi}
+
+ Consiglio di nascondere gli avvicinamenti persi sulla mappa deselezionando "Mappa" - & gt; "Mostra avvicinamenti persi"! [Mostra avvicinamenti persi] (../ images / icons / missed.png "Mostra avvicinamenti persi"). Questo aiuta a sgombrare la visualizzazione della mappa.
+
+ * ** Se l'avvicinamento mancato non viene visualizzato: ** La finestra di avanzamento mostra distanza e tempo a destinazione. L'attivazione della tratta successiva \ (mostrata in colore magenta \) si interromperà se viene raggiunta la destinazione \ (ovvero la soglia della pista \), anche quando si supera la soglia.
+ * ** Se viene mostrato il mancato avvicinamento e l'aeromobile supera la soglia della pista: ** Viene attivata la prima tratta dell'avvicinamento mancato e l'avanzamento del velivolo del simulatore visualizzerà la distanza rimanente al termine della procedura persa.
